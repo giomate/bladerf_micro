@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "valid",
+					"strict" : false
+				},
+				{
+					"name" : "index_max[0]",
+					"strict" : false
+				},
+				{
+					"name" : "index_max[1]",
+					"strict" : false
+				},
+				{
+					"name" : "index_max[2]",
+					"strict" : false
+				},
+				{
+					"name" : "index_max[3]",
+					"strict" : false
+				},
+				{
+					"name" : "index_max[4]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "clk_enable",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[11]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[11]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[10]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[10]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_re[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in_im[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

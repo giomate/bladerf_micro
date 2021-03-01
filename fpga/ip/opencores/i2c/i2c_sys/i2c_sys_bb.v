@@ -1,0 +1,24 @@
+
+module i2c_sys (
+	bladerf_oc_i2c_master_0_conduit_end_scl_pad_o,
+	bladerf_oc_i2c_master_0_conduit_end_scl_padoen_o,
+	bladerf_oc_i2c_master_0_conduit_end_sda_pad_i,
+	bladerf_oc_i2c_master_0_conduit_end_sda_pad_o,
+	bladerf_oc_i2c_master_0_conduit_end_sda_padoen_o,
+	bladerf_oc_i2c_master_0_conduit_end_arst_i,
+	bladerf_oc_i2c_master_0_conduit_end_scl_pad_i,
+	clk_clk,
+	reset_reset_n,
+	bladerf_oc_i2c_master_0_interrupt_sender_irq);	
+
+	output		bladerf_oc_i2c_master_0_conduit_end_scl_pad_o;
+	output		bladerf_oc_i2c_master_0_conduit_end_scl_padoen_o;
+	input		bladerf_oc_i2c_master_0_conduit_end_sda_pad_i;
+	output		bladerf_oc_i2c_master_0_conduit_end_sda_pad_o;
+	output		bladerf_oc_i2c_master_0_conduit_end_sda_padoen_o;
+	input		bladerf_oc_i2c_master_0_conduit_end_arst_i;
+	input		bladerf_oc_i2c_master_0_conduit_end_scl_pad_i;
+	input		clk_clk;
+	input		reset_reset_n;
+	output		bladerf_oc_i2c_master_0_interrupt_sender_irq;
+endmodule

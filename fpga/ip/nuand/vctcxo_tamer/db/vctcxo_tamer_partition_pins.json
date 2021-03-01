@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "mm_rd_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_rd_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_rd_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_rd_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_rd_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_rd_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_rd_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_rd_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_rd_datav",
+					"strict" : false
+				},
+				{
+					"name" : "mm_irq",
+					"strict" : false
+				},
+				{
+					"name" : "mm_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_clock",
+					"strict" : false
+				},
+				{
+					"name" : "mm_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_rd_req",
+					"strict" : false
+				},
+				{
+					"name" : "mm_wr_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_wr_req",
+					"strict" : false
+				},
+				{
+					"name" : "mm_wr_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_wr_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_wr_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_wr_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_wr_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_wr_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_wr_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mm_reset",
+					"strict" : false
+				},
+				{
+					"name" : "vctcxo_clock",
+					"strict" : false
+				},
+				{
+					"name" : "tune_ref",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

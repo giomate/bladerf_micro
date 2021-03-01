@@ -1,0 +1,37 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\nuand\vctcxo_tamer\vctcxo_qsys.qsys --block-symbol-file --output-directory=C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\nuand\vctcxo_tamer\vctcxo_qsys --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading vctcxo_tamer/vctcxo_qsys.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding vctcxo_tamer_0 [vctcxo_tamer 1.0]
+Progress: Parameterizing module vctcxo_tamer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: vctcxo_qsys.vctcxo_tamer_0: Interrupt sender vctcxo_tamer_0.interrupt_sender is not connected to an interrupt receiver
+Warning: vctcxo_qsys.vctcxo_tamer_0: vctcxo_tamer_0.avalon_slave_0 must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\nuand\vctcxo_tamer\vctcxo_qsys.qsys --synthesis=VHDL --output-directory=C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\nuand\vctcxo_tamer\vctcxo_qsys\synthesis --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading vctcxo_tamer/vctcxo_qsys.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding vctcxo_tamer_0 [vctcxo_tamer 1.0]
+Progress: Parameterizing module vctcxo_tamer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: vctcxo_qsys.vctcxo_tamer_0: Interrupt sender vctcxo_tamer_0.interrupt_sender is not connected to an interrupt receiver
+Warning: vctcxo_qsys.vctcxo_tamer_0: vctcxo_tamer_0.avalon_slave_0 must be connected to an Avalon-MM master
+Info: vctcxo_qsys: Generating vctcxo_qsys "vctcxo_qsys" for QUARTUS_SYNTH
+Info: vctcxo_tamer_0: "vctcxo_qsys" instantiated vctcxo_tamer "vctcxo_tamer_0"
+Info: rst_controller: "vctcxo_qsys" instantiated altera_reset_controller "rst_controller"
+Info: vctcxo_qsys: Done "vctcxo_qsys" with 3 modules, 10 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

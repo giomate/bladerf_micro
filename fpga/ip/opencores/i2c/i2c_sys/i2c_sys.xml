@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2021.02.28.18:43:00"
+ outputDirectory="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5CEBA4F23C8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="bladerf_oc_i2c_master_0_conduit_end" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="bladerf_oc_i2c_master_0_conduit_end_scl_pad_o"
+       direction="output"
+       role="scl_pad_o"
+       width="1" />
+   <port
+       name="bladerf_oc_i2c_master_0_conduit_end_scl_padoen_o"
+       direction="output"
+       role="scl_padoen_o"
+       width="1" />
+   <port
+       name="bladerf_oc_i2c_master_0_conduit_end_sda_pad_i"
+       direction="input"
+       role="sda_pad_i"
+       width="1" />
+   <port
+       name="bladerf_oc_i2c_master_0_conduit_end_sda_pad_o"
+       direction="output"
+       role="sda_pad_o"
+       width="1" />
+   <port
+       name="bladerf_oc_i2c_master_0_conduit_end_sda_padoen_o"
+       direction="output"
+       role="sda_padoen_o"
+       width="1" />
+   <port
+       name="bladerf_oc_i2c_master_0_conduit_end_arst_i"
+       direction="input"
+       role="arst_i"
+       width="1" />
+   <port
+       name="bladerf_oc_i2c_master_0_conduit_end_scl_pad_i"
+       direction="input"
+       role="scl_pad_i"
+       width="1" />
+  </interface>
+  <interface
+     name="bladerf_oc_i2c_master_0_interrupt_sender"
+     kind="interrupt"
+     start="0">
+   <property name="associatedAddressablePoint" value="" />
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port
+       name="bladerf_oc_i2c_master_0_interrupt_sender_irq"
+       direction="output"
+       role="irq"
+       width="1" />
+  </interface>
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="50000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="i2c_sys:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CEBA4F23C8,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1614534176,AUTO_UNIQUE_ID=(bladerf_oc_i2c_master:1.0:ARST_LVL=1)(clock_source:20.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(clock:20.1:)(reset:20.1:)"
+   instancePathKey="i2c_sys"
+   kind="i2c_sys"
+   version="1.0"
+   name="i2c_sys">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1614534176" />
+  <parameter name="AUTO_DEVICE" value="5CEBA4F23C8" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
+  <generatedFiles>
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/i2c_sys.vhd"
+       type="VHDL" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/i2c_master_bit_ctrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/i2c_master_byte_ctrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/i2c_master_defines.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/i2c_master_top.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/timescale.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/qsys/oc_i2c_master_hw.tcl" />
+   <file
+       path="C:/intelfpga_lite/20.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="i2c_sys">queue size: 0 starting:i2c_sys "i2c_sys"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>2</b> modules, <b>2</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>3</b> modules, <b>4</b> connections]]></message>
+   <message level="Debug" culprit="i2c_sys"><![CDATA["<b>i2c_sys</b>" reuses <b>bladerf_oc_i2c_master</b> "<b>submodules/i2c_master_top</b>"]]></message>
+   <message level="Debug" culprit="i2c_sys"><![CDATA["<b>i2c_sys</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"]]></message>
+   <message level="Debug" culprit="i2c_sys">queue size: 1 starting:bladerf_oc_i2c_master "submodules/i2c_master_top"</message>
+   <message level="Info" culprit="bladerf_oc_i2c_master_0"><![CDATA["<b>i2c_sys</b>" instantiated <b>bladerf_oc_i2c_master</b> "<b>bladerf_oc_i2c_master_0</b>"]]></message>
+   <message level="Debug" culprit="i2c_sys">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>i2c_sys</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="bladerf_oc_i2c_master:1.0:ARST_LVL=1"
+   instancePathKey="i2c_sys:.:bladerf_oc_i2c_master_0"
+   kind="bladerf_oc_i2c_master"
+   version="1.0"
+   name="i2c_master_top">
+  <parameter name="ARST_LVL" value="1" />
+  <generatedFiles>
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/i2c_master_bit_ctrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/i2c_master_byte_ctrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/i2c_master_defines.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/i2c_master_top.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/timescale.v"
+       type="VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/qsys/oc_i2c_master_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="i2c_sys" as="bladerf_oc_i2c_master_0" />
+  <messages>
+   <message level="Debug" culprit="i2c_sys">queue size: 1 starting:bladerf_oc_i2c_master "submodules/i2c_master_top"</message>
+   <message level="Info" culprit="bladerf_oc_i2c_master_0"><![CDATA["<b>i2c_sys</b>" instantiated <b>bladerf_oc_i2c_master</b> "<b>bladerf_oc_i2c_master_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_reset_controller:20.1:ADAPT_RESET_REQUEST=0,MIN_RST_ASSERTION_TIME=3,NUM_RESET_INPUTS=1,OUTPUT_RESET_SYNC_EDGES=deassert,RESET_REQUEST_PRESENT=0,RESET_REQ_EARLY_DSRT_TIME=1,RESET_REQ_WAIT_TIME=1,SYNC_DEPTH=2,USE_RESET_REQUEST_IN0=0,USE_RESET_REQUEST_IN1=0,USE_RESET_REQUEST_IN10=0,USE_RESET_REQUEST_IN11=0,USE_RESET_REQUEST_IN12=0,USE_RESET_REQUEST_IN13=0,USE_RESET_REQUEST_IN14=0,USE_RESET_REQUEST_IN15=0,USE_RESET_REQUEST_IN2=0,USE_RESET_REQUEST_IN3=0,USE_RESET_REQUEST_IN4=0,USE_RESET_REQUEST_IN5=0,USE_RESET_REQUEST_IN6=0,USE_RESET_REQUEST_IN7=0,USE_RESET_REQUEST_IN8=0,USE_RESET_REQUEST_IN9=0,USE_RESET_REQUEST_INPUT=0"
+   instancePathKey="i2c_sys:.:rst_controller"
+   kind="altera_reset_controller"
+   version="20.1"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/opencores/i2c/i2c_sys/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_lite/20.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="i2c_sys" as="rst_controller" />
+  <messages>
+   <message level="Debug" culprit="i2c_sys">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>i2c_sys</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

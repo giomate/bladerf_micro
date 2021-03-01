@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="i2c_qip_test">
+	</PROJECT>
+	<PROJECT NAME="i2c_si53304">
+	</PROJECT>
+</LOG_ROOT>

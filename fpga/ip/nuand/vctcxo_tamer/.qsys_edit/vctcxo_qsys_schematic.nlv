@@ -1,0 +1,12 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst vctcxo_qsys.clk_0 -pg 1 -lvl 1 -y 90
+preplace inst vctcxo_qsys.vctcxo_tamer_0 -pg 1 -lvl 2 -y 30
+preplace inst vctcxo_qsys -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>vctcxo_qsys</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)vctcxo_qsys.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>vctcxo_qsys</net_container>(SLAVE)vctcxo_qsys.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>vctcxo_qsys</net_container>(SLAVE)vctcxo_tamer_0.clock_sink,(MASTER)clk_0.clk) 1 1 1 380
+preplace netloc EXPORT<net_container>vctcxo_qsys</net_container>(SLAVE)vctcxo_tamer_0.conduit_end,(SLAVE)vctcxo_qsys.vctcxo_tamer_0_conduit_end) 1 0 2 NJ 80 NJ
+preplace netloc POINT_TO_POINT<net_container>vctcxo_qsys</net_container>(MASTER)clk_0.clk_reset,(SLAVE)vctcxo_tamer_0.reset_sink) 1 1 1 N
+levelinfo -pg 1 0 170 550
+levelinfo -hier vctcxo_qsys 180 210 410 540

@@ -1,0 +1,23 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\i2c_si53304.qsys --block-symbol-file --output-directory=C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\i2c_si53304 --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading bladerf_micro/i2c_si53304.qsys
+Progress: Reading input file
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\i2c_si53304.qsys --synthesis=VHDL --output-directory=C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\i2c_si53304\synthesis --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading bladerf_micro/i2c_si53304.qsys
+Progress: Reading input file
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: i2c_si53304: Generating i2c_si53304 "i2c_si53304" for QUARTUS_SYNTH
+Info: i2c_si53304: Done "i2c_si53304" with 1 modules, 1 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,16 @@
+`timescale 1 ps/1 ps
+
+module i2c_qip_test(
+	input clk,
+	input rst,
+	input sclk.
+	inout sda);
+
+i2c_master_top i2c(
+p
+	wb_clk_i.(clk), wb_rst_i.(rst),
+	scl_pad_i.(sclk),  sda_pad_o(sda) );
+
+	defparam
+         ARST_LVL = 0;
+endmodule

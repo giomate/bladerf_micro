@@ -1,0 +1,75 @@
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_16:u_twdlROM_3_16|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 Radix22TwdlMapping_phase.11 
+Radix22TwdlMapping_phase.11 0 0 0 0 
+Radix22TwdlMapping_phase.01 0 0 1 1 
+Radix22TwdlMapping_phase.10 0 1 0 1 
+Radix22TwdlMapping_phase.00 1 0 0 1 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_15:u_twdlROM_3_15|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 Radix22TwdlMapping_phase.11 
+Radix22TwdlMapping_phase.11 0 0 0 0 
+Radix22TwdlMapping_phase.01 0 0 1 1 
+Radix22TwdlMapping_phase.10 0 1 0 1 
+Radix22TwdlMapping_phase.00 1 0 0 1 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_14:u_twdlROM_3_14|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 Radix22TwdlMapping_phase.11 
+Radix22TwdlMapping_phase.11 0 0 0 0 
+Radix22TwdlMapping_phase.01 0 0 1 1 
+Radix22TwdlMapping_phase.10 0 1 0 1 
+Radix22TwdlMapping_phase.00 1 0 0 1 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_8:u_twdlROM_3_8|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 
+Radix22TwdlMapping_phase.01 0 0 0 
+Radix22TwdlMapping_phase.00 1 0 1 
+Radix22TwdlMapping_phase.10 0 1 1 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_7:u_twdlROM_3_7|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 
+Radix22TwdlMapping_phase.01 0 0 0 
+Radix22TwdlMapping_phase.00 1 0 1 
+Radix22TwdlMapping_phase.10 0 1 1 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_6:u_twdlROM_3_6|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 
+Radix22TwdlMapping_phase.01 0 0 0 
+Radix22TwdlMapping_phase.00 1 0 1 
+Radix22TwdlMapping_phase.10 0 1 1 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_12:u_twdlROM_3_12|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 
+Radix22TwdlMapping_phase.10 0 0 0 
+Radix22TwdlMapping_phase.01 0 1 1 
+Radix22TwdlMapping_phase.00 1 1 0 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_11:u_twdlROM_3_11|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 
+Radix22TwdlMapping_phase.10 0 0 0 
+Radix22TwdlMapping_phase.01 0 1 1 
+Radix22TwdlMapping_phase.00 1 1 0 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_10:u_twdlROM_3_10|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 
+Radix22TwdlMapping_phase.10 0 0 0 
+Radix22TwdlMapping_phase.01 0 1 1 
+Radix22TwdlMapping_phase.00 1 1 0 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_4:u_twdlROM_3_4|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 
+Radix22TwdlMapping_phase.00 0 0 0 
+Radix22TwdlMapping_phase.01 1 0 1 
+Radix22TwdlMapping_phase.10 1 1 0 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_3:u_twdlROM_3_3|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 
+Radix22TwdlMapping_phase.00 0 0 0 
+Radix22TwdlMapping_phase.01 1 0 1 
+Radix22TwdlMapping_phase.10 1 1 0 
+
+State Machine - |max_frequency_top|Max_Frequency:u_Max_Frequency|FFT_streamer:u_FFT_streamer|FFT_HDL_Optimized:u_FFT_HDL_Optimized|TWDLROM_3_2:u_twdlROM_3_2|Radix22TwdlMapping_phase
+Name Radix22TwdlMapping_phase.00 Radix22TwdlMapping_phase.10 Radix22TwdlMapping_phase.01 
+Radix22TwdlMapping_phase.00 0 0 0 
+Radix22TwdlMapping_phase.01 1 0 1 
+Radix22TwdlMapping_phase.10 1 1 0 

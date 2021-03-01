@@ -1,0 +1,15 @@
+	component i2c_sys is
+		port (
+			bladerf_oc_i2c_master_0_conduit_end_scl_pad_o    : out std_logic;        -- scl_pad_o
+			bladerf_oc_i2c_master_0_conduit_end_scl_padoen_o : out std_logic;        -- scl_padoen_o
+			bladerf_oc_i2c_master_0_conduit_end_sda_pad_i    : in  std_logic := 'X'; -- sda_pad_i
+			bladerf_oc_i2c_master_0_conduit_end_sda_pad_o    : out std_logic;        -- sda_pad_o
+			bladerf_oc_i2c_master_0_conduit_end_sda_padoen_o : out std_logic;        -- sda_padoen_o
+			bladerf_oc_i2c_master_0_conduit_end_arst_i       : in  std_logic := 'X'; -- arst_i
+			bladerf_oc_i2c_master_0_conduit_end_scl_pad_i    : in  std_logic := 'X'; -- scl_pad_i
+			bladerf_oc_i2c_master_0_interrupt_sender_irq     : out std_logic;        -- irq
+			clk_clk                                          : in  std_logic := 'X'; -- clk
+			reset_reset_n                                    : in  std_logic := 'X'  -- reset_n
+		);
+	end component i2c_sys;
+

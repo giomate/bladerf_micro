@@ -1,0 +1,206 @@
+ --> max_index_frequency_pkg
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block1
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block2
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block3
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block4
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block5
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block6
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block7
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block8
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block9
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block10
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block11
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block12
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block13
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_1 --> RADIX22FFT_SDNF1_1_block14
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block1
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block2
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block3
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block4
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block5
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block6
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block7
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block8
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block9
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block10
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block11
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block12
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block13
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_2 --> RADIX22FFT_SDNF2_2_block14
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_2 --> TWDLROM_3_2
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_3 --> TWDLROM_3_3
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_4 --> TWDLROM_3_4
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block1
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_5 --> TWDLROM_3_5
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_6 --> TWDLROM_3_6
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block2
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block3
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block1
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_7 --> TWDLROM_3_7
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_8 --> TWDLROM_3_8
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block4
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block5
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block2
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_10 --> TWDLROM_3_10
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block6
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block3
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_11 --> TWDLROM_3_11
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_12 --> TWDLROM_3_12
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block7
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block8
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block4
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_13 --> TWDLROM_3_13
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_14 --> TWDLROM_3_14
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block9
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block10
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block5
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_15 --> TWDLROM_3_15
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_16 --> TWDLROM_3_16
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block11
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block12
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block6
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_18 --> TWDLROM_3_18
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block13
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block7
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_19 --> TWDLROM_3_19
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_20 --> TWDLROM_3_20
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block14
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block15
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block8
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_21 --> TWDLROM_3_21
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_22 --> TWDLROM_3_22
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block16
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block17
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block9
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_23 --> TWDLROM_3_23
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_24 --> TWDLROM_3_24
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block18
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block19
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block10
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_26 --> TWDLROM_3_26
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block20
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block11
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_27 --> TWDLROM_3_27
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_28 --> TWDLROM_3_28
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block21
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block22
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block12
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_29 --> TWDLROM_3_29
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_30 --> TWDLROM_3_30
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block23
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block24
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block13
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_31 --> TWDLROM_3_31
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_3_32 --> TWDLROM_3_32
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block25
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3/Complex3Multiply --> Complex3Multiply_block26
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLMULT_SDNF1_3 --> TWDLMULT_SDNF1_3_block14
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block1
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block2
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block3
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block4
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block5
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block6
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block7
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block8
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block9
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block10
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block11
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block12
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block13
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_3 --> RADIX22FFT_SDNF1_3_block14
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block1
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block2
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block3
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block4
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block5
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block6
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block7
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block8
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block9
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block10
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block11
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block12
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block13
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF2_4 --> RADIX22FFT_SDNF2_4_block14
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_2 --> TWDLROM_5_2
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_4 --> TWDLROM_5_4
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_6 --> TWDLROM_5_6
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_8 --> TWDLROM_5_8
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_10 --> TWDLROM_5_10
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_12 --> TWDLROM_5_12
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_14 --> TWDLROM_5_14
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_16 --> TWDLROM_5_16
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_18 --> TWDLROM_5_18
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_20 --> TWDLROM_5_20
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_22 --> TWDLROM_5_22
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_24 --> TWDLROM_5_24
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_26 --> TWDLROM_5_26
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_28 --> TWDLROM_5_28
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_30 --> TWDLROM_5_30
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/TWDLROM_5_32 --> TWDLROM_5_32
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block27
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block28
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block29
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block1
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block30
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block2
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block31
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block3
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block32
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block4
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block33
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block5
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block34
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block6
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block35
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block7
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block36
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block8
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block37
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block9
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block38
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block10
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block39
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block11
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block40
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block12
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block41
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block13
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5/Complex3Multiply --> Complex3Multiply_block42
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized/RADIX22FFT_SDNF1_5 --> RADIX22FFT_SDNF1_5_block14
+max_frequency_index/max_index_frequency/FFT_streamer/FFT HDL Optimized --> FFT_HDL_Optimized
+max_frequency_index/max_index_frequency/FFT_streamer --> FFT_streamer
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/Quadrant_Mapper --> Quadrant_Mapper
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag_block
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag_block1
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag_block2
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag_block3
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag_block4
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag_block5
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag_block6
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag_block7
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag_block8
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each/magnitud_fft/CordicKernelMag --> CordicKernelMag_block9
+max_frequency_index/max_index_frequency/frequency_max/index_finder/for_each --> for_each
+Maximum/max_frequency_index/max_index_frequency/frequency_max/index_finder/Maximum --> Maximum
+max_frequency_index/max_index_frequency/frequency_max/index_finder --> index_finder
+max_frequency_index/max_index_frequency/frequency_max --> frequency_max
+max_frequency_index/max_index_frequency/serial2parallel --> serial2parallel
+max_index_frequency_tc --> max_index_frequency_tc
+max_frequency_index/max_index_frequency --> max_index_frequency

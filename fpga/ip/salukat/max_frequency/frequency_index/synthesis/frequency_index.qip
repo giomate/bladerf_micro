@@ -1,0 +1,287 @@
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_TOOL_VERSION "20.1"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "frequency_index" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../frequency_index.sopcinfo"]
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name SLD_INFO "QSYS_NAME frequency_index HAS_SOPCINFO 1 GENERATION_ID 1610179337"
+set_global_assignment -library "frequency_index" -name MISC_FILE [file join $::quartus(qip_path) "../frequency_index.cmp"]
+set_global_assignment -library "frequency_index" -name SLD_FILE [file join $::quartus(qip_path) "frequency_index.debuginfo"]
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_QSYS_MODE "SYSTEM"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "frequency_index" -name MISC_FILE [file join $::quartus(qip_path) "../../frequency_index.qsys"]
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_NAME "ZnJlcXVlbmN5X2luZGV4"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_DISPLAY_NAME "ZnJlcXVlbmN5X2luZGV4"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYxMDE3OTMzNw==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNFQkE0RjIzQzg=::QXV0byBERVZJQ0U="
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::OA==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_NAME "YWx0ZXJhX3Jlc2V0X2NvbnRyb2xsZXI="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_DISPLAY_NAME "TWVybGluIFJlc2V0IENvbnRyb2xsZXI="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_VERSION "MjAuMQ=="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_DESCRIPTION "Rm9yIHN5c3RlbXMgd2l0aCBtdWx0aXBsZSByZXNldCBpbnB1dHMsIHRoZSBNZXJsaW4gUmVzZXQgQ29udHJvbGxlciBPUnMgYWxsIHJlc2V0IGlucHV0cyBhbmQgZ2VuZXJhdGVzIGEgc2luZ2xlIHJlc2V0IG91dHB1dC4="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "TlVNX1JFU0VUX0lOUFVUUw==::MQ==::TnVtYmVyIG9mIGlucHV0cw=="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "T1VUUFVUX1JFU0VUX1NZTkNfRURHRVM=::ZGVhc3NlcnQ=::T3V0cHV0IFJlc2V0IFN5bmNocm9ub3VzIEVkZ2Vz"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "U1lOQ19ERVBUSA==::Mg==::U3luY2hyb25pemVyIGRlcHRo"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRVUVTVF9QUkVTRU5U::MA==::UmVzZXQgcmVxdWVzdCBsb2dpYyBlbmFibGU="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRX1dBSVRfVElNRQ==::MQ==::UmVzZXQgcmVxdWVzdCB3YWl0IHRpbWU="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "TUlOX1JTVF9BU1NFUlRJT05fVElNRQ==::Mw==::TWluaW11bSByZXNldCBhc3NlcnRpb24gdGltZQ=="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRX0VBUkxZX0RTUlRfVElNRQ==::MQ==::UmVzZXQgcmVxdWVzdCBkZWFzc2VydCB0aW1pbmc="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4w::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjA="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4x::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4y::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjI="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4z::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjM="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU40::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjQ="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU41::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjU="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU42::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjY="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU43::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjc="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU44::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjg="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU45::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjk="
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMA==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEw"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMQ==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEx"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMg==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEy"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMw==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEz"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xNA==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE0"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xNQ==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE1"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU5QVVQ=::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcmVzZXRfaW5wdXRz"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QURBUFRfUkVTRVRfUkVRVUVTVA==::MA==::T25seSBhZGFwdCBvbmx5IHJlc2V0IHJlcXVlc3Q="
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_NAME "bWF4X2luZGV4X21lbW9yeQ=="
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_DISPLAY_NAME "bWF4X2ZyZXF1ZW5jeV9pbmRleA=="
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_AUTHOR "Z2lvdmFubnk="
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_DESCRIPTION "ZmluZCB0aGUgaW5kZXggb2YgdGhlIG1heCBmcmVxdWVuY3k="
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_PARAMETER "TlVNX1JFR0lTVEVSUw==::MzI=::TlVNX1JFR0lTVEVSUw=="
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QUREUl9XSURUSA==::NQ==::QUREUl9XSURUSA=="
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_PARAMETER "REFUQV9XSURUSA==::MjQ=::REFUQV9XSURUSA=="
+set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_PARAMETER "SU5ERVhfV0lEVEg=::OA==::SU5ERVhfV0lEVEg="
+
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "frequency_index.vhd"]
+set_global_assignment -library "frequency_index" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "frequency_index" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "frequency_index" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/max_index_memory.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/complex_memory_synchronizer.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/index_synchronizer.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block1.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block10.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block11.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block12.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block13.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block14.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block15.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block16.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block17.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block18.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block19.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block20.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block21.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block22.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block23.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block24.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block25.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block26.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block27.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block28.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block29.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block30.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block31.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block32.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block33.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block34.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block35.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block36.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block37.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block38.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block39.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block40.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block41.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block42.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block5.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block6.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block7.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block8.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block9.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag_block.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag_block1.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag_block2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag_block3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag_block4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag_block5.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag_block6.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag_block7.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag_block8.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/CordicKernelMag_block9.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/FFT_HDL_Optimized.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/FFT_streamer.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Maximum.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Quadrant_Mapper.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block1.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block10.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block11.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block12.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block13.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block14.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block5.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block6.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block7.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block8.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_1_block9.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block1.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block10.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block11.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block12.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block13.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block14.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block5.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block6.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block7.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block8.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_3_block9.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block1.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block10.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block11.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block12.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block13.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block14.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block5.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block6.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block7.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block8.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF1_5_block9.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block1.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block10.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block11.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block12.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block13.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block14.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block5.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block6.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block7.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block8.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_2_block9.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block1.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block10.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block11.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block12.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block13.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block14.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block5.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block6.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block7.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block8.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/RADIX22FFT_SDNF2_4_block9.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block1.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block10.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block11.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block12.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block13.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block14.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block5.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block6.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block7.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block8.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLMULT_SDNF1_3_block9.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_10.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_11.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_12.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_13.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_14.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_15.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_16.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_18.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_19.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_20.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_21.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_22.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_23.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_24.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_26.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_27.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_28.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_29.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_3.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_30.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_31.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_32.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_5.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_6.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_7.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_3_8.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_10.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_12.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_14.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_16.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_18.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_2.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_20.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_22.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_24.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_26.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_28.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_30.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_32.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_4.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_6.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/TWDLROM_5_8.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/for_each.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/frequency_max.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/index_finder.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/max_index_frequency.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/max_index_frequency_pkg.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/max_index_frequency_tc.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/serial2parallel.vhd"]
+set_global_assignment -library "frequency_index" -name QIP_FILE [file join $::quartus(qip_path) "submodules/counter_adddress_32.qip"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/counter_adddress_32.vhd"]
+
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_TOOL_VERSION "20.1"
+set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_TOOL_ENV "Qsys"

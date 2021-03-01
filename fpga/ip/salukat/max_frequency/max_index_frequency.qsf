@@ -1,0 +1,270 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions
+# and other software and tools, and any partner logic
+# functions, and any output files from any of the foregoing
+# (including device programming or simulation files), and any
+# associated documentation or information are expressly subject
+# to the terms and conditions of the Intel Program License
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# Date created = 17:25:41  December 28, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		max_index_frequency_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEBA4F23C8
+set_global_assignment -name TOP_LEVEL_ENTITY max_frequency_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:48:05  DECEMBER 31, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name OPTIMIZATION_MODE "HIGH PERFORMANCE EFFORT"
+set_global_assignment -name TIMING_ANALYZER_DO_REPORT_TIMING ON
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name FLOW_ENABLE_RTL_VIEWER ON
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_32.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_30.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_28.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_26.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_24.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_22.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_20.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_18.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_16.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_14.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_12.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_10.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_8.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_6.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_5_2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_32.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_31.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_30.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_29.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_28.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_27.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_26.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_24.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_23.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_22.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_21.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_20.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_19.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_18.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_16.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_15.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_14.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_13.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_12.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_11.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_10.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_8.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_7.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_6.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_5.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLROM_3_2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block14.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block13.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block12.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block11.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block10.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block9.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block8.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block7.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block6.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block5.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block1.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3_block.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/TWDLMULT_SDNF1_3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/serial2parallel.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block14.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block13.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block12.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block11.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block10.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block9.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block8.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block7.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block6.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block5.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block1.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4_block.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block14.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block13.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block12.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block11.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block10.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block9.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block8.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block7.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block6.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block5.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block1.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2_block.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF2_2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block14.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block13.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block12.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block11.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block10.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block9.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block8.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block7.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block6.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block5.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block1.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5_block.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_5.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block14.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block13.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block12.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block11.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block10.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block9.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block8.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block7.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block6.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block5.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block1.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3_block.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block14.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block13.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block12.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block11.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block10.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block9.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block8.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block7.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block6.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block5.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block1.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1_block.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/RADIX22FFT_SDNF1_1.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Quadrant_Mapper.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Maximum.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/max_index_frequency_tc.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/max_index_frequency_pkg.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/max_index_frequency.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/index_finder.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/frequency_max.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/for_each.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/FFT_streamer.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/FFT_HDL_Optimized.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag_block9.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag_block8.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag_block7.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag_block6.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag_block5.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag_block4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag_block3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag_block2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag_block1.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag_block.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/CordicKernelMag.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block42.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block41.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block40.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block39.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block38.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block37.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block36.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block35.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block34.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block33.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block32.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block31.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block30.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block29.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block28.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block27.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block26.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block25.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block24.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block23.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block22.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block21.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block20.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block19.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block18.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block17.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block16.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block15.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block14.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block13.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block12.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block11.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block10.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block9.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block8.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block7.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block6.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block5.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block4.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block3.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block2.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block1.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply_block.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_index/Complex3Multiply.vhd
+set_global_assignment -name SDC_FILE constraints/max_index_frequency_out.sdc
+set_global_assignment -name SDC_FILE vhdl/max_frequency_index/max_index_frequency_constraints.sdc
+set_global_assignment -name VHDL_FILE vhdl/complex_memory_synchronizer.vhd
+set_global_assignment -name VHDL_FILE vhdl/max_frequency_top.vhd
+set_global_assignment -name VHDL_FILE vhdl/index_synchronizer.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

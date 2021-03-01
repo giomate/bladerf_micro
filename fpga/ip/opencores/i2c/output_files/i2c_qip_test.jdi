@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="669caa0b866d0f66c3c7"/>
+  </project>
+  <file_info>
+    <file device="5CEBA4F23C8" path="i2c_qip_test.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="i2c_sys:i2c" name="i2c">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME i2c_sys HAS_SOPCINFO 1 GENERATION_ID 1614526547"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

@@ -1,0 +1,6 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
+USE IEEE.math_real.ALL;
+USE IEEE.math_complex.ALL;
+USE work.Max_Frequency_pkg.ALL;

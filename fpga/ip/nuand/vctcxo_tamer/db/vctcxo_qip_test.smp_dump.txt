@@ -1,0 +1,18 @@
+
+State Machine - |vctcxo_tamer|pps_counter:U_pps_counter_100s|current.state
+Name current.state.HANDSHAKE_REQ current.state.INCREMENT current.state.IDLE 
+current.state.IDLE 0 0 0 
+current.state.INCREMENT 0 1 1 
+current.state.HANDSHAKE_REQ 1 0 1 
+
+State Machine - |vctcxo_tamer|pps_counter:U_pps_counter_10s|current.state
+Name current.state.HANDSHAKE_REQ current.state.INCREMENT current.state.IDLE 
+current.state.IDLE 0 0 0 
+current.state.INCREMENT 0 1 1 
+current.state.HANDSHAKE_REQ 1 0 1 
+
+State Machine - |vctcxo_tamer|pps_counter:U_pps_counter_1s|current.state
+Name current.state.HANDSHAKE_REQ current.state.INCREMENT current.state.IDLE 
+current.state.IDLE 0 0 0 
+current.state.INCREMENT 0 1 1 
+current.state.HANDSHAKE_REQ 1 0 1 

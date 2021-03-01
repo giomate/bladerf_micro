@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sun Jan 03 10:36:48 2021
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : max_index_frequency
+Top-level Entity Name : max_frequency_top
+Family : Cyclone V
+Device : 5CEBA4F23C8
+Timing Models : Final
+Logic utilization (in ALMs) : 11,654 / 18,480 ( 63 % )
+Total registers : 24180
+Total pins : 36 / 224 ( 16 % )
+Total virtual pins : 0
+Total block memory bits : 9,136 / 3,153,920 ( < 1 % )
+Total RAM Blocks : 41 / 308 ( 13 % )
+Total DSP Blocks : 66 / 66 ( 100 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )
