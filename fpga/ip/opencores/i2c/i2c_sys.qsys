@@ -13,16 +13,16 @@
    {
       datum _sortIndex
       {
-         value = "1";
+         value = "0";
          type = "int";
       }
    }
-   element clk_0
+   element i2c_sys
    {
-      datum _sortIndex
+      datum _originalDeviceFamily
       {
-         value = "0";
-         type = "int";
+         value = "Cyclone V";
+         type = "String";
       }
    }
 }
@@ -47,6 +47,16 @@
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface
+   name="bladerf_oc_i2c_master_0_bladerf_oc_i2c_master"
+   internal="bladerf_oc_i2c_master_0.bladerf_oc_i2c_master"
+   type="avalon"
+   dir="end" />
+ <interface
+   name="bladerf_oc_i2c_master_0_clock_sink"
+   internal="bladerf_oc_i2c_master_0.clock_sink"
+   type="clock"
+   dir="end" />
+ <interface
    name="bladerf_oc_i2c_master_0_conduit_end"
    internal="bladerf_oc_i2c_master_0.conduit_end"
    type="conduit"
@@ -56,8 +66,11 @@
    internal="bladerf_oc_i2c_master_0.interrupt_sender"
    type="interrupt"
    dir="end" />
- <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
- <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <interface
+   name="bladerf_oc_i2c_master_0_reset_sink"
+   internal="bladerf_oc_i2c_master_0.reset_sink"
+   type="reset"
+   dir="end" />
  <module
    name="bladerf_oc_i2c_master_0"
    kind="bladerf_oc_i2c_master"
@@ -65,22 +78,6 @@
    enabled="1">
   <parameter name="ARST_LVL" value="1" />
  </module>
- <module name="clk_0" kind="clock_source" version="20.1" enabled="1">
-  <parameter name="clockFrequency" value="50000000" />
-  <parameter name="clockFrequencyKnown" value="true" />
-  <parameter name="inputClockFrequency" value="0" />
-  <parameter name="resetSynchronousEdges" value="NONE" />
- </module>
- <connection
-   kind="clock"
-   version="20.1"
-   start="clk_0.clk"
-   end="bladerf_oc_i2c_master_0.clock_sink" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="clk_0.clk_reset"
-   end="bladerf_oc_i2c_master_0.reset_sink" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />

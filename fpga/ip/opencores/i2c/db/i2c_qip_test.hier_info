@@ -6,6 +6,30 @@ sda <> i2c_sys:i2c.bladerf_oc_i2c_master_0_conduit_end_scl_pad_o
 
 
 |i2c_qip_test|i2c_sys:i2c
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_writedata[0] => i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_i[0]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_writedata[1] => i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_i[1]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_writedata[2] => i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_i[2]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_writedata[3] => i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_i[3]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_writedata[4] => i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_i[4]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_writedata[5] => i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_i[5]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_writedata[6] => i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_i[6]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_writedata[7] => i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_i[7]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_readdata[0] <= i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_o[0]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_readdata[1] <= i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_o[1]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_readdata[2] <= i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_o[2]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_readdata[3] <= i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_o[3]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_readdata[4] <= i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_o[4]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_readdata[5] <= i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_o[5]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_readdata[6] <= i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_o[6]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_readdata[7] <= i2c_master_top:bladerf_oc_i2c_master_0.wb_dat_o[7]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_write => i2c_master_top:bladerf_oc_i2c_master_0.wb_we_i
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_byteenable => i2c_master_top:bladerf_oc_i2c_master_0.wb_stb_i
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_chipselect => i2c_master_top:bladerf_oc_i2c_master_0.wb_cyc_i
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_waitrequest_n <= i2c_master_top:bladerf_oc_i2c_master_0.wb_ack_o
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_address[0] => i2c_master_top:bladerf_oc_i2c_master_0.wb_adr_i[0]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_address[1] => i2c_master_top:bladerf_oc_i2c_master_0.wb_adr_i[1]
+bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_address[2] => i2c_master_top:bladerf_oc_i2c_master_0.wb_adr_i[2]
+bladerf_oc_i2c_master_0_clock_sink_clk => i2c_master_top:bladerf_oc_i2c_master_0.wb_clk_i
 bladerf_oc_i2c_master_0_conduit_end_scl_pad_o <= i2c_master_top:bladerf_oc_i2c_master_0.scl_pad_o
 bladerf_oc_i2c_master_0_conduit_end_scl_padoen_o <= i2c_master_top:bladerf_oc_i2c_master_0.scl_padoen_o
 bladerf_oc_i2c_master_0_conduit_end_sda_pad_i => i2c_master_top:bladerf_oc_i2c_master_0.sda_pad_i
@@ -14,9 +38,7 @@ bladerf_oc_i2c_master_0_conduit_end_sda_padoen_o <= i2c_master_top:bladerf_oc_i2
 bladerf_oc_i2c_master_0_conduit_end_arst_i => i2c_master_top:bladerf_oc_i2c_master_0.arst_i
 bladerf_oc_i2c_master_0_conduit_end_scl_pad_i => i2c_master_top:bladerf_oc_i2c_master_0.scl_pad_i
 bladerf_oc_i2c_master_0_interrupt_sender_irq <= i2c_master_top:bladerf_oc_i2c_master_0.wb_inta_o
-clk_clk => i2c_master_top:bladerf_oc_i2c_master_0.wb_clk_i
-clk_clk => altera_reset_controller:rst_controller.clk
-reset_reset_n => altera_reset_controller:rst_controller.reset_in0
+bladerf_oc_i2c_master_0_reset_sink_reset => i2c_master_top:bladerf_oc_i2c_master_0.wb_rst_i
 
 
 |i2c_qip_test|i2c_sys:i2c|i2c_master_top:bladerf_oc_i2c_master_0
@@ -453,61 +475,5 @@ scl_oen <= scl_oen~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sda_i => cSDA.DATAA
 sda_o <= <GND>
 sda_oen <= sda_oen~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|i2c_qip_test|i2c_sys:i2c|altera_reset_controller:rst_controller
-reset_in0 => merged_reset.IN0
-reset_in1 => merged_reset.IN1
-reset_in2 => merged_reset.IN1
-reset_in3 => merged_reset.IN1
-reset_in4 => merged_reset.IN1
-reset_in5 => merged_reset.IN1
-reset_in6 => merged_reset.IN1
-reset_in7 => merged_reset.IN1
-reset_in8 => merged_reset.IN1
-reset_in9 => merged_reset.IN1
-reset_in10 => merged_reset.IN1
-reset_in11 => merged_reset.IN1
-reset_in12 => merged_reset.IN1
-reset_in13 => merged_reset.IN1
-reset_in14 => merged_reset.IN1
-reset_in15 => merged_reset.IN1
-reset_req_in0 => ~NO_FANOUT~
-reset_req_in1 => ~NO_FANOUT~
-reset_req_in2 => ~NO_FANOUT~
-reset_req_in3 => ~NO_FANOUT~
-reset_req_in4 => ~NO_FANOUT~
-reset_req_in5 => ~NO_FANOUT~
-reset_req_in6 => ~NO_FANOUT~
-reset_req_in7 => ~NO_FANOUT~
-reset_req_in8 => ~NO_FANOUT~
-reset_req_in9 => ~NO_FANOUT~
-reset_req_in10 => ~NO_FANOUT~
-reset_req_in11 => ~NO_FANOUT~
-reset_req_in12 => ~NO_FANOUT~
-reset_req_in13 => ~NO_FANOUT~
-reset_req_in14 => ~NO_FANOUT~
-reset_req_in15 => ~NO_FANOUT~
-clk => clk.IN2
-reset_out <= altera_reset_synchronizer:alt_rst_sync_uq1.reset_out
-reset_req <= altera_reset_synchronizer:alt_rst_req_sync_uq1.reset_out
-
-
-|i2c_qip_test|i2c_sys:i2c|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
-reset_in => altera_reset_synchronizer_int_chain_out.PRESET
-reset_in => altera_reset_synchronizer_int_chain[0].PRESET
-reset_in => altera_reset_synchronizer_int_chain[1].PRESET
-clk => altera_reset_synchronizer_int_chain_out.CLK
-clk => altera_reset_synchronizer_int_chain[0].CLK
-clk => altera_reset_synchronizer_int_chain[1].CLK
-reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|i2c_qip_test|i2c_sys:i2c|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
-reset_in => altera_reset_synchronizer_int_chain[1].DATAIN
-clk => altera_reset_synchronizer_int_chain_out.CLK
-clk => altera_reset_synchronizer_int_chain[0].CLK
-clk => altera_reset_synchronizer_int_chain[1].CLK
-reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 

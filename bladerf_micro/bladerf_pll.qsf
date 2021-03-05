@@ -1,0 +1,212 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions
+# and other software and tools, and any partner logic
+# functions, and any output files from any of the foregoing
+# (including device programming or simulation files), and any
+# associated documentation or information are expressly subject
+# to the terms and conditions of the Intel Program License
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# Date created = 13:46:08  February 28, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		bladerf_pll_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEBA4F23C8
+set_global_assignment -name TOP_LEVEL_ENTITY bladerf_pll
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:16:59  MARCH 05, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name IP_SEARCH_PATHS "d:\\salukat\\development\\software\\quartus\\bladerf_micro\\fpga\\ip\\nuand\\vctcxo_tamer\\qsys;d:\\salukat\\development\\software\\quartus\\bladerf_micro\\fpga\\ip\\nuand\\vctcxo_tamer;d:\\salukat\\development\\software\\quartus\\bladerf_micro\\fpga\\ip\\opencores\\i2c\\i2c_sys;c:\\users\\gmateusdp\\documents\\trobina\\development\\software\\bladerf\\fpga\\ip;c:\\users\\gmateusdp\\documents\\trobina\\development\\software\\bladerf\\fpga\\ip\\opencores\\i2c;d:\\salukat\\development\\software\\quartus\\bladerf_micro\\fpga\\ip\\opencores\\i2c"
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_location_assignment PIN_T15 -to adf_muxout
+set_location_assignment PIN_T18 -to adf_ce
+set_location_assignment PIN_R16 -to adf_csn
+set_location_assignment PIN_R15 -to adf_sclk
+set_location_assignment PIN_R17 -to adf_sdi
+set_location_assignment PIN_M22 -to adi_rx_spdt1_v[2]
+set_location_assignment PIN_N19 -to adi_rx_spdt1_v[1]
+set_location_assignment PIN_P14 -to adi_rx_spdt2_v[2]
+set_location_assignment PIN_L22 -to adi_rx_spdt2_v[1]
+set_location_assignment PIN_R14 -to adi_tx_spdt1_v[2]
+set_location_assignment PIN_AB18 -to adi_tx_spdt1_v[1]
+set_location_assignment PIN_AA15 -to adi_tx_spdt2_v[2]
+set_location_assignment PIN_AB17 -to adi_tx_spdt2_v[1]
+set_location_assignment PIN_H13 -to c5_clock2
+set_location_assignment PIN_T17 -to c5_clock2_oe
+set_location_assignment PIN_G12 -to dac_csn
+set_location_assignment PIN_A12 -to dac_sclk
+set_location_assignment PIN_H11 -to dac_sdi
+set_location_assignment PIN_T20 -to exp_clock_oe
+set_location_assignment PIN_E15 -to hw_rev[0]
+set_location_assignment PIN_E12 -to hw_rev[1]
+set_location_assignment PIN_K20 -to led[1]
+set_location_assignment PIN_B16 -to led[2]
+set_location_assignment PIN_K19 -to led[3]
+set_location_assignment PIN_H16 -to mini_exp1
+set_location_assignment PIN_H15 -to mini_exp2
+set_location_assignment PIN_C11 -to ps_sync_1p1
+set_location_assignment PIN_C13 -to ps_sync_1p8
+set_location_assignment PIN_P22 -to pwr_scl
+set_location_assignment PIN_P19 -to pwr_sda
+set_location_assignment PIN_R11 -to pwr_status
+set_location_assignment PIN_R22 -to rx_bias_en
+set_location_assignment PIN_T22 -to si_clock_sel
+set_location_assignment PIN_R21 -to tx_bias_en
+set_location_assignment PIN_T19 -to ufl_clock_oe
+set_global_assignment -name HEX_FILE "../../BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/bladeRF_nios/mem_init/nios_system_vctcxo_tamer_0.hex"
+set_global_assignment -name QIP_FILE software/bladerf_app/mem_init/meminit.qip
+set_global_assignment -name VHDL_FILE ../fpga/ip/nuand/synthesis/fifo_readwrite_p.vhd
+set_global_assignment -name VHDL_FILE ../fpga/ip/nuand/ps_sync/vhdl/ps_sync.vhd
+set_global_assignment -name VHDL_FILE ../fpga/ip/nuand/pll_reset/vhdl/pll_reset.vhd
+set_global_assignment -name VHDL_FILE ../fpga/ip/altera/common_dcfifo/common_dcfifo.vhd
+set_global_assignment -name VHDL_FILE "../fpga/platforms/bladerf-micro/vhdl/bladerf_p.vhd"
+set_global_assignment -name QIP_FILE ../fpga/ip/opencores/i2c/i2c_sys/synthesis/i2c_sys.qip
+set_global_assignment -name QIP_FILE nios_cpu/synthesis/nios_cpu.qip
+set_global_assignment -name VHDL_FILE bladerf_micro.vhd
+set_global_assignment -name VHDL_FILE test_qip.vhd
+set_global_assignment -name VHDL_FILE bladerf_i2c.vhd
+set_global_assignment -name QIP_FILE system_pll.qip
+set_global_assignment -name SIP_FILE system_pll.sip
+set_global_assignment -name VHDL_FILE bladerf_pll.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to adf_sclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to adf_ce
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to adf_csn
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to adf_muxout
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to adf_sdi
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adf_sclk
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adf_ce
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adf_csn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adf_sdi
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_rx_spdt1_v[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_rx_spdt1_v[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_rx_spdt1_v
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_rx_spdt2_v[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_rx_spdt2_v[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_rx_spdt2_v
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_tx_spdt1_v[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_tx_spdt1_v[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_tx_spdt1_v
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_tx_spdt2_v[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_tx_spdt2_v[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adi_tx_spdt2_v
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to c5_clock2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to c5_clock2_oe
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to c5_clock2_oe
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dac_csn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to dac_csn
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dac_sclk
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to dac_sclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dac_sdi
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to dac_sdi
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to exp_clock_oe
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to exp_clock_oe
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hw_rev[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hw_rev[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to hw_rev
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to led[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to led[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to led[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to led[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to led[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to led
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to led[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to led
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to mini_exp1
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to mini_exp1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to mini_exp2
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to mini_exp2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ps_sync_1p1
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to ps_sync_1p1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ps_sync_1p8
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to ps_sync_1p8
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to pwr_sda
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to pwr_scl
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to pwr_scl
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to pwr_sda
+set_instance_assignment -name IO_STANDARD "1.8 V" -to pwr_status
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rx_bias_en
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to rx_bias_en
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to si_clock_sel
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to si_clock_sel
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to tx_bias_en
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to tx_bias_en
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ufl_clock_oe
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ufl_clock_oe
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_rx_spdt1_v[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_rx_spdt1_v[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_rx_spdt1_v
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_rx_spdt2_v[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_rx_spdt2_v[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_rx_spdt2_v
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_tx_spdt1_v[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_tx_spdt1_v[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_tx_spdt1_v
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_tx_spdt2_v[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_tx_spdt2_v[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adi_tx_spdt2_v
+set_location_assignment PIN_D9 -to adf5610_spi_sclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to adf5610_spi_sclk
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adf5610_spi_sclk
+set_location_assignment PIN_A8 -to adf5610_spi_sdi
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to adf5610_spi_sdi
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adf5610_spi_sdi
+set_location_assignment PIN_A7 -to adf5610_spi_sdo
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to adf5610_spi_sdo
+set_location_assignment PIN_C8 -to adf5610_spi_csn
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to adf5610_spi_csn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to adf5610_spi_csn
+set_location_assignment PIN_C6 -to exp_gpio[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to exp_gpio[0]
+set_location_assignment PIN_D6 -to exp_gpio[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to exp_gpio[1]
+set_location_assignment PIN_B6 -to exp_gpio[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to exp_gpio[2]
+set_location_assignment PIN_B7 -to exp_gpio[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to exp_gpio[3]
+set_location_assignment PIN_A5 -to exp_gpio[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to exp_gpio[4]
+set_location_assignment PIN_B5 -to exp_gpio[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to exp_gpio[5]
+set_location_assignment PIN_A10 -to exp_gpio[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to exp_gpio[6]
+set_location_assignment PIN_A9 -to exp_gpio[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to exp_gpio[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to exp_gpio
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

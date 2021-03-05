@@ -1,5 +1,5 @@
 Flow report for vctcxo_qip_test
-Sun Feb 28 17:07:12 2021
+Fri Mar 05 05:52:58 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sun Feb 28 17:07:12 2021       ;
+; Flow Status                 ; Successful - Fri Mar 05 05:52:58 2021       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; vctcxo_qip_test                             ;
 ; Top-level Entity Name       ; vctcxo_qip_test                             ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/28/2021 17:06:45 ;
+; Start date & time ; 03/05/2021 05:52:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vctcxo_qip_test     ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                                         ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 93383156820899.161452840417188                                ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 172056107148978.161491996720444                               ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                            ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                             ; --            ; --          ; --         ;
 ; MISC_FILE                           ; vctcxo_qsys/synthesis/../vctcxo_qsys.cmp                      ; --            ; --          ; --         ;
@@ -86,7 +86,7 @@ https://fpgasoftware.intel.com/eula.
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                         ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                  ; --            ; --          ; --         ;
 ; SLD_FILE                            ; vctcxo_qsys/synthesis/vctcxo_qsys.debuginfo                   ; --            ; --          ; --         ;
-; SLD_INFO                            ; QSYS_NAME vctcxo_qsys HAS_SOPCINFO 1 GENERATION_ID 1614527963 ; --            ; vctcxo_qsys ; --         ;
+; SLD_INFO                            ; QSYS_NAME vctcxo_qsys HAS_SOPCINFO 1 GENERATION_ID 1614534276 ; --            ; vctcxo_qsys ; --         ;
 ; SOPCINFO_FILE                       ; vctcxo_qsys/synthesis/../../vctcxo_qsys.sopcinfo              ; --            ; --          ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                            ; --            ; --          ; --         ;
 +-------------------------------------+---------------------------------------------------------------+---------------+-------------+------------+
@@ -97,8 +97,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:29     ; 1.0                     ; 4838 MB             ; 00:00:49                           ;
-; Total                  ; 00:00:29     ; --                      ; --                  ; 00:00:49                           ;
+; Analysis & Elaboration ; 00:00:12     ; 1.0                     ; 4837 MB             ; 00:00:18                           ;
+; Total                  ; 00:00:12     ; --                      ; --                  ; 00:00:18                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,7 +107,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+------------------+------------+------------+----------------+
 ; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; 1255SJLAPTOP     ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; DESKTOP-7SD1LJN  ; Windows 10 ; 10.0       ; x86_64         ;
 +------------------------+------------------+------------+------------+----------------+
 
 

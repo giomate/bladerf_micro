@@ -1,0 +1,31 @@
+
+State Machine - |bladerf_pll|nios_cpu:U_nios_system|i2c_master_top:opencores_i2c|i2c_master_byte_ctrl:byte_controller|c_state
+Name c_state.ST_IDLE c_state.ST_STOP c_state.ST_ACK c_state.ST_WRITE c_state.ST_READ c_state.ST_START 
+c_state.ST_IDLE 0 0 0 0 0 0 
+c_state.ST_START 1 0 0 0 0 1 
+c_state.ST_READ 1 0 0 0 1 0 
+c_state.ST_WRITE 1 0 0 1 0 0 
+c_state.ST_ACK 1 0 1 0 0 0 
+c_state.ST_STOP 1 1 0 0 0 0 
+
+State Machine - |bladerf_pll|nios_cpu:U_nios_system|nios_cpu_nios2:nios2|nios_cpu_nios2_cpu:cpu|nios_cpu_nios2_cpu_nios2_oci:the_nios_cpu_nios2_cpu_nios2_oci|nios_cpu_nios2_cpu_debug_slave_wrapper:the_nios_cpu_nios2_cpu_debug_slave_wrapper|nios_cpu_nios2_cpu_debug_slave_tck:the_nios_cpu_nios2_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |bladerf_pll|ps_sync:U_ps_sync|\sync_proc:state
+Name \sync_proc:state.DOWNCOUNT_HIGH \sync_proc:state.DOWNCOUNT_LOW \sync_proc:state.LOAD_COUNT 
+\sync_proc:state.LOAD_COUNT 0 0 0 
+\sync_proc:state.DOWNCOUNT_LOW 0 1 1 
+\sync_proc:state.DOWNCOUNT_HIGH 1 0 1 
+
+State Machine - |bladerf_pll|pll_reset:U_pll_reset_pll|current.state
+Name current.state.WAIT_FOR_UNLOCK current.state.WAIT_FOR_LOCK current.state.ASSERT_RESET current.state.INIT 
+current.state.INIT 0 0 0 0 
+current.state.ASSERT_RESET 0 0 1 1 
+current.state.WAIT_FOR_LOCK 0 1 0 1 
+current.state.WAIT_FOR_UNLOCK 1 0 0 1 

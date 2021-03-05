@@ -1,0 +1,18 @@
+/*
+ * BLADERFDEVICES.cpp
+ *
+ *  Created on: Mar 3, 2021
+ *      Author: giova
+ */
+
+#include "BLADERFDEVICES.h"
+
+BLADERF_DEVICES::BLADERF_DEVICES() {
+	// TODO Auto-generated constructor stub
+
+}
+
+BLADERF_DEVICES::~BLADERF_DEVICES() {
+	// TODO Auto-generated destructor stub
+}
+

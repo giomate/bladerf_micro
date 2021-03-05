@@ -19,13 +19,15 @@
 #
 # Quartus Prime
 # Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-# Date created = 13:46:08  February 28, 2021
+# Date created = 07:17:03  March 05, 2021
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "20.1"
-DATE = "13:46:08  February 28, 2021"
+DATE = "07:17:03  March 05, 2021"
 
 # Revisions
 
+PROJECT_REVISION = "bladerf_pll"
+PROJECT_REVISION = "bladerf_i2c"
 PROJECT_REVISION = "bladerf_micro"

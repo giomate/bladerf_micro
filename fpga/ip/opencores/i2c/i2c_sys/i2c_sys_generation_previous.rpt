@@ -1,11 +1,9 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\opencores\i2c\i2c_sys.qsys --block-symbol-file --output-directory=C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\opencores\i2c\i2c_sys --family="Cyclone V" --part=5CEBA4F23C8
+Info: qsys-generate D:\Salukat\Development\Software\Quartus\bladerf_micro\fpga\ip\opencores\i2c\i2c_sys.qsys --block-symbol-file --output-directory=D:\Salukat\Development\Software\Quartus\bladerf_micro\fpga\ip\opencores\i2c\i2c_sys --family="Cyclone V" --part=5CEBA4F23C8
 Progress: Loading i2c/i2c_sys.qsys
 Progress: Reading input file
 Progress: Adding bladerf_oc_i2c_master_0 [bladerf_oc_i2c_master 1.0]
 Progress: Parameterizing module bladerf_oc_i2c_master_0
-Progress: Adding clk_0 [clock_source 20.1]
-Progress: Parameterizing module clk_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
@@ -15,13 +13,11 @@ Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\opencores\i2c\i2c_sys.qsys --synthesis=VHDL --output-directory=C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\opencores\i2c\i2c_sys\synthesis --family="Cyclone V" --part=5CEBA4F23C8
+Info: qsys-generate D:\Salukat\Development\Software\Quartus\bladerf_micro\fpga\ip\opencores\i2c\i2c_sys.qsys --synthesis=VHDL --output-directory=D:\Salukat\Development\Software\Quartus\bladerf_micro\fpga\ip\opencores\i2c\i2c_sys\synthesis --family="Cyclone V" --part=5CEBA4F23C8
 Progress: Loading i2c/i2c_sys.qsys
 Progress: Reading input file
 Progress: Adding bladerf_oc_i2c_master_0 [bladerf_oc_i2c_master 1.0]
 Progress: Parameterizing module bladerf_oc_i2c_master_0
-Progress: Adding clk_0 [clock_source 20.1]
-Progress: Parameterizing module clk_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
@@ -29,7 +25,6 @@ Progress: Done reading input file
 Warning: i2c_sys.bladerf_oc_i2c_master_0: bladerf_oc_i2c_master_0.bladerf_oc_i2c_master must be connected to an Avalon-MM master
 Info: i2c_sys: Generating i2c_sys "i2c_sys" for QUARTUS_SYNTH
 Info: bladerf_oc_i2c_master_0: "i2c_sys" instantiated bladerf_oc_i2c_master "bladerf_oc_i2c_master_0"
-Info: rst_controller: "i2c_sys" instantiated altera_reset_controller "rst_controller"
-Info: i2c_sys: Done "i2c_sys" with 3 modules, 9 files
+Info: i2c_sys: Done "i2c_sys" with 2 modules, 6 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

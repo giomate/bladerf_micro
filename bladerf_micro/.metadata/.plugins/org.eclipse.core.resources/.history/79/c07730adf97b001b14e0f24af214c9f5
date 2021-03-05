@@ -1,0 +1,17 @@
+/*
+ * BLADERFDEVICES.h
+ *
+ *  Created on: Mar 3, 2021
+ *      Author: giova
+ */
+
+#ifndef BLADERFDEVICES_H_
+#define BLADERFDEVICES_H_
+
+class BLADERF_DEVICES {
+public:
+	BLADERF_DEVICES();
+	virtual ~BLADERF_DEVICES();
+};
+
+#endif /* BLADERFDEVICES_H_ */

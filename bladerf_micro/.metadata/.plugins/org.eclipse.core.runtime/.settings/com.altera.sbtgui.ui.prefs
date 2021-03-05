@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+newApplicationWizardPage.defaultLocation=D\:\\Salukat\\Development\\Software\\Quartus\\bladerf_micro\\bladerf_micro\\software\\bladerf_app
+newBspWizardPage.defaultLocation=D\:\\Salukat\\Development\\Software\\Quartus\\bladerf_micro\\bladerf_micro\\software\\bladerf_pll_bsp
+newBspWizardPage.sopcinfoFile=D\:\\Salukat\\Development\\Software\\Quartus\\bladerf_micro\\bladerf_micro\\nios_cpu.sopcinfo
+newLibraryWizardPage.bspLocation=D\:\\Salukat\\Development\\Software\\Quartus\\bladerf_micro\\bladerf_micro\\software\\bladerf_pll_bsp
+newLibraryWizardPage.defaultLocation=D\:\\Salukat\\Development\\Software\\Quartus\\bladerf_micro\\bladerf_micro\\software\\adf5610_lib

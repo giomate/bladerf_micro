@@ -1,0 +1,13 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "c5_clock2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

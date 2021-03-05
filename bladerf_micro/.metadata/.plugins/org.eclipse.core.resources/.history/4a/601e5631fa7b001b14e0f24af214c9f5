@@ -1,0 +1,20 @@
+/*
+ * BLADERFDEVICES.h
+ *
+ *  Created on: Mar 3, 2021
+ *      Author: giova
+ */
+
+#ifndef BLADERFDEVICES_H_
+#define BLADERFDEVICES_H_
+#include "VCTCXOTAMERCLASS.h"
+
+class BLADERF_DEVICES {
+private:
+	 VCTCXO_TAMER_CLASS	*vctcxo;
+public:
+	BLADERF_DEVICES();
+	virtual ~BLADERF_DEVICES();
+};
+
+#endif /* BLADERFDEVICES_H_ */

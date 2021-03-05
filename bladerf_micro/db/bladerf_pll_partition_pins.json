@@ -1,0 +1,173 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "si_clock_sel",
+					"strict" : false
+				},
+				{
+					"name" : "ufl_clock_oe",
+					"strict" : false
+				},
+				{
+					"name" : "dac_sclk",
+					"strict" : false
+				},
+				{
+					"name" : "dac_sdi",
+					"strict" : false
+				},
+				{
+					"name" : "dac_csn",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ps_sync_1p1",
+					"strict" : false
+				},
+				{
+					"name" : "ps_sync_1p8",
+					"strict" : false
+				},
+				{
+					"name" : "pwr_scl",
+					"strict" : false
+				},
+				{
+					"name" : "adi_rx_spdt1_v[1]",
+					"strict" : false
+				},
+				{
+					"name" : "adi_rx_spdt1_v[2]",
+					"strict" : false
+				},
+				{
+					"name" : "adi_rx_spdt2_v[1]",
+					"strict" : false
+				},
+				{
+					"name" : "adi_rx_spdt2_v[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rx_bias_en",
+					"strict" : false
+				},
+				{
+					"name" : "adi_tx_spdt1_v[1]",
+					"strict" : false
+				},
+				{
+					"name" : "adi_tx_spdt1_v[2]",
+					"strict" : false
+				},
+				{
+					"name" : "adi_tx_spdt2_v[1]",
+					"strict" : false
+				},
+				{
+					"name" : "adi_tx_spdt2_v[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_bias_en",
+					"strict" : false
+				},
+				{
+					"name" : "adf_sclk",
+					"strict" : false
+				},
+				{
+					"name" : "adf_csn",
+					"strict" : false
+				},
+				{
+					"name" : "adf_sdi",
+					"strict" : false
+				},
+				{
+					"name" : "adf_ce",
+					"strict" : false
+				},
+				{
+					"name" : "adf5610_spi_sclk",
+					"strict" : false
+				},
+				{
+					"name" : "adf5610_spi_csn",
+					"strict" : false
+				},
+				{
+					"name" : "adf5610_spi_sdi",
+					"strict" : false
+				},
+				{
+					"name" : "pwr_sda",
+					"strict" : false
+				},
+				{
+					"name" : "adf5610_spi_sdo",
+					"strict" : false
+				},
+				{
+					"name" : "c5_clock2",
+					"strict" : false
+				},
+				{
+					"name" : "exp_gpio[2]",
+					"strict" : false
+				},
+				{
+					"name" : "exp_gpio[1]",
+					"strict" : false
+				},
+				{
+					"name" : "exp_gpio[3]",
+					"strict" : false
+				},
+				{
+					"name" : "exp_gpio[7]",
+					"strict" : false
+				},
+				{
+					"name" : "exp_gpio[4]",
+					"strict" : false
+				},
+				{
+					"name" : "exp_gpio[5]",
+					"strict" : false
+				},
+				{
+					"name" : "exp_gpio[6]",
+					"strict" : false
+				},
+				{
+					"name" : "exp_gpio[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pwr_status",
+					"strict" : false
+				},
+				{
+					"name" : "adf_muxout",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

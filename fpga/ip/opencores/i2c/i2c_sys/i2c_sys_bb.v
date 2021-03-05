@@ -1,5 +1,6 @@
 
 module i2c_sys (
+	bladerf_oc_i2c_master_0_clock_sink_clk,
 	bladerf_oc_i2c_master_0_conduit_end_scl_pad_o,
 	bladerf_oc_i2c_master_0_conduit_end_scl_padoen_o,
 	bladerf_oc_i2c_master_0_conduit_end_sda_pad_i,
@@ -7,10 +8,17 @@ module i2c_sys (
 	bladerf_oc_i2c_master_0_conduit_end_sda_padoen_o,
 	bladerf_oc_i2c_master_0_conduit_end_arst_i,
 	bladerf_oc_i2c_master_0_conduit_end_scl_pad_i,
-	clk_clk,
-	reset_reset_n,
-	bladerf_oc_i2c_master_0_interrupt_sender_irq);	
+	bladerf_oc_i2c_master_0_interrupt_sender_irq,
+	bladerf_oc_i2c_master_0_reset_sink_reset,
+	bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_writedata,
+	bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_readdata,
+	bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_write,
+	bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_byteenable,
+	bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_chipselect,
+	bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_waitrequest_n,
+	bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_address);	
 
+	input		bladerf_oc_i2c_master_0_clock_sink_clk;
 	output		bladerf_oc_i2c_master_0_conduit_end_scl_pad_o;
 	output		bladerf_oc_i2c_master_0_conduit_end_scl_padoen_o;
 	input		bladerf_oc_i2c_master_0_conduit_end_sda_pad_i;
@@ -18,7 +26,13 @@ module i2c_sys (
 	output		bladerf_oc_i2c_master_0_conduit_end_sda_padoen_o;
 	input		bladerf_oc_i2c_master_0_conduit_end_arst_i;
 	input		bladerf_oc_i2c_master_0_conduit_end_scl_pad_i;
-	input		clk_clk;
-	input		reset_reset_n;
 	output		bladerf_oc_i2c_master_0_interrupt_sender_irq;
+	input		bladerf_oc_i2c_master_0_reset_sink_reset;
+	input	[7:0]	bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_writedata;
+	output	[7:0]	bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_readdata;
+	input		bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_write;
+	input		bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_byteenable;
+	input		bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_chipselect;
+	output		bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_waitrequest_n;
+	input	[2:0]	bladerf_oc_i2c_master_0_bladerf_oc_i2c_master_address;
 endmodule

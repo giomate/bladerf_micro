@@ -1,0 +1,17 @@
+09:18:36 **** Build of configuration Nios II for project adf5610_lib ****
+wsl make all 
+Info: Building ../bladerf_pll_bsp/
+make --no-print-directory -C ../bladerf_pll_bsp/
+[BSP build complete]
+Info: Compiling ADF5610Driver.cpp to obj/default/ADF5610Driver.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../bladerf_pll_bsp//HAL/inc -I../bladerf_pll_bsp/ -I../bladerf_pll_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DNIOS_BUILD  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/ADF5610Driver.o ADF5610Driver.cpp
+Info: Compiling SPIHandler.cpp to obj/default/SPIHandler.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../bladerf_pll_bsp//HAL/inc -I../bladerf_pll_bsp/ -I../bladerf_pll_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DNIOS_BUILD  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/SPIHandler.o SPIHandler.cpp
+Info: Archiving obj/default/libadf5610_lib.a
+rm -f obj/default/libadf5610_lib.a
+mkdir -p obj/default
+nios2-elf-ar.exe  -src obj/default/libadf5610_lib.a obj/default/ADF5610Driver.o obj/default/SPIHandler.o
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+
+09:18:39 Build Finished (took 2s.463ms)
+

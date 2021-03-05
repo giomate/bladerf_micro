@@ -1,47 +1,147 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\nios_cpu.qsys --block-symbol-file --output-directory=C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\nios_cpu --family="Cyclone V" --part=5CEBA4F23C8
+Info: qsys-generate D:\Salukat\Development\Software\Quartus\bladerf_micro\bladerf_micro\nios_cpu.qsys --block-symbol-file --output-directory=D:\Salukat\Development\Software\Quartus\bladerf_micro\bladerf_micro\nios_cpu --family="Cyclone V" --part=5CEBA4F23C8
 Progress: Loading bladerf_micro/nios_cpu.qsys
 Progress: Reading input file
-Progress: Adding bladerf_oc_i2c_master_0 [bladerf_oc_i2c_master 1.0]
-Warning: bladerf_oc_i2c_master_0: Component type bladerf_oc_i2c_master is not in the library
-Progress: Parameterizing module bladerf_oc_i2c_master_0
+Progress: Adding adf5610 [altera_avalon_spi 20.1]
+Progress: Parameterizing module adf5610
 Progress: Adding clk_0 [clock_source 20.1]
 Progress: Parameterizing module clk_0
-Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 20.1]
-Progress: Parameterizing module jtag_uart_0
-Progress: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
-Progress: Parameterizing module nios2_gen2_0
+Progress: Adding control [altera_avalon_pio 20.1]
+Progress: Parameterizing module control
+Progress: Adding gpio_rffe [altera_avalon_pio 20.1]
+Progress: Parameterizing module gpio_rffe
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 20.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2 [altera_nios2_gen2 20.1]
+Progress: Parameterizing module nios2
+Progress: Adding opencores_i2c [bladerf_oc_i2c_master 1.0]
+Progress: Parameterizing module opencores_i2c
+Progress: Adding peripheral_spi [altera_avalon_spi 20.1]
+Progress: Parameterizing module peripheral_spi
 Progress: Adding ram [altera_avalon_onchip_memory2 20.1]
 Progress: Parameterizing module ram
+Progress: Adding xb_gpio [altera_avalon_pio 20.1]
+Progress: Parameterizing module xb_gpio
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Error: nios_cpu.bladerf_oc_i2c_master_0: Component bladerf_oc_i2c_master 1.0 not found or could not be instantiated
-Info: nios_cpu.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: nios_cpu.control: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_cpu.gpio_rffe: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_cpu.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: nios_cpu.xb_gpio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\nios_cpu.qsys --synthesis=VHDL --output-directory=C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\nios_cpu\synthesis --family="Cyclone V" --part=5CEBA4F23C8
+Info: qsys-generate D:\Salukat\Development\Software\Quartus\bladerf_micro\bladerf_micro\nios_cpu.qsys --synthesis=VHDL --output-directory=D:\Salukat\Development\Software\Quartus\bladerf_micro\bladerf_micro\nios_cpu\synthesis --family="Cyclone V" --part=5CEBA4F23C8
 Progress: Loading bladerf_micro/nios_cpu.qsys
 Progress: Reading input file
-Progress: Adding bladerf_oc_i2c_master_0 [bladerf_oc_i2c_master 1.0]
-Warning: bladerf_oc_i2c_master_0: Component type bladerf_oc_i2c_master is not in the library
-Progress: Parameterizing module bladerf_oc_i2c_master_0
+Progress: Adding adf5610 [altera_avalon_spi 20.1]
+Progress: Parameterizing module adf5610
 Progress: Adding clk_0 [clock_source 20.1]
 Progress: Parameterizing module clk_0
-Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 20.1]
-Progress: Parameterizing module jtag_uart_0
-Progress: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
-Progress: Parameterizing module nios2_gen2_0
+Progress: Adding control [altera_avalon_pio 20.1]
+Progress: Parameterizing module control
+Progress: Adding gpio_rffe [altera_avalon_pio 20.1]
+Progress: Parameterizing module gpio_rffe
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 20.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2 [altera_nios2_gen2 20.1]
+Progress: Parameterizing module nios2
+Progress: Adding opencores_i2c [bladerf_oc_i2c_master 1.0]
+Progress: Parameterizing module opencores_i2c
+Progress: Adding peripheral_spi [altera_avalon_spi 20.1]
+Progress: Parameterizing module peripheral_spi
 Progress: Adding ram [altera_avalon_onchip_memory2 20.1]
 Progress: Parameterizing module ram
+Progress: Adding xb_gpio [altera_avalon_pio 20.1]
+Progress: Parameterizing module xb_gpio
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Error: nios_cpu.bladerf_oc_i2c_master_0: Component bladerf_oc_i2c_master 1.0 not found or could not be instantiated
-Info: nios_cpu.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: nios_cpu.control: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_cpu.gpio_rffe: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: nios_cpu.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: nios_cpu.xb_gpio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: nios_cpu: Generating nios_cpu "nios_cpu" for QUARTUS_SYNTH
-Error: null
+Info: adf5610: Starting RTL generation for module 'nios_cpu_adf5610'
+Info: adf5610:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=nios_cpu_adf5610 --dir=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0002_adf5610_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0002_adf5610_gen//nios_cpu_adf5610_component_configuration.pl  --do_build_sim=0  ]
+Info: adf5610: Done RTL generation for module 'nios_cpu_adf5610'
+Info: adf5610: "nios_cpu" instantiated altera_avalon_spi "adf5610"
+Info: control: Starting RTL generation for module 'nios_cpu_control'
+Info: control:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_cpu_control --dir=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0003_control_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0003_control_gen//nios_cpu_control_component_configuration.pl  --do_build_sim=0  ]
+Info: control: Done RTL generation for module 'nios_cpu_control'
+Info: control: "nios_cpu" instantiated altera_avalon_pio "control"
+Info: jtag_uart: Starting RTL generation for module 'nios_cpu_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_cpu_jtag_uart --dir=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0004_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0004_jtag_uart_gen//nios_cpu_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'nios_cpu_jtag_uart'
+Info: jtag_uart: "nios_cpu" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: nios2: "nios_cpu" instantiated altera_nios2_gen2 "nios2"
+Info: opencores_i2c: "nios_cpu" instantiated bladerf_oc_i2c_master "opencores_i2c"
+Info: peripheral_spi: Starting RTL generation for module 'nios_cpu_peripheral_spi'
+Info: peripheral_spi:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=nios_cpu_peripheral_spi --dir=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0006_peripheral_spi_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0006_peripheral_spi_gen//nios_cpu_peripheral_spi_component_configuration.pl  --do_build_sim=0  ]
+Info: peripheral_spi: Done RTL generation for module 'nios_cpu_peripheral_spi'
+Info: peripheral_spi: "nios_cpu" instantiated altera_avalon_spi "peripheral_spi"
+Info: ram: Starting RTL generation for module 'nios_cpu_ram'
+Info: ram:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_cpu_ram --dir=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0007_ram_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0007_ram_gen//nios_cpu_ram_component_configuration.pl  --do_build_sim=0  ]
+Info: ram: Done RTL generation for module 'nios_cpu_ram'
+Info: ram: "nios_cpu" instantiated altera_avalon_onchip_memory2 "ram"
+Info: xb_gpio: Starting RTL generation for module 'nios_cpu_xb_gpio'
+Info: xb_gpio:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_cpu_xb_gpio --dir=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0008_xb_gpio_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0008_xb_gpio_gen//nios_cpu_xb_gpio_component_configuration.pl  --do_build_sim=0  ]
+Info: xb_gpio: Done RTL generation for module 'nios_cpu_xb_gpio'
+Info: xb_gpio: "nios_cpu" instantiated altera_avalon_pio "xb_gpio"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "nios_cpu" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "nios_cpu" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "nios_cpu" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'nios_cpu_nios2_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=nios_cpu_nios2_cpu --dir=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0011_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/giova/AppData/Local/Temp/alt8691_1167944894634098643.dir/0011_cpu_gen//nios_cpu_nios2_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2021.03.05 08:00:52 (*) Starting Nios II generation
+Info: cpu: # 2021.03.05 08:00:52 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2021.03.05 08:00:52 (*)   Creating all objects for CPU
+Info: cpu: # 2021.03.05 08:00:53 (*)   Generating RTL from CPU objects
+Info: cpu: # 2021.03.05 08:00:53 (*)   Creating plain-text RTL
+Info: cpu: # 2021.03.05 08:00:53 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'nios_cpu_nios2_cpu'
+Info: cpu: "nios2" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: nios2_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: opencores_i2c_bladerf_oc_i2c_master_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "opencores_i2c_bladerf_oc_i2c_master_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file D:/Salukat/Development/Software/Quartus/bladerf_micro/bladerf_micro/nios_cpu/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/Salukat/Development/Software/Quartus/bladerf_micro/bladerf_micro/nios_cpu/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file D:/Salukat/Development/Software/Quartus/bladerf_micro/bladerf_micro/nios_cpu/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: opencores_i2c_bladerf_oc_i2c_master_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "opencores_i2c_bladerf_oc_i2c_master_rsp_width_adapter"
+Info: Reusing file D:/Salukat/Development/Software/Quartus/bladerf_micro/bladerf_micro/nios_cpu/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/Salukat/Development/Software/Quartus/bladerf_micro/bladerf_micro/nios_cpu/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: nios_cpu: Done "nios_cpu" with 36 modules, 63 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
