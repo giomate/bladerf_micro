@@ -1,0 +1,21 @@
+22:19:32 **** Incremental Build of configuration Nios II for project trobina_controller_lib ****
+wsl make all 
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+cp -f obj/default/libtrobina_controller_lib.a libtrobina_controller_lib.a
+
+22:19:38 Build Finished (took 5s.998ms)
+

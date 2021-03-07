@@ -1,196 +1,196 @@
-09:18:24 **** Build of configuration Nios II for project bladerf_pll_bsp ****
+21:55:01 **** Build of configuration Nios II for project trobina_controller_bsp ****
 wsl make all 
 Compiling alt_alarm_start.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
 Compiling alt_busy_sleep.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
 Compiling alt_close.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
 Compiling alt_dcache_flush.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
 Compiling alt_dcache_flush_all.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
 Compiling alt_dcache_flush_no_writeback.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
 Compiling alt_dev.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
 Compiling alt_dev_llist_insert.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
 Compiling alt_dma_rxchan_open.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
 Compiling alt_dma_txchan_open.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
 Compiling alt_do_ctors.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
 Compiling alt_do_dtors.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
 Compiling alt_ecc_fatal_entry.S...
-nios2-elf-gcc.exe -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
+nios2-elf-gcc.exe -MP -MMD -c   -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
 Compiling alt_ecc_fatal_exception.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
 Compiling alt_env_lock.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
 Compiling alt_environ.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
 Compiling alt_errno.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
 Compiling alt_exception_entry.S...
-nios2-elf-gcc.exe -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+nios2-elf-gcc.exe -MP -MMD -c   -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
 Compiling alt_exception_muldiv.S...
-nios2-elf-gcc.exe -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
+nios2-elf-gcc.exe -MP -MMD -c   -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
 Compiling alt_exception_trap.S...
-nios2-elf-gcc.exe -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
+nios2-elf-gcc.exe -MP -MMD -c   -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
 Compiling alt_execve.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
 Compiling alt_exit.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
 Compiling alt_fcntl.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
 Compiling alt_fd_lock.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
 Compiling alt_fd_unlock.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
 Compiling alt_find_dev.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
 Compiling alt_find_file.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
 Compiling alt_flash_dev.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
 Compiling alt_fork.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
 Compiling alt_fs_reg.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
 Compiling alt_fstat.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
 Compiling alt_get_fd.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
 Compiling alt_getchar.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
 Compiling alt_getpid.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
 Compiling alt_gettod.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
 Compiling alt_gmon.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
 Compiling alt_icache_flush.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
 Compiling alt_icache_flush_all.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
 Compiling alt_iic.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
 Compiling alt_iic_isr_register.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
 Compiling alt_instruction_exception_entry.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
 Compiling alt_instruction_exception_register.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
 Compiling alt_io_redirect.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
 Compiling alt_ioctl.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
 Compiling alt_irq_entry.S...
-nios2-elf-gcc.exe -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
+nios2-elf-gcc.exe -MP -MMD -c   -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
 Compiling alt_irq_handler.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
 Compiling alt_irq_register.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
 Compiling alt_irq_vars.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
 Compiling alt_isatty.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
 Compiling alt_kill.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
 Compiling alt_link.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
 Compiling alt_load.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
 Compiling alt_log_macro.S...
-nios2-elf-gcc.exe -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
+nios2-elf-gcc.exe -MP -MMD -c   -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
 Compiling alt_log_printf.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
 Compiling alt_lseek.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
 Compiling alt_main.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
 Compiling alt_malloc_lock.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
 Compiling alt_mcount.S...
-nios2-elf-gcc.exe -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
+nios2-elf-gcc.exe -MP -MMD -c   -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
 Compiling alt_open.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
 Compiling alt_printf.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
 Compiling alt_putchar.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
 Compiling alt_putcharbuf.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putcharbuf.o HAL/src/alt_putcharbuf.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putcharbuf.o HAL/src/alt_putcharbuf.c
 Compiling alt_putstr.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
 Compiling alt_read.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
 Compiling alt_release_fd.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
 Compiling alt_remap_cached.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
 Compiling alt_remap_uncached.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
 Compiling alt_rename.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
 Compiling alt_sbrk.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
 Compiling alt_settod.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
 Compiling alt_software_exception.S...
-nios2-elf-gcc.exe -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+nios2-elf-gcc.exe -MP -MMD -c   -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
 Compiling alt_stat.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
 Compiling alt_tick.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
 Compiling alt_times.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
 Compiling alt_uncached_free.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
 Compiling alt_uncached_malloc.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
 Compiling alt_unlink.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
 Compiling alt_usleep.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
 Compiling alt_wait.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
 Compiling alt_write.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
 Compiling altera_nios2_gen2_irq.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
 Compiling crt0.S...
-nios2-elf-gcc.exe -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
+nios2-elf-gcc.exe -MP -MMD -c   -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
 Compiling alt_sys_init.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/alt_sys_init.o alt_sys_init.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/alt_sys_init.o alt_sys_init.c
 Compiling altera_avalon_jtag_uart_fd.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_jtag_uart_fd.o drivers/src/altera_avalon_jtag_uart_fd.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_jtag_uart_fd.o drivers/src/altera_avalon_jtag_uart_fd.c
 Compiling altera_avalon_jtag_uart_init.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_jtag_uart_init.o drivers/src/altera_avalon_jtag_uart_init.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_jtag_uart_init.o drivers/src/altera_avalon_jtag_uart_init.c
 Compiling altera_avalon_jtag_uart_ioctl.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o drivers/src/altera_avalon_jtag_uart_ioctl.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o drivers/src/altera_avalon_jtag_uart_ioctl.c
 Compiling altera_avalon_jtag_uart_read.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_jtag_uart_read.o drivers/src/altera_avalon_jtag_uart_read.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_jtag_uart_read.o drivers/src/altera_avalon_jtag_uart_read.c
 Compiling altera_avalon_jtag_uart_write.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_jtag_uart_write.o drivers/src/altera_avalon_jtag_uart_write.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_jtag_uart_write.o drivers/src/altera_avalon_jtag_uart_write.c
 Compiling altera_avalon_spi.c...
-nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_spi.o drivers/src/altera_avalon_spi.c
+nios2-elf-gcc.exe -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -Os -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_spi.o drivers/src/altera_avalon_spi.c
 Creating libhal_bsp.a...
 rm -f -f libhal_bsp.a
 nios2-elf-ar.exe -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_avalon_spi.o
 [BSP build complete]
-09:18:34 **** Build of configuration Nios II for project bladerf_lib ****
+21:55:34 **** Build of configuration Nios II for project bladerf_lib ****
 wsl make all 
-Info: Building ../bladerf_pll_bsp
-make --no-print-directory -C ../bladerf_pll_bsp
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
 [BSP build complete]
 Info: Compiling BLADERFDEVICES.cpp to obj/default/BLADERFDEVICES.o
-nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../bladerf_pll_bsp/HAL/inc -I../bladerf_pll_bsp -I../bladerf_pll_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/BLADERFDEVICES.o BLADERFDEVICES.cpp
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../trobina_controller_bsp/HAL/inc -I../trobina_controller_bsp -I../trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/BLADERFDEVICES.o BLADERFDEVICES.cpp
 Info: Compiling VCTCXOTAMERCLASS.cpp to obj/default/VCTCXOTAMERCLASS.o
-nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../bladerf_pll_bsp/HAL/inc -I../bladerf_pll_bsp -I../bladerf_pll_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/VCTCXOTAMERCLASS.o VCTCXOTAMERCLASS.cpp
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../trobina_controller_bsp/HAL/inc -I../trobina_controller_bsp -I../trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/VCTCXOTAMERCLASS.o VCTCXOTAMERCLASS.cpp
 VCTCXOTAMERCLASS.cpp: In constructor 'VCTCXO_TAMER_CLASS::VCTCXO_TAMER_CLASS()':
 VCTCXOTAMERCLASS.cpp:58:11: warning: converting to non-pointer type 'uint32_t' {aka 'long unsigned int'} from NULL [-Wconversion-null]
    58 |   base  = NULL;
@@ -218,43 +218,816 @@ rm -f obj/default/libbladerf_lib.a
 mkdir -p obj/default
 nios2-elf-ar.exe  -src obj/default/libbladerf_lib.a obj/default/BLADERFDEVICES.o obj/default/VCTCXOTAMERCLASS.o
 cp -f obj/default/libbladerf_lib.a libbladerf_lib.a
-09:18:36 **** Build of configuration Nios II for project adf5610_lib ****
+21:55:37 **** Build of configuration Nios II for project adf5610_lib ****
 wsl make all 
-Info: Building ../bladerf_pll_bsp/
-make --no-print-directory -C ../bladerf_pll_bsp/
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
 [BSP build complete]
 Info: Compiling ADF5610Driver.cpp to obj/default/ADF5610Driver.o
-nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../bladerf_pll_bsp//HAL/inc -I../bladerf_pll_bsp/ -I../bladerf_pll_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DNIOS_BUILD  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/ADF5610Driver.o ADF5610Driver.cpp
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../trobina_controller_bsp/HAL/inc -I../trobina_controller_bsp -I../trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DNIOS_BUILD -DNOT_SDO  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/ADF5610Driver.o ADF5610Driver.cpp
 Info: Compiling SPIHandler.cpp to obj/default/SPIHandler.o
-nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../bladerf_pll_bsp//HAL/inc -I../bladerf_pll_bsp/ -I../bladerf_pll_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DNIOS_BUILD  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/SPIHandler.o SPIHandler.cpp
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../trobina_controller_bsp/HAL/inc -I../trobina_controller_bsp -I../trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DNIOS_BUILD -DNOT_SDO  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/SPIHandler.o SPIHandler.cpp
 Info: Archiving obj/default/libadf5610_lib.a
 rm -f obj/default/libadf5610_lib.a
 mkdir -p obj/default
 nios2-elf-ar.exe  -src obj/default/libadf5610_lib.a obj/default/ADF5610Driver.o obj/default/SPIHandler.o
 cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
-09:18:39 **** Build of configuration Nios II for project bladerf_app ****
+21:55:40 **** Build of configuration Nios II for project ad9361_lib ****
 wsl make all 
-Info: Building ../bladerf_lib
-make --no-print-directory -C ../bladerf_lib
-Info: Building ../bladerf_pll_bsp
-make --no-print-directory -C ../bladerf_pll_bsp
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
 [BSP build complete]
-cp -f obj/default/libbladerf_lib.a libbladerf_lib.a
+Info: Compiling AD9361_Class.cpp to obj/default/AD9361_Class.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/AD9361_Class.o AD9361_Class.cpp
+In file included from BLADERFCOMMONCLASS.h:10,
+                 from AD9361_Class.cpp:15:
+../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src/libbladeRF_nios_compat.h:46: warning: "ARRAY_SIZE" redefined
+   46 | #define ARRAY_SIZE(n) (sizeof(n) / sizeof(n[0]))
+      | 
+In file included from ../../libad936x/ad9361_api.h:45,
+                 from AD9361_Class.cpp:14:
+../../libad936x/util.h:70: note: this is the location of the previous definition
+   70 | #define ARRAY_SIZE(arr)       (sizeof(arr) / sizeof((arr)[0]))
+      | 
+AD9361_Class.cpp: In member function 'bool AD9361_Class::IsLocked()':
+AD9361_Class.cpp:79:23: warning: comparison of integer expressions of different signedness: 'uint32_t' {aka 'long unsigned int'} and 'long int' [-Wsign-compare]
+   79 |  return herz_tolerance>abs((long)(set_rx_pll_frequency-Get_RX_PLL_Frequency()));
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Info: Compiling BLADERFCOMMONCLASS.cpp to obj/default/BLADERFCOMMONCLASS.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/BLADERFCOMMONCLASS.o BLADERFCOMMONCLASS.cpp
+Info: Compiling RFFEClass.cpp to obj/default/RFFEClass.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/RFFEClass.o RFFEClass.cpp
+Info: Compiling SENSORREADERCLASS.cpp to obj/default/SENSORREADERCLASS.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/SENSORREADERCLASS.o SENSORREADERCLASS.cpp
+In file included from SENSORREADERCLASS.cpp:8:
+SENSORREADERCLASS.cpp: In member function 'bool SENSOR_READER_CLASS::Init()':
+SENSORREADERCLASS.cpp:95:17: warning: enumeral mismatch in conditional expression: 'bladerf_rfic_txfir' vs 'bladerf_rfic_rxfir' [-Wenum-compare]
+   95 |                 ? BLADERF_RFIC_TXFIR_DEFAULT
+SENSORREADERCLASS.h:89:18: note: in definition of macro 'CHECK_BOOL'
+   89 |         int _s = _fn;           \
+      |                  ^~~
+SENSORREADERCLASS.cpp: In member function 'bool SENSOR_READER_CLASS::is_locked()':
+SENSORREADERCLASS.cpp:502:57: warning: comparison of integer expressions of different signedness: 'long int' and 'uint32_t' {aka 'long unsigned int'} [-Wsign-compare]
+  502 |  if(abs((long)(current_frequency-rx_required_frequency))<herz_tolerance){
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+Info: Compiling ad9361.cpp to obj/default/ad9361.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/ad9361.o ad9361.cpp
+ad9361.cpp:593:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  593 |   dev_err(&spi->dev, "Read Error %"PRId32, ret);
+      |                      ^
+ad9361.cpp:690:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  690 |   dev_err(&spi->dev, "Write Error %"PRId32, ret);
+      |                      ^
+ad9361.cpp:781:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  781 |   dev_err(&spi->dev, "Write Error %"PRId32, ret);
+      |                      ^
+ad9361.cpp:1018:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1018 |  dev_dbg(&phy->spi->dev, "%s: mode %"PRId32, __func__, mode);
+      |                          ^
+ad9361.cpp:1218:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1218 |  dev_err(&phy->spi->dev, "Calibration TIMEOUT (0x%"PRIX32", 0x%"PRIX32")", reg, mask);
+      |                          ^
+ad9361.cpp:1218:58: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1218 |  dev_err(&phy->spi->dev, "Calibration TIMEOUT (0x%"PRIX32", 0x%"PRIX32")", reg, mask);
+      |                                                          ^
+ad9361.cpp:1237:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1237 |  dev_dbg(&phy->spi->dev, "%s: CAL Mask 0x%"PRIx32, __func__, mask);
+      |                          ^
+ad9361.cpp:1294:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1294 |  dev_dbg(&phy->spi->dev, "%s: frequency %"PRIu64, __func__, freq);
+      |                          ^
+ad9361.cpp:1298:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1298 |  dev_dbg(&phy->spi->dev, "%s: frequency %"PRIu64" (band %d)",
+      |                          ^
+ad9361.cpp:1433:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1433 |  dev_dbg(&phy->spi->dev, "%s : attenuation %"PRIu32" mdB tx1=%d tx2=%d",
+      |                          ^
+ad9361.cpp:1549:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1549 |  dev_dbg(&phy->spi->dev, "%s : vco_freq %"PRIu64" : ref_clk %"PRIu32" : range %"PRIu32,
+      |                          ^
+ad9361.cpp:1549:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1549 |  dev_dbg(&phy->spi->dev, "%s : vco_freq %"PRIu64" : ref_clk %"PRIu32" : range %"PRIu32,
+      |                                                 ^
+ad9361.cpp:1549:69: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1549 |  dev_dbg(&phy->spi->dev, "%s : vco_freq %"PRIu64" : ref_clk %"PRIu32" : range %"PRIu32,
+      |                                                                     ^
+ad9361.cpp:1575:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1575 |  dev_dbg(&phy->spi->dev, "%s : freq %d MHz : index %"PRId32,
+      |                          ^
+ad9361.cpp:1727:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1727 |   dev_err(dev, "Unknown Rx path %"PRIu32, rx_id);
+      |                ^
+ad9361.cpp:1735:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1735 |   dev_dbg(dev, "Rx%"PRIu32" is not enabled", rx_gain->ant);
+      |                ^
+ad9361.cpp:1751:18: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1751 |    dev_warn(dev, "Failed to read gain, state m/c at %"PRIx32,
+      |                  ^
+ad9361.cpp:1977:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1977 |   dev_err(dev, "Invalid gain %"PRId32", supported range [%"PRId32" - %"PRId32"]",
+      |                ^
+ad9361.cpp:1977:38: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1977 |   dev_err(dev, "Invalid gain %"PRId32", supported range [%"PRId32" - %"PRId32"]",
+      |                                      ^
+ad9361.cpp:1977:66: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1977 |   dev_err(dev, "Invalid gain %"PRId32", supported range [%"PRId32" - %"PRId32"]",
+      |                                                                  ^
+ad9361.cpp:2018:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2018 |   dev_err(dev, "Unknown Rx path %"PRIu32, rx_id);
+      |                ^
+ad9361.cpp:2038:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2038 |   dev_err(dev, "Unable to write gain tbl idx reg: %"PRIu32, idx_reg);
+      |                ^
+ad9361.cpp:2246:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2246 |   dev_err(dev, "Unknown Rx path %"PRIu32, gain_ctrl->ant);
+      |                ^
+ad9361.cpp:2253:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2253 |   dev_err(dev, "Unable to disable rx%"PRIu32, gain_ctrl->ant);
+      |                ^
+ad9361.cpp:2347:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2347 |  dev_dbg(&phy->spi->dev, "%s : BBBW %"PRIu32" : ADCfreq %"PRIu32,
+      |                          ^
+ad9361.cpp:2347:45: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2347 |  dev_dbg(&phy->spi->dev, "%s : BBBW %"PRIu32" : ADCfreq %"PRIu32,
+      |                                             ^
+ad9361.cpp:2390:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2390 |  dev_dbg(&phy->spi->dev, "invrc_tconst_1e6 %"PRIu64", sqrt_inv_rc_tconst_1e3 %"PRIu32,
+      |                          ^
+ad9361.cpp:2390:52: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2390 |  dev_dbg(&phy->spi->dev, "invrc_tconst_1e6 %"PRIu64", sqrt_inv_rc_tconst_1e3 %"PRIu32,
+      |                                                    ^
+ad9361.cpp:2392:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2392 |  dev_dbg(&phy->spi->dev, "scaled_adc_clk_1e6 %"PRIu32", inv_scaled_adc_clk_1e3 %"PRIu32,
+      |                          ^
+ad9361.cpp:2392:54: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2392 |  dev_dbg(&phy->spi->dev, "scaled_adc_clk_1e6 %"PRIu32", inv_scaled_adc_clk_1e3 %"PRIu32,
+      |                                                      ^
+ad9361.cpp:2394:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2394 |  dev_dbg(&phy->spi->dev, "tmp_1e3 %"PRIu32", sqrt_term_1e3 %"PRIu32", min_sqrt_term_1e3 %"PRIu32,
+      |                          ^
+ad9361.cpp:2394:43: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2394 |  dev_dbg(&phy->spi->dev, "tmp_1e3 %"PRIu32", sqrt_term_1e3 %"PRIu32", min_sqrt_term_1e3 %"PRIu32,
+      |                                           ^
+ad9361.cpp:2394:68: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2394 |  dev_dbg(&phy->spi->dev, "tmp_1e3 %"PRIu32", sqrt_term_1e3 %"PRIu32", min_sqrt_term_1e3 %"PRIu32,
+      |                                                                    ^
+ad9361.cpp:2486:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2486 |  dev_dbg(&phy->spi->dev, "%s : bb_bw_Hz %"PRIu32,
+      |                          ^
+ad9361.cpp:2543:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2543 |  dev_dbg(&phy->spi->dev, "%s : rx_bb_bw %"PRIu32" bbpll_freq %"PRIu32,
+      |                          ^
+ad9361.cpp:2543:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2543 |  dev_dbg(&phy->spi->dev, "%s : rx_bb_bw %"PRIu32" bbpll_freq %"PRIu32,
+      |                                                 ^
+ad9361.cpp:2596:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2596 |  dev_dbg(&phy->spi->dev, "%s : tx_bb_bw %"PRIu32" bbpll_freq %"PRIu32,
+      |                          ^
+ad9361.cpp:2596:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2596 |  dev_dbg(&phy->spi->dev, "%s : tx_bb_bw %"PRIu32" bbpll_freq %"PRIu32,
+      |                                                 ^
+ad9361.cpp:2638:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2638 |  dev_dbg(&phy->spi->dev, "%s : tx_bb_bw %"PRIu32,
+      |                          ^
+ad9361.cpp:2703:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2703 |  dev_dbg(&phy->spi->dev, "%s : ref_clk_hz %"PRIu32" : is_tx %d",
+      |                          ^
+ad9361.cpp:2778:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2778 |  dev_dbg(&phy->spi->dev, "%s : rx_freq %"PRIu64,
+      |                          ^
+ad9361.cpp:2834:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2834 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32,
+      |                          ^
+ad9361.cpp:2834:39: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2834 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32,
+      |                                       ^
+ad9361.cpp:2979:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2979 |  dev_dbg(&phy->spi->dev, "%s : bw_tx %"PRIu32" clkrf %"PRIu32" clktf %"PRIu32,
+      |                          ^
+ad9361.cpp:2979:46: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2979 |  dev_dbg(&phy->spi->dev, "%s : bw_tx %"PRIu32" clkrf %"PRIu32" clktf %"PRIu32,
+      |                                              ^
+ad9361.cpp:2979:62: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2979 |  dev_dbg(&phy->spi->dev, "%s : bw_tx %"PRIu32" clkrf %"PRIu32" clktf %"PRIu32,
+      |                                                              ^
+ad9361.cpp:2986:15: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2986 |  dev_dbg(dev, "Tx NCO frequency: %"PRIu32" (BW/4: %"PRIu32") txnco_word %"PRId32,
+      |               ^
+ad9361.cpp:2986:42: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2986 |  dev_dbg(dev, "Tx NCO frequency: %"PRIu32" (BW/4: %"PRIu32") txnco_word %"PRId32,
+      |                                          ^
+ad9361.cpp:2986:59: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 2986 |  dev_dbg(dev, "Tx NCO frequency: %"PRIu32" (BW/4: %"PRIu32") txnco_word %"PRId32,
+      |                                                           ^
+ad9361.cpp:3032:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 3032 |   dev_err(dev, "Unhandled case in %s line %d clkrf %"PRIu32" clktf %"PRIu32,
+      |                ^
+ad9361.cpp:3032:60: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 3032 |   dev_err(dev, "Unhandled case in %s line %d clkrf %"PRIu32" clktf %"PRIu32,
+      |                                                            ^
+ad9361.cpp:3269:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 3269 |  dev_dbg(&phy->spi->dev, "%s : ref_clk_hz %"PRIu32,
+      |                          ^
+ad9361.cpp:3286:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 3286 |  dev_dbg(&phy->spi->dev, "%s : coarse %"PRIu32" fine %"PRIu32,
+      |                          ^
+ad9361.cpp:3286:47: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 3286 |  dev_dbg(&phy->spi->dev, "%s : coarse %"PRIu32" fine %"PRIu32,
+      |                                               ^
+ad9361.cpp:3345:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 3345 |  dev_dbg(&phy->spi->dev, "%s: mask 0x%"PRIx32, __func__, en_mask);
+      |                          ^
+ad9361.cpp:3414:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 3414 |  dev_dbg(&phy->spi->dev, "%s : INPUT_SELECT 0x%"PRIx32,
+      |                          ^
+ad9361.cpp:3838:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 3838 |  dev_dbg(&phy->spi->dev, "%s DAC%"PRId32" = %"PRId32" mV", __func__, dac, val_mV);
+      |                          ^
+ad9361.cpp:3838:41: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 3838 |  dev_dbg(&phy->spi->dev, "%s DAC%"PRId32" = %"PRId32" mV", __func__, dac, val_mV);
+      |                                         ^
+ad9361.cpp:4366:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4366 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                          ^
+ad9361.cpp:4366:39: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4366 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                                       ^
+ad9361.cpp:4366:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4366 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                                                 ^
+ad9361.cpp:4366:59: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4366 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                                                           ^
+ad9361.cpp:4366:69: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4366 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                                                                     ^
+ad9361.cpp:4366:79: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4366 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                                                                               ^
+ad9361.cpp:4371:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4371 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                          ^
+ad9361.cpp:4371:39: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4371 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                                       ^
+ad9361.cpp:4371:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4371 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                                                 ^
+ad9361.cpp:4371:59: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4371 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                                                           ^
+ad9361.cpp:4371:69: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4371 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                                                                     ^
+ad9361.cpp:4371:79: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4371 |  dev_dbg(&phy->spi->dev, "%s: %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32" %"PRIu32,
+      |                                                                               ^
+ad9361.cpp:4388:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4388 |    dev_err(dev, "Failed to set BB ref clock rate (%"PRId32")",
+      |                 ^
+ad9361.cpp:4394:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4394 |    dev_err(dev, "Failed to set BB ref clock rate (%"PRId32")",
+      |                 ^
+ad9361.cpp:4508:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4508 |  dev_dbg(&phy->spi->dev, "%s: requested rate %"PRIu32" TXFIR int %"PRIu32" RXFIR dec %"PRIu32" mode %s",
+      |                          ^
+ad9361.cpp:4508:54: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4508 |  dev_dbg(&phy->spi->dev, "%s: requested rate %"PRIu32" TXFIR int %"PRIu32" RXFIR dec %"PRIu32" mode %s",
+      |                                                      ^
+ad9361.cpp:4508:74: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4508 |  dev_dbg(&phy->spi->dev, "%s: requested rate %"PRIu32" TXFIR int %"PRIu32" RXFIR dec %"PRIu32" mode %s",
+      |                                                                          ^
+ad9361.cpp:4710:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4710 |  dev_dbg(&phy->spi->dev, "%s: %s Profile %"PRIu32":",
+      |                          ^
+ad9361.cpp:4752:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4752 |  dev_dbg(&phy->spi->dev, "%s: %s Profile %"PRIu32":",
+      |                          ^
+ad9361.cpp:4822:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4822 |  dev_dbg(&phy->spi->dev, "%s: %s Profile %"PRIu32": %s",
+      |                          ^
+ad9361.cpp:4881:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4881 |  dev_dbg(&phy->spi->dev, "%s: %s Profile %"PRIu32":",
+      |                          ^
+ad9361.cpp:4936:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4936 |  dev_dbg(&phy->spi->dev, "%s: %s Profile %"PRIu32":",
+      |                          ^
+ad9361.cpp:4956:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 4956 |  dev_dbg(&phy->spi->dev, "%s: MCS step %"PRId32, __func__, step);
+      |                          ^
+ad9361.cpp:5147:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5147 |   dev_err(dev, "Failed to set BB ref clock rate (%"PRId32")",
+      |                ^
+ad9361.cpp:5159:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5159 |   dev_err(dev, "Failed to enable BB ref clock rate (%"PRId32")",
+      |                ^
+ad9361.cpp:5224:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5224 |   dev_err(dev, "Failed to set RX Synth ref clock rate (%"PRId32")", ret);
+      |                ^
+ad9361.cpp:5230:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5230 |   dev_err(dev, "Failed to set TX Synth ref clock rate (%"PRId32")", ret);
+      |                ^
+ad9361.cpp:5247:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5247 |   dev_err(dev, "Failed to set RX Synth rate (%"PRId32")",
+      |                ^
+ad9361.cpp:5254:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5254 |   dev_err(dev, "Failed to enable RX Synth ref clock (%"PRId32")", ret);
+      |                ^
+ad9361.cpp:5266:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5266 |   dev_err(dev, "Failed to set TX Synth rate (%"PRId32")",
+      |                ^
+ad9361.cpp:5273:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5273 |   dev_err(dev, "Failed to enable TX Synth ref clock (%"PRId32")", ret);
+      |                ^
+ad9361.cpp:5406:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5406 |  dev_dbg(&phy->spi->dev, "%s: CAL %"PRIu32" ARG %"PRId32, __func__, cal, arg);
+      |                          ^
+ad9361.cpp:5406:43: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5406 |  dev_dbg(&phy->spi->dev, "%s: CAL %"PRIu32" ARG %"PRId32, __func__, cal, arg);
+      |                                           ^
+ad9361.cpp:5493:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5493 |  dev_dbg(&phy->spi->dev, "%s: TAPS %"PRIu32", dest %d",
+      |                          ^
+ad9361.cpp:5525:28: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5525 |     dev_err(&phy->spi->dev,"%s%"PRIu32" read verify failed TAP%"PRIu32" %d =! %d",
+      |                            ^
+ad9361.cpp:5525:39: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5525 |     dev_err(&phy->spi->dev,"%s%"PRIu32" read verify failed TAP%"PRIu32" %d =! %d",
+      |                                       ^
+ad9361.cpp:5558:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5558 |  dev_dbg(&phy->spi->dev, "%s: TAPS %"PRIu32", gain %"PRId32", dest %d",
+      |                          ^
+ad9361.cpp:5558:44: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5558 |  dev_dbg(&phy->spi->dev, "%s: TAPS %"PRIu32", gain %"PRId32", dest %d",
+      |                                            ^
+ad9361.cpp:5563:4: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5563 |    "%s: Invalid parameters: TAPS %"PRIu32", gain %"PRId32", dest 0x%X",
+      |    ^
+ad9361.cpp:5563:42: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5563 |    "%s: Invalid parameters: TAPS %"PRIu32", gain %"PRId32", dest 0x%X",
+      |                                          ^
+ad9361.cpp:5852:5: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5852 |     "%s: Calculating filter rates failed %"PRId32
+      |     ^
+ad9361.cpp:5906:5: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5906 |     "(max %"PRIu32", adc %"PRIu32", tx %"PRIu32")",
+      |     ^
+ad9361.cpp:5906:19: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5906 |     "(max %"PRIu32", adc %"PRIu32", tx %"PRIu32")",
+      |                   ^
+ad9361.cpp:5906:34: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5906 |     "(max %"PRIu32", adc %"PRIu32", tx %"PRIu32")",
+      |                                  ^
+ad9361.cpp:5917:5: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 5917 |     "%s: Invalid: ratio ADC/2 / RX_SAMPL * 16 > TAPS (max %"PRIu32")",
+      |     ^
+ad9361.cpp:6275:31: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 6275 |  dev_dbg(&clk_priv->spi->dev, "%s: Rate %"PRIu32" Hz Parent Rate %"PRIu32" Hz",
+      |                               ^
+ad9361.cpp:6275:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 6275 |  dev_dbg(&clk_priv->spi->dev, "%s: Rate %"PRIu32" Hz Parent Rate %"PRIu32" Hz",
+      |                                                 ^
+ad9361.cpp:6381:21: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 6381 |  dev_dbg(&spi->dev, "%s: Rate %"PRIu32" Hz Parent Rate %"PRIu32" Hz",
+      |                     ^
+ad9361.cpp:6381:39: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 6381 |  dev_dbg(&spi->dev, "%s: Rate %"PRIu32" Hz Parent Rate %"PRIu32" Hz",
+      |                                       ^
+ad9361.cpp:6510:31: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 6510 |  dev_dbg(&clk_priv->spi->dev, "%s: Parent Rate %"PRIu32" Hz",
+      |                               ^
+ad9361.cpp:6562:31: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 6562 |  dev_dbg(&clk_priv->spi->dev, "%s: Rate %"PRIu32" Hz", __func__, rate);
+      |                               ^
+ad9361.cpp:6595:31: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 6595 |  dev_dbg(&clk_priv->spi->dev, "%s: %s Rate %"PRIu32" Hz Parent Rate %"PRIu32" Hz",
+      |                               ^
+ad9361.cpp:6595:52: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 6595 |  dev_dbg(&clk_priv->spi->dev, "%s: %s Rate %"PRIu32" Hz Parent Rate %"PRIu32" Hz",
+      |                                                    ^
+ad9361.cpp: In function 'int32_t ad9361_spi_writem(spi_device*, uint32_t, uint8_t*, uint32_t)':
+ad9361.cpp:766:16: warning: comparison of integer expressions of different signedness: 'int32_t' {aka 'long int'} and 'uint32_t' {aka 'long unsigned int'} [-Wsign-compare]
+  766 |  for (i = 0; i < num; i++)
+      |              ~~^~~~~
+ad9361.cpp: In function 'int32_t ad9361_rfpll_vco_init(ad9361_rf_phy*, bool, uint64_t, uint32_t)':
+ad9361.cpp:1543:23: warning: unnecessary parentheses in declaration of 'tab' [-Wparentheses]
+ 1543 |  const struct SynthLUT(*tab);
+      |                       ^
+ad9361.cpp: In function 'int32_t ad9361_validate_enable_fir(ad9361_rf_phy*)':
+ad9361.cpp:5874:17: warning: comparison of integer expressions of different signedness: 'int32_t' {aka 'long int'} and 'uint32_t' {aka 'long unsigned int'} [-Wsign-compare]
+ 5874 |   for (i = 0; i < num; i++)
+      |               ~~^~~~~
+ad9361.cpp:5882:17: warning: comparison of integer expressions of different signedness: 'int32_t' {aka 'long int'} and 'uint32_t' {aka 'long unsigned int'} [-Wsign-compare]
+ 5882 |   for (i = 0; i < num; i++)
+      |               ~~^~~~~
+Info: Compiling ad9361_api.cpp to obj/default/ad9361_api.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/ad9361_api.o ad9361_api.cpp
+ad9361_api.cpp:57:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   57 |   "4_CH_DEV",
+      |   ^~~~~~~~~~
+ad9361_api.cpp:61:3: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   61 |   "2_CH_DEV",
+      |   ^~~~~~~~~~
+ad9361_api.cpp: In function 'int32_t ad9361_init(ad9361_rf_phy**, AD9361_InitParam*, void*)':
+ad9361_api.cpp:84:10: warning: variable 'rev' set but not used [-Wunused-but-set-variable]
+   84 |  int32_t rev = 0;
+      |          ^~~
+Info: Compiling ad9361_conv.cpp to obj/default/ad9361_conv.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/ad9361_conv.o ad9361_conv.cpp
+ad9361_conv.cpp:209:5: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  209 |     "%s Lane %"PRId32", window cnt %"PRIu32" , start %"PRIu32", IODELAY set to %"PRIu32"\n",
+      |     ^
+ad9361_conv.cpp:209:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  209 |     "%s Lane %"PRId32", window cnt %"PRIu32" , start %"PRIu32", IODELAY set to %"PRIu32"\n",
+      |                      ^
+ad9361_conv.cpp:209:44: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  209 |     "%s Lane %"PRId32", window cnt %"PRIu32" , start %"PRIu32", IODELAY set to %"PRIu32"\n",
+      |                                            ^
+ad9361_conv.cpp:209:62: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  209 |     "%s Lane %"PRId32", window cnt %"PRIu32" , start %"PRIu32", IODELAY set to %"PRIu32"\n",
+      |                                                              ^
+ad9361_conv.cpp:228:9: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  228 |  printk("SAMPL CLK: %"PRIu32" tuning: %s\n",
+      |         ^
+ad9361_conv.cpp:232:10: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  232 |   printk("%"PRIx32":", i);
+      |          ^
+ad9361_conv.cpp:236:10: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  236 |   printk("%"PRIx32":", i);
+      |          ^
+ad9361_conv.cpp:310:37: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  310 |  len += snprintf(buf + len, buflen, "CLK: %"PRIu32" Hz 'o' = PASS\n",
+      |                                     ^
+ad9361_conv.cpp:314:38: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  314 |   len += snprintf(buf + len, buflen, "%"PRIx32":", i);
+      |                                      ^
+ad9361_conv.cpp:318:38: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  318 |   len += snprintf(buf + len, buflen, "%"PRIx32":", i);
+      |                                      ^
+ad9361_conv.cpp:349:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  349 |  dev_dbg(&phy->spi->dev, "%s: freq %"PRIu32" flags 0x%X\n", __func__,
+      |                          ^
+Info: Compiling ad936x_params.cpp to obj/default/ad936x_params.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/ad936x_params.o ad936x_params.cpp
+Info: Compiling adc_core.cpp to obj/default/adc_core.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/adc_core.o adc_core.cpp
+Info: Compiling dac_core.cpp to obj/default/dac_core.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/dac_core.o dac_core.cpp
+Info: Compiling platform.cpp to obj/default/platform.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/platform.o platform.cpp
+Info: Compiling util.cpp to obj/default/util.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/util.o util.cpp
+Info: Archiving obj/default/libad9361_lib.a
+rm -f obj/default/libad9361_lib.a
+mkdir -p obj/default
+nios2-elf-ar.exe  -src obj/default/libad9361_lib.a obj/default/AD9361_Class.o obj/default/BLADERFCOMMONCLASS.o obj/default/RFFEClass.o obj/default/SENSORREADERCLASS.o obj/default/ad9361.o obj/default/ad9361_api.o obj/default/ad9361_conv.o obj/default/ad936x_params.o obj/default/adc_core.o obj/default/dac_core.o obj/default/platform.o obj/default/util.o
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+21:55:57 **** Build of configuration Nios II for project trobina_controller_lib ****
+wsl make all 
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
 Info: Building ../adf5610_lib
 make --no-print-directory -C ../adf5610_lib
-Info: Building ../bladerf_pll_bsp/
-make --no-print-directory -C ../bladerf_pll_bsp/
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
 [BSP build complete]
 cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
-Info: Building ../bladerf_pll_bsp
-make --no-print-directory -C ../bladerf_pll_bsp
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+Info: Compiling COEFFICIENTSHANDLER.cpp to obj/default/COEFFICIENTSHANDLER.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../fpga_common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/libraries/libbladeRF/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../libad936x -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/./ -I../trobina_controller_bsp//HAL/inc -I../trobina_controller_bsp/ -I../trobina_controller_bsp//drivers/inc -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/COEFFICIENTSHANDLER.o COEFFICIENTSHANDLER.cpp
+Info: Compiling CORRELATORCLASS.cpp to obj/default/CORRELATORCLASS.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../fpga_common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/libraries/libbladeRF/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../libad936x -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/./ -I../trobina_controller_bsp//HAL/inc -I../trobina_controller_bsp/ -I../trobina_controller_bsp//drivers/inc -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/CORRELATORCLASS.o CORRELATORCLASS.cpp
+Info: Compiling LEDCONTROLLER.cpp to obj/default/LEDCONTROLLER.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../fpga_common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/libraries/libbladeRF/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../libad936x -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/./ -I../trobina_controller_bsp//HAL/inc -I../trobina_controller_bsp/ -I../trobina_controller_bsp//drivers/inc -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/LEDCONTROLLER.o LEDCONTROLLER.cpp
+Info: Compiling LTC5548HANDLER.cpp to obj/default/LTC5548HANDLER.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../fpga_common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/libraries/libbladeRF/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../libad936x -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/./ -I../trobina_controller_bsp//HAL/inc -I../trobina_controller_bsp/ -I../trobina_controller_bsp//drivers/inc -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/LTC5548HANDLER.o LTC5548HANDLER.cpp
+Info: Compiling SPECTRUMSEARCHER.cpp to obj/default/SPECTRUMSEARCHER.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../fpga_common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/libraries/libbladeRF/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../libad936x -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/./ -I../trobina_controller_bsp//HAL/inc -I../trobina_controller_bsp/ -I../trobina_controller_bsp//drivers/inc -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/SPECTRUMSEARCHER.o SPECTRUMSEARCHER.cpp
+Info: Archiving obj/default/libtrobina_controller_lib.a
+rm -f obj/default/libtrobina_controller_lib.a
+mkdir -p obj/default
+nios2-elf-ar.exe  -src obj/default/libtrobina_controller_lib.a obj/default/COEFFICIENTSHANDLER.o obj/default/CORRELATORCLASS.o obj/default/LEDCONTROLLER.o obj/default/LTC5548HANDLER.o obj/default/SPECTRUMSEARCHER.o
+cp -f obj/default/libtrobina_controller_lib.a libtrobina_controller_lib.a
+21:56:08 **** Build of configuration Nios II for project trobina_controller_app ****
+wsl make all 
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../bladerf_lib
+make --no-print-directory -C ../bladerf_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libbladerf_lib.a libbladerf_lib.a
+Info: Building ../trobina_controller_lib
+make --no-print-directory -C ../trobina_controller_lib
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+cp -f obj/default/libtrobina_controller_lib.a libtrobina_controller_lib.a
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
 [BSP build complete]
 Info: Compiling main.cpp to obj/default/main.o
-nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../bladerf_pll_bsp/HAL/inc -I../bladerf_pll_bsp -I../bladerf_pll_bsp/drivers/inc -I../bladerf_lib -I../adf5610_lib  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DNIOS_BUILD  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.cpp
-Info: Linking bladerf_app.elf
-nios2-elf-g++.exe  -T'../bladerf_pll_bsp/linker.x' -msys-crt0='../bladerf_pll_bsp/obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../bladerf_lib -L../adf5610_lib -L../bladerf_pll_bsp -L../bladerf_lib -L../adf5610_lib   -Wl,-Map=bladerf_app.map -DNIOS_BUILD  -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o bladerf_app.elf obj/default/main.o -lbladerf_lib -ladf5610_lib -lm -lbladerf_lib -ladf5610_lib -msys-lib=m
-nios2-elf-insert.exe bladerf_app.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_cpu
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../trobina_controller_lib/../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../trobina_controller_lib/../adf5610_lib -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../fpga_common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/common/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../host/libraries/libbladeRF/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/../../libad936x -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib/./ -I../trobina_controller_bsp//HAL/inc -I../trobina_controller_bsp/ -I../trobina_controller_bsp//drivers/inc -I../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -I../adf5610_lib -I../trobina_controller_lib -I../bladerf_lib  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS -DNIOS_BUILD -DNOT_SDO  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.cpp
+Info: Linking trobina_controller_app.elf
+nios2-elf-g++.exe  -T'../trobina_controller_bsp//linker.x' -msys-crt0='../trobina_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../adf5610_lib -L../bladerf_lib -L../trobina_controller_lib -L../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -L../trobina_controller_bsp/ -L../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib   -Wl,-Map=trobina_controller_app.map -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS -DNIOS_BUILD -DNOT_SDO  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o trobina_controller_app.elf obj/default/main.o -ladf5610_lib -lbladerf_lib -ltrobina_controller_lib -lad9361_lib -lm -lad9361_lib -lbladerf_lib -ladf5610_lib -ltrobina_controller_lib -msys-lib=m
+nios2-elf-insert.exe trobina_controller_app.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_cpu
 Unable to determine program-size.
-Info: Creating bladerf_app.objdump
-nios2-elf-objdump.exe --disassemble --syms --all-header bladerf_app.elf >bladerf_app.objdump
-[bladerf_app build complete]
+Info: Creating trobina_controller_app.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header trobina_controller_app.elf >trobina_controller_app.objdump
+[trobina_controller_app build complete]
+21:56:40 **** Incremental Build of configuration Nios II for project trobina_controller_bsp ****
+wsl make all 
+[BSP build complete]
+21:56:42 **** Incremental Build of configuration Nios II for project bladerf_lib ****
+wsl make all 
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libbladerf_lib.a libbladerf_lib.a
+21:56:44 **** Incremental Build of configuration Nios II for project adf5610_lib ****
+wsl make all 
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+21:56:46 **** Incremental Build of configuration Nios II for project ad9361_lib ****
+wsl make all 
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+21:56:49 **** Incremental Build of configuration Nios II for project trobina_controller_lib ****
+wsl make all 
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+cp -f obj/default/libtrobina_controller_lib.a libtrobina_controller_lib.a
+21:56:55 **** Incremental Build of configuration Nios II for project trobina_controller_app ****
+wsl make all 
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../bladerf_lib
+make --no-print-directory -C ../bladerf_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libbladerf_lib.a libbladerf_lib.a
+Info: Building ../trobina_controller_lib
+make --no-print-directory -C ../trobina_controller_lib
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+cp -f obj/default/libtrobina_controller_lib.a libtrobina_controller_lib.a
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+Info: Linking trobina_controller_app.elf
+nios2-elf-g++.exe  -T'../trobina_controller_bsp//linker.x' -msys-crt0='../trobina_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../adf5610_lib -L../bladerf_lib -L../trobina_controller_lib -L../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -L../trobina_controller_bsp/ -L../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib   -Wl,-Map=trobina_controller_app.map -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS -DNIOS_BUILD -DNOT_SDO  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o trobina_controller_app.elf obj/default/main.o -ladf5610_lib -lbladerf_lib -ltrobina_controller_lib -lad9361_lib -lm -lad9361_lib -lbladerf_lib -ladf5610_lib -ltrobina_controller_lib -msys-lib=m
+nios2-elf-insert.exe trobina_controller_app.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_cpu
+Unable to determine program-size.
+Info: Creating trobina_controller_app.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header trobina_controller_app.elf >trobina_controller_app.objdump
+[trobina_controller_app build complete]
+22:17:37 **** Incremental Build of configuration Nios II for project trobina_controller_bsp ****
+wsl make all 
+[BSP build complete]
+22:17:39 **** Incremental Build of configuration Nios II for project bladerf_lib ****
+wsl make all 
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libbladerf_lib.a libbladerf_lib.a
+22:17:41 **** Incremental Build of configuration Nios II for project adf5610_lib ****
+wsl make all 
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+22:17:43 **** Incremental Build of configuration Nios II for project ad9361_lib ****
+wsl make all 
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+Info: Compiling RFFEClass.cpp to obj/default/RFFEClass.o
+nios2-elf-gcc.exe -xc++ -MP -MMD -c -I../../libad936x -I../../../../../fpga/ip/analogdevicesinc/no_OS/include -I../../../../../../thirdparty/analogdevicesinc/no-OS_local/platform_bladerf2_headless -I../../../../../fpga/platforms/common/bladerf/software/bladeRF_nios/src -I../../../../../../host/common/include -I../../../../../../host/libraries/libbladeRF/include -I../../../../../fpga/platforms/bladerf-micro/software/bladeRF_nios/src -I../../../../../../fpga_common/include -I./ -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/HAL/inc -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp -I../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp/drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/RFFEClass.o RFFEClass.cpp
+Info: Archiving obj/default/libad9361_lib.a
+rm -f obj/default/libad9361_lib.a
+mkdir -p obj/default
+nios2-elf-ar.exe  -src obj/default/libad9361_lib.a obj/default/AD9361_Class.o obj/default/BLADERFCOMMONCLASS.o obj/default/RFFEClass.o obj/default/SENSORREADERCLASS.o obj/default/ad9361.o obj/default/ad9361_api.o obj/default/ad9361_conv.o obj/default/ad936x_params.o obj/default/adc_core.o obj/default/dac_core.o obj/default/platform.o obj/default/util.o
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+22:17:46 **** Incremental Build of configuration Nios II for project trobina_controller_lib ****
+wsl make all 
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+cp -f obj/default/libtrobina_controller_lib.a libtrobina_controller_lib.a
+22:17:52 **** Incremental Build of configuration Nios II for project trobina_controller_app ****
+wsl make all 
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../bladerf_lib
+make --no-print-directory -C ../bladerf_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libbladerf_lib.a libbladerf_lib.a
+Info: Building ../trobina_controller_lib
+make --no-print-directory -C ../trobina_controller_lib
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+cp -f obj/default/libtrobina_controller_lib.a libtrobina_controller_lib.a
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+Info: Linking trobina_controller_app.elf
+nios2-elf-g++.exe  -T'../trobina_controller_bsp//linker.x' -msys-crt0='../trobina_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../adf5610_lib -L../bladerf_lib -L../trobina_controller_lib -L../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -L../trobina_controller_bsp/ -L../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib   -Wl,-Map=trobina_controller_app.map -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS -DNIOS_BUILD -DNOT_SDO  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o trobina_controller_app.elf obj/default/main.o -ladf5610_lib -lbladerf_lib -ltrobina_controller_lib -lad9361_lib -lm -lad9361_lib -lbladerf_lib -ladf5610_lib -ltrobina_controller_lib -msys-lib=m
+nios2-elf-insert.exe trobina_controller_app.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_cpu
+Unable to determine program-size.
+Info: Creating trobina_controller_app.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header trobina_controller_app.elf >trobina_controller_app.objdump
+[trobina_controller_app build complete]
+22:19:24 **** Incremental Build of configuration Nios II for project trobina_controller_bsp ****
+wsl make all 
+[BSP build complete]
+22:19:26 **** Incremental Build of configuration Nios II for project bladerf_lib ****
+wsl make all 
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libbladerf_lib.a libbladerf_lib.a
+22:19:28 **** Incremental Build of configuration Nios II for project adf5610_lib ****
+wsl make all 
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+22:19:30 **** Incremental Build of configuration Nios II for project ad9361_lib ****
+wsl make all 
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+22:19:32 **** Incremental Build of configuration Nios II for project trobina_controller_lib ****
+wsl make all 
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+cp -f obj/default/libtrobina_controller_lib.a libtrobina_controller_lib.a
+22:19:38 **** Incremental Build of configuration Nios II for project trobina_controller_app ****
+wsl make all 
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../bladerf_lib
+make --no-print-directory -C ../bladerf_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libbladerf_lib.a libbladerf_lib.a
+Info: Building ../trobina_controller_lib
+make --no-print-directory -C ../trobina_controller_lib
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+cp -f obj/default/libtrobina_controller_lib.a libtrobina_controller_lib.a
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+Info: Linking trobina_controller_app.elf
+nios2-elf-g++.exe  -T'../trobina_controller_bsp//linker.x' -msys-crt0='../trobina_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../adf5610_lib -L../bladerf_lib -L../trobina_controller_lib -L../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -L../trobina_controller_bsp/ -L../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib   -Wl,-Map=trobina_controller_app.map -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS -DNIOS_BUILD -DNOT_SDO  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o trobina_controller_app.elf obj/default/main.o -ladf5610_lib -lbladerf_lib -ltrobina_controller_lib -lad9361_lib -lm -lad9361_lib -lbladerf_lib -ladf5610_lib -ltrobina_controller_lib -msys-lib=m
+nios2-elf-insert.exe trobina_controller_app.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_cpu
+Unable to determine program-size.
+Info: Creating trobina_controller_app.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header trobina_controller_app.elf >trobina_controller_app.objdump
+[trobina_controller_app build complete]

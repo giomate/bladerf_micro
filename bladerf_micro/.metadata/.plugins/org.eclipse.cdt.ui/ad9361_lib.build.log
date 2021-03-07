@@ -1,0 +1,9 @@
+22:19:30 **** Incremental Build of configuration Nios II for project ad9361_lib ****
+wsl make all 
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+
+22:19:32 Build Finished (took 2s.418ms)
+

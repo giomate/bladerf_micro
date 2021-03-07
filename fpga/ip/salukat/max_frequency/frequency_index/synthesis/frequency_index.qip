@@ -2,7 +2,7 @@ set_global_assignment -entity "frequency_index" -library "frequency_index" -name
 set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_TOOL_VERSION "20.1"
 set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "frequency_index" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../frequency_index.sopcinfo"]
-set_global_assignment -entity "frequency_index" -library "frequency_index" -name SLD_INFO "QSYS_NAME frequency_index HAS_SOPCINFO 1 GENERATION_ID 1610179337"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name SLD_INFO "QSYS_NAME frequency_index HAS_SOPCINFO 1 GENERATION_ID 1615037628"
 set_global_assignment -library "frequency_index" -name MISC_FILE [file join $::quartus(qip_path) "../frequency_index.cmp"]
 set_global_assignment -library "frequency_index" -name SLD_FILE [file join $::quartus(qip_path) "frequency_index.debuginfo"]
 set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
@@ -15,7 +15,7 @@ set_global_assignment -entity "frequency_index" -library "frequency_index" -name
 set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYxMDE3OTMzNw==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYxNTAzNzYyOA==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNFQkE0RjIzQzg=::QXV0byBERVZJQ0U="
 set_global_assignment -entity "frequency_index" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::OA==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -54,25 +54,19 @@ set_global_assignment -entity "altera_reset_controller" -library "frequency_inde
 set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xNQ==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE1"
 set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU5QVVQ=::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcmVzZXRfaW5wdXRz"
 set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QURBUFRfUkVTRVRfUkVRVUVTVA==::MA==::T25seSBhZGFwdCBvbmx5IHJlc2V0IHJlcXVlc3Q="
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_NAME "bWF4X2luZGV4X21lbW9yeQ=="
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_DISPLAY_NAME "bWF4X2ZyZXF1ZW5jeV9pbmRleA=="
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_INTERNAL "Off"
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_AUTHOR "Z2lvdmFubnk="
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_DESCRIPTION "ZmluZCB0aGUgaW5kZXggb2YgdGhlIG1heCBmcmVxdWVuY3k="
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_PARAMETER "TlVNX1JFR0lTVEVSUw==::MzI=::TlVNX1JFR0lTVEVSUw=="
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_PARAMETER "QUREUl9XSURUSA==::NQ==::QUREUl9XSURUSA=="
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_PARAMETER "REFUQV9XSURUSA==::MjQ=::REFUQV9XSURUSA=="
-set_global_assignment -entity "max_index_memory" -library "frequency_index" -name IP_COMPONENT_PARAMETER "SU5ERVhfV0lEVEg=::OA==::SU5ERVhfV0lEVEg="
+set_global_assignment -entity "max_frequency_top" -library "frequency_index" -name IP_COMPONENT_NAME "bWF4X2ZyZXF1ZW5jeV90b3A="
+set_global_assignment -entity "max_frequency_top" -library "frequency_index" -name IP_COMPONENT_DISPLAY_NAME "bWF4X2ZyZXF1ZW5jeV9pbmRleA=="
+set_global_assignment -entity "max_frequency_top" -library "frequency_index" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "max_frequency_top" -library "frequency_index" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "max_frequency_top" -library "frequency_index" -name IP_COMPONENT_AUTHOR "Z2lvdmFubnk="
+set_global_assignment -entity "max_frequency_top" -library "frequency_index" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "max_frequency_top" -library "frequency_index" -name IP_COMPONENT_DESCRIPTION "ZmluZCB0aGUgaW5kZXggb2YgdGhlIG1heCBmcmVxdWVuY3k="
 
 set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "frequency_index.vhd"]
 set_global_assignment -library "frequency_index" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
 set_global_assignment -library "frequency_index" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
 set_global_assignment -library "frequency_index" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
-set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/max_index_memory.vhd"]
-set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/complex_memory_synchronizer.vhd"]
-set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/index_synchronizer.vhd"]
+set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/max_frequency_top.vhd"]
 set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply.vhd"]
 set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block.vhd"]
 set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/Complex3Multiply_block1.vhd"]
@@ -279,8 +273,6 @@ set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::q
 set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/max_index_frequency_pkg.vhd"]
 set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/max_index_frequency_tc.vhd"]
 set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/serial2parallel.vhd"]
-set_global_assignment -library "frequency_index" -name QIP_FILE [file join $::quartus(qip_path) "submodules/counter_adddress_32.qip"]
-set_global_assignment -library "frequency_index" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/counter_adddress_32.vhd"]
 
 set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_TOOL_NAME "altera_reset_controller"
 set_global_assignment -entity "altera_reset_controller" -library "frequency_index" -name IP_TOOL_VERSION "20.1"

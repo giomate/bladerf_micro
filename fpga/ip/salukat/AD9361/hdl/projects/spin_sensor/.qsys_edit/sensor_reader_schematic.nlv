@@ -1,0 +1,14 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst sensor_reader -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst sensor_reader.spin_sensor_receiver_0 -pg 1 -lvl 2 -y 40
+preplace inst sensor_reader.clock_bridge_0 -pg 1 -lvl 3 -y 80
+preplace inst sensor_reader.clk_0 -pg 1 -lvl 1 -y 120
+preplace netloc POINT_TO_POINT<net_container>sensor_reader</net_container>(SLAVE)spin_sensor_receiver_0.s_axi_clock,(MASTER)clk_0.clk) 1 1 1 N
+preplace netloc POINT_TO_POINT<net_container>sensor_reader</net_container>(MASTER)spin_sensor_receiver_0.clk_out,(SLAVE)clock_bridge_0.in_clk) 1 2 1 NJ
+preplace netloc POINT_TO_POINT<net_container>sensor_reader</net_container>(MASTER)clock_bridge_0.out_clk,(SLAVE)spin_sensor_receiver_0.device_clock) 1 1 3 260 30 NJ 30 590
+preplace netloc EXPORT<net_container>sensor_reader</net_container>(SLAVE)sensor_reader.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>sensor_reader</net_container>(SLAVE)clk_0.clk_in,(SLAVE)sensor_reader.clk) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>sensor_reader</net_container>(MASTER)clk_0.clk_reset,(SLAVE)spin_sensor_receiver_0.s_axi_reset) 1 1 1 N
+levelinfo -pg 1 0 50 630
+levelinfo -hier sensor_reader 60 90 290 460 610

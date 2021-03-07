@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
-newApplicationWizardPage.defaultLocation=D\:\\Salukat\\Development\\Software\\Quartus\\bladerf_micro\\bladerf_micro\\software\\bladerf_app
-newBspWizardPage.defaultLocation=D\:\\Salukat\\Development\\Software\\Quartus\\bladerf_micro\\bladerf_micro\\software\\bladerf_pll_bsp
-newBspWizardPage.sopcinfoFile=D\:\\Salukat\\Development\\Software\\Quartus\\bladerf_micro\\bladerf_micro\\nios_cpu.sopcinfo
-newLibraryWizardPage.bspLocation=D\:\\Salukat\\Development\\Software\\Quartus\\bladerf_micro\\bladerf_micro\\software\\bladerf_pll_bsp
-newLibraryWizardPage.defaultLocation=D\:\\Salukat\\Development\\Software\\Quartus\\bladerf_micro\\bladerf_micro\\software\\adf5610_lib
+newApplicationWizardPage.defaultLocation=C\:\\Users\\GMateusDP\\Documents\\Trobina\\Development\\Software\\BladeRF\\bladerf_micro\\software\\trobina_controller_app
+newBspWizardPage.defaultLocation=C\:\\Users\\GMateusDP\\Documents\\Trobina\\Development\\Software\\BladeRF\\bladerf_micro\\software\\trobina_controller_bsp
+newBspWizardPage.sopcinfoFile=C\:\\Users\\GMateusDP\\Documents\\Trobina\\Development\\Software\\BladeRF\\bladerf_micro\\nios_cpu.sopcinfo
+newLibraryWizardPage.bspLocation=C\:\\Users\\GMateusDP\\Documents\\Trobina\\Development\\Software\\BladeRF\\bladerf_micro\\software\\trobina_controller_bsp
+newLibraryWizardPage.defaultLocation=C\:\\Users\\GMateusDP\\Documents\\Trobina\\Development\\Software\\BladeRF\\bladerf_micro\\software\\trobina_controller_lib

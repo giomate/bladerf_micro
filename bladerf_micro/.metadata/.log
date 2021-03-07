@@ -2698,3 +2698,3879 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ui 4 4 2021-03-05 09:12:31.537
 !MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@3e02ac0b)} vs {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@124ff64d)}
+!SESSION 2021-03-06 10:22:43.306 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/20.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -data C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/20.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 4 567 2021-03-06 10:22:46.533
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2021-03-06 10:22:46.533
+!MESSAGE Could not read metadata for 'adf5610_lib'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'adf5610_lib' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:902)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:882)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:733)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:140)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2021-03-06 10:22:46.535
+!MESSAGE The project description file (.project) for 'adf5610_lib' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2021-03-06 10:22:46.535
+!MESSAGE Could not read metadata for 'bladerf_app'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'bladerf_app' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:902)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:882)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:733)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:140)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2021-03-06 10:22:46.536
+!MESSAGE The project description file (.project) for 'bladerf_app' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2021-03-06 10:22:46.536
+!MESSAGE Could not read metadata for 'bladerf_lib'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'bladerf_lib' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:902)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:882)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:733)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:140)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2021-03-06 10:22:46.537
+!MESSAGE The project description file (.project) for 'bladerf_lib' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2021-03-06 10:22:46.537
+!MESSAGE Could not read metadata for 'bladerf_pll_bsp'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'bladerf_pll_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:902)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:882)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:733)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:140)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2021-03-06 10:22:46.538
+!MESSAGE The project description file (.project) for 'bladerf_pll_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-03-06 10:22:59.001
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\GMateusDP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2021-03-06 10:23:00.851
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.core.resources 4 567 2021-03-06 10:38:56.736
+!MESSAGE The project description file (.project) for 'bladerf_pll_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.resources 4 567 2021-03-06 10:40:58.170
+!MESSAGE The project description file (.project) for 'bladerf_pll_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-06 10:42:13.541
+!MESSAGE Indexed 'bladerf_pll_bsp' (80 sources, 185 headers) in 5.38 sec: 6,060 declarations; 9,253 references; 1 unresolved inclusions; 3 syntax errors; 9 unresolved names (0.059%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-06 10:42:14.416
+!MESSAGE Indexed 'bladerf_app' (1 sources, 71 headers) in 0.845 sec: 2,473 declarations; 3,175 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-06 10:42:15.976
+!MESSAGE Indexed 'adf5610_lib' (2 sources, 72 headers) in 1.53 sec: 4,151 declarations; 5,332 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-06 10:42:16.620
+!MESSAGE Indexed 'bladerf_lib' (2 sources, 69 headers) in 0.627 sec: 2,373 declarations; 3,525 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.altera.sbtgui.core 4 0 2021-03-06 10:42:42.720
+!MESSAGE Error executing 'nios2-bsp-generate-files.exe --bsp-dir . --settings settings.bsp', unexpected return code 1.
+
+Error message:
+
+SEVERE: File not found: D:\Salukat\Development\Software\Quartus\bladerf_micro\bladerf_micro\nios_cpu.sopcinfo
+SEVERE: File not found: D:\Salukat\Development\Software\Quartus\bladerf_micro\bladerf_micro\nios_cpu.sopcinfo
+SEVERE: nios2-bsp-generate-files failed.
+
+
+!ENTRY com.altera.sbtgui.core 4 0 2021-03-06 10:43:59.658
+!MESSAGE Error executing 'nios2-bsp-generate-files.exe --bsp-dir . --settings settings.bsp', unexpected return code 1.
+
+Error message:
+
+SEVERE: File not found: D:\Salukat\Development\Software\Quartus\bladerf_micro\bladerf_micro\nios_cpu.sopcinfo
+SEVERE: File not found: D:\Salukat\Development\Software\Quartus\bladerf_micro\bladerf_micro\nios_cpu.sopcinfo
+SEVERE: nios2-bsp-generate-files failed.
+
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-06 10:52:37.708
+!MESSAGE Indexed 'bladerf_pll_bsp' (80 sources, 62 headers) in 1.68 sec: 1,214 declarations; 2,622 references; 111 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.7%)
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:43.292
+!MESSAGE Connecting to System Console on port 53582
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:43.663
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:43.663
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:43.663
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:43.670
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:43.670
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:43.670
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:49.510
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:49.510
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:49.510
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:49.709
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:49.709
+!MESSAGE return "/channels/remote1/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:49.709
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:49.751
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:49.751
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:49.751
+!MESSAGE processor_stop {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.362
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.362
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.362
+!MESSAGE processor_download_elf {/channels/remote1/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.367
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.367
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.367
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.373
+!MESSAGE Connecting to System Console on port 53582
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.425
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.425
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote2/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.425
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.430
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.430
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:51.430
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:53.451
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:53.452
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:04:53.452
+!MESSAGE close_service processor {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 11:04:53.458
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:52.490
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:52.703
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:52.703
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:52.703
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:52.727
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:52.727
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:52.727
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:58.554
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:58.554
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:58.554
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:58.745
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:58.745
+!MESSAGE return "/channels/remote1/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:58.745
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:58.782
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:58.782
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:09:58.782
+!MESSAGE processor_stop {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.486
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.486
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.486
+!MESSAGE processor_download_elf {/channels/remote1/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.493
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.493
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.493
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.499
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.556
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.556
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote2/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.556
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.560
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.560
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:00.560
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:02.583
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:02.583
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:10:02.583
+!MESSAGE close_service processor {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 11:10:02.587
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-06 11:27:58.791
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:03.199
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:03.282
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:03.282
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:03.282
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:03.285
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:03.285
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:03.285
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:09.295
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:09.295
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:09.295
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:09.485
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:09.485
+!MESSAGE return "/channels/remote3/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:09.485
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:09.521
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:09.521
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:09.521
+!MESSAGE processor_stop {/channels/remote3/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.126
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.126
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.126
+!MESSAGE processor_download_elf {/channels/remote3/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.132
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.132
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.132
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.137
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.197
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.197
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote4/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.197
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.200
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.200
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:11.200
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:13.221
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:13.221
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:28:13.221
+!MESSAGE close_service processor {/channels/remote3/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 11:28:13.224
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 11:44:26.680
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@36f7c08f)}
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:18.009
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:18.037
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:18.037
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:18.037
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:18.041
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:18.041
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:18.041
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:24.047
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:24.047
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:24.047
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:24.217
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:24.217
+!MESSAGE return "/channels/remote5/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:24.217
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:24.251
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:24.251
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:24.251
+!MESSAGE processor_stop {/channels/remote5/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.920
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.921
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.921
+!MESSAGE processor_download_elf {/channels/remote5/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.930
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.930
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.930
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.934
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.980
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.980
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote6/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.980
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.983
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.983
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:25.983
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:28.006
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:28.006
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:47:28.006
+!MESSAGE close_service processor {/channels/remote5/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 11:47:28.011
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-03-06 11:54:20.953
+!MESSAGE An internal error occurred during: "Add Memory Block".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.icu.text.MessagePattern.parseMessage(MessagePattern.java:934)
+	at com.ibm.icu.text.MessagePattern.parse(MessagePattern.java:183)
+	at com.ibm.icu.text.MessagePattern.<init>(MessagePattern.java:168)
+	at com.ibm.icu.text.MessageFormat.applyPattern(MessageFormat.java:453)
+	at com.ibm.icu.text.MessageFormat.<init>(MessageFormat.java:351)
+	at com.ibm.icu.text.MessageFormat.format(MessageFormat.java:997)
+	at org.eclipse.cdt.debug.internal.core.CMemoryBlockRetrievalExtension.getMemoryBlock(CMemoryBlockRetrievalExtension.java:287)
+	at org.eclipse.cdt.debug.internal.core.CMemoryBlockRetrievalExtension.getExtendedMemoryBlock(CMemoryBlockRetrievalExtension.java:226)
+	at org.eclipse.debug.internal.ui.views.memory.AddMemoryBlockAction.addMemoryBlocks(AddMemoryBlockAction.java:197)
+	at org.eclipse.debug.internal.ui.views.memory.AddMemoryBlockAction.access$0(AddMemoryBlockAction.java:187)
+	at org.eclipse.debug.internal.ui.views.memory.AddMemoryBlockAction$1.run(AddMemoryBlockAction.java:170)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-03-06 11:54:50.570
+!MESSAGE An internal error occurred during: "Add Memory Block".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.icu.text.MessagePattern.parseMessage(MessagePattern.java:934)
+	at com.ibm.icu.text.MessagePattern.parse(MessagePattern.java:183)
+	at com.ibm.icu.text.MessagePattern.<init>(MessagePattern.java:168)
+	at com.ibm.icu.text.MessageFormat.applyPattern(MessageFormat.java:453)
+	at com.ibm.icu.text.MessageFormat.<init>(MessageFormat.java:351)
+	at com.ibm.icu.text.MessageFormat.format(MessageFormat.java:997)
+	at org.eclipse.cdt.debug.internal.core.CMemoryBlockRetrievalExtension.getMemoryBlock(CMemoryBlockRetrievalExtension.java:287)
+	at org.eclipse.cdt.debug.internal.core.CMemoryBlockRetrievalExtension.getExtendedMemoryBlock(CMemoryBlockRetrievalExtension.java:226)
+	at org.eclipse.debug.internal.ui.views.memory.AddMemoryBlockAction.addMemoryBlocks(AddMemoryBlockAction.java:197)
+	at org.eclipse.debug.internal.ui.views.memory.AddMemoryBlockAction.access$0(AddMemoryBlockAction.java:187)
+	at org.eclipse.debug.internal.ui.views.memory.AddMemoryBlockAction$1.run(AddMemoryBlockAction.java:170)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-06 11:58:58.048
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:02.443
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:02.526
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:02.526
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:02.526
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:02.531
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:02.531
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:02.531
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:08.542
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:08.542
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:08.542
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:08.734
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:08.734
+!MESSAGE return "/channels/remote7/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:08.734
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:08.773
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:08.773
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:08.773
+!MESSAGE processor_stop {/channels/remote7/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.370
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.370
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.370
+!MESSAGE processor_download_elf {/channels/remote7/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.375
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.375
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.375
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.380
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.548
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.548
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote8/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.548
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.551
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.551
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:10.551
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:12.576
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:12.576
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 11:59:12.576
+!MESSAGE close_service processor {/channels/remote7/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 11:59:12.581
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-06 12:00:13.546
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:18.028
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:18.063
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:18.063
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:18.063
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:18.067
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:18.067
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:18.067
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:24.079
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:24.079
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:24.079
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:24.120
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:24.120
+!MESSAGE return "/channels/remote9/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:24.120
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:24.153
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:24.153
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:24.154
+!MESSAGE processor_stop {/channels/remote9/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.785
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.785
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.785
+!MESSAGE processor_download_elf {/channels/remote9/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.792
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.792
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.792
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.796
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.864
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.864
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote10/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.864
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.878
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.878
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:25.878
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:27.908
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:27.908
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:00:27.909
+!MESSAGE close_service processor {/channels/remote9/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 12:00:27.913
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:16.987
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:17.034
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:17.034
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:17.034
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:17.038
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:17.038
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:17.038
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:23.050
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:23.050
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:23.050
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:23.237
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:23.238
+!MESSAGE return "/channels/remote11/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:23.238
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:23.277
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:23.277
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:23.277
+!MESSAGE processor_stop {/channels/remote11/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.912
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.912
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.912
+!MESSAGE processor_download_elf {/channels/remote11/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.917
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.917
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.917
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.921
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.961
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.961
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote12/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.961
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.964
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.964
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:24.964
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:26.985
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:26.985
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:01:26.985
+!MESSAGE close_service processor {/channels/remote11/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 12:01:26.989
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-06 12:07:33.631
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:38.049
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:38.093
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:38.093
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:38.093
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:38.097
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:38.097
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:38.097
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:44.115
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:44.115
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:44.115
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:44.300
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:44.300
+!MESSAGE return "/channels/remote13/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:44.300
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:44.336
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:44.336
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:44.336
+!MESSAGE processor_stop {/channels/remote13/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.005
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.005
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.005
+!MESSAGE processor_download_elf {/channels/remote13/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.012
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.012
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.012
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.016
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.076
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.076
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote14/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.076
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.083
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.083
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:46.083
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:48.108
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:48.108
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:07:48.108
+!MESSAGE close_service processor {/channels/remote13/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 12:07:48.112
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-06 12:10:00.602
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:05.112
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:05.154
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:05.154
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:05.154
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:05.159
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:05.159
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:05.159
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:11.168
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:11.168
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:11.168
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:11.198
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:11.198
+!MESSAGE return "/channels/remote15/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:11.198
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:11.233
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:11.233
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:11.233
+!MESSAGE processor_stop {/channels/remote15/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.848
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.848
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.848
+!MESSAGE processor_download_elf {/channels/remote15/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.860
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.860
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.860
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.863
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.924
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.924
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote16/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.924
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.927
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.928
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:12.928
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:14.950
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:14.950
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:10:14.950
+!MESSAGE close_service processor {/channels/remote15/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 12:10:14.953
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-06 12:16:56.969
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:01.564
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:01.606
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:01.606
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:01.606
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:01.611
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:01.611
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:01.611
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:07.619
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:07.619
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:07.619
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:07.646
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:07.646
+!MESSAGE return "/channels/remote17/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:07.646
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:07.679
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:07.680
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:07.680
+!MESSAGE processor_stop {/channels/remote17/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:08.924
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:08.924
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:08.924
+!MESSAGE processor_download_elf {/channels/remote17/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:08.932
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:08.932
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:08.932
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:08.935
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:08.997
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:08.997
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote18/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:08.997
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:09.003
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:09.003
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:09.003
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:11.022
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:11.022
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:17:11.022
+!MESSAGE close_service processor {/channels/remote17/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 12:17:11.025
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-06 12:19:28.575
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:33.034
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:33.076
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:33.076
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:33.076
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:33.083
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:33.083
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:33.083
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:39.093
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:39.093
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:39.093
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:39.131
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:39.131
+!MESSAGE return "/channels/remote19/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:39.131
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:39.165
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:39.165
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:39.165
+!MESSAGE processor_stop {/channels/remote19/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.851
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.851
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.851
+!MESSAGE processor_download_elf {/channels/remote19/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.864
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.864
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.864
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.868
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.913
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.916
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote20/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.916
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.927
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.927
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:40.927
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:42.950
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:42.950
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:19:42.950
+!MESSAGE close_service processor {/channels/remote19/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 12:19:42.954
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-06 12:24:45.300
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:49.686
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:49.794
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:49.794
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:49.794
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:49.799
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:49.799
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:49.799
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:55.823
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:55.823
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:55.823
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:55.854
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:55.854
+!MESSAGE return "/channels/remote21/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:55.854
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:55.888
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:55.888
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:55.888
+!MESSAGE processor_stop {/channels/remote21/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.567
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.567
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.567
+!MESSAGE processor_download_elf {/channels/remote21/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.575
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.575
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.575
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.579
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.615
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.615
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote22/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.615
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.618
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.618
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:57.618
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:59.641
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:59.641
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:24:59.641
+!MESSAGE close_service processor {/channels/remote21/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 12:24:59.646
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:39.709
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:39.758
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:39.758
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:39.758
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:39.763
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:39.763
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:39.763
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:45.771
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:45.771
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:45.771
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:45.936
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:45.936
+!MESSAGE return "/channels/remote23/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:45.936
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:45.976
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:45.976
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:45.976
+!MESSAGE processor_stop {/channels/remote23/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.285
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.285
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.285
+!MESSAGE processor_download_elf {/channels/remote23/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.291
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.291
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.291
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.294
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.341
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.341
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote24/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.341
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.345
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.345
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:47.345
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:49.366
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:49.366
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 12:59:49.366
+!MESSAGE close_service processor {/channels/remote23/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 12:59:49.369
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-06 13:02:13.040
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:20.422
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:20.484
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:20.484
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:20.484
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:20.491
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:20.491
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:20.491
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:26.497
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:26.497
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:26.497
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:26.663
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:26.663
+!MESSAGE return "/channels/remote25/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:26.663
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:26.698
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:26.698
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:26.698
+!MESSAGE processor_stop {/channels/remote25/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.005
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.005
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.005
+!MESSAGE processor_download_elf {/channels/remote25/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.009
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.009
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.009
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.012
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.074
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.074
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote26/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.074
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.078
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.078
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:28.078
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:30.088
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:30.088
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:30.088
+!MESSAGE processor_run {/channels/remote25/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:30.106
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:30.106
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:02:30.106
+!MESSAGE close_service processor {/channels/remote25/(lib)/processor_1}
+
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 13:09:53.415
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@64f616a3)} vs {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)}
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:29.471
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:29.512
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:29.512
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:29.512
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:29.521
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:29.521
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:29.521
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:35.529
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:35.529
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:35.529
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:35.560
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:35.560
+!MESSAGE return "/channels/remote27/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:35.560
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:35.599
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:35.599
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:35.599
+!MESSAGE processor_stop {/channels/remote27/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:36.954
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:36.954
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:36.954
+!MESSAGE processor_download_elf {/channels/remote27/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:36.962
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:36.962
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:36.962
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:36.965
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:37.023
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:37.023
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote28/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:37.023
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:37.028
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:37.028
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:37.028
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:39.049
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:39.049
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:13:39.049
+!MESSAGE close_service processor {/channels/remote27/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 13:13:39.052
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-06 13:15:51.629
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:15:56.925
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:15:56.973
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:15:56.973
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:15:56.973
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:15:56.979
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:15:56.979
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:15:56.979
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:02.986
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:02.986
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:02.986
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:03.155
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:03.155
+!MESSAGE return "/channels/remote29/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:03.155
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:03.191
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:03.191
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:03.191
+!MESSAGE processor_stop {/channels/remote29/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.528
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.528
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.528
+!MESSAGE processor_download_elf {/channels/remote29/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.532
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.532
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.532
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.535
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.602
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.602
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote30/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.602
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.606
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.607
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:04.607
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:06.627
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:06.627
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-06 13:16:06.627
+!MESSAGE close_service processor {/channels/remote29/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-06 13:16:06.631
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-06 13:32:09.306
+!MESSAGE Indexed 'ad9361_lib' (12 sources, 67 headers) in 2.1 sec: 4,691 declarations; 14,343 references; 45 unresolved inclusions; 79 syntax errors; 7,234 unresolved names (28%)
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 13:39:01.446
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@5ad7a85)} vs {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)}
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-06 13:45:37.001
+!MESSAGE Indexed 'ad9361_lib' (12 sources, 67 headers) in 1.53 sec: 4,691 declarations; 14,343 references; 45 unresolved inclusions; 79 syntax errors; 7,234 unresolved names (28%)
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 13:46:01.384
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@3801fba1)}
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 13:46:54.004
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@68d3ec5e)} vs {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)}
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-06 18:16:48.517
+!MESSAGE Indexed 'trobina_controller_bsp' (80 sources, 62 headers) in 1.5 sec: 1,215 declarations; 2,624 references; 111 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.7%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-06 18:19:22.205
+!MESSAGE Indexed 'trobina_controller_lib' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-06 19:06:10.643
+!MESSAGE Indexed 'trobina_controller_app' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 19:11:49.376
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@3bf5f06c)}
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 19:15:37.636
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@3bf5f06c)}
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 19:19:52.327
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@3ead7b34)} vs {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)}
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 19:23:03.454
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@1ac38ed4)} vs {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)}
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 19:41:39.351
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@7465897f)}
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 19:46:18.465
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@5c7a3f5f)}
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 19:46:57.395
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@41da758a)} vs {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)}
+
+!ENTRY org.eclipse.ui 4 4 2021-03-06 20:02:06.710
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@c375d95)}
+
+!ENTRY org.eclipse.ui 4 0 2021-03-07 10:42:05.162
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at java.io.File.<init>(File.java:277)
+	at com.altera.sbtgui.project.fieldeditor.RelativePathListEditor.getNewInputObject(RelativePathListEditor.java:283)
+	at com.altera.sbtgui.project.fieldeditor.RelativePathListEditor.addtoList(RelativePathListEditor.java:221)
+	at com.altera.sbtgui.project.fieldeditor.RelativePathListEditor$1.widgetSelected(RelativePathListEditor.java:120)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.ui.dialogs.PropertyDialogAction.run(PropertyDialogAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor63.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1266)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1164)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.wmSysChar(Widget.java:2508)
+	at org.eclipse.swt.widgets.Control.WM_SYSCHAR(Control.java:5350)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4752)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:6024)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+
+!ENTRY org.eclipse.ui 4 4 2021-03-07 11:33:36.201
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@1e5ea059)} vs {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)}
+
+!ENTRY org.eclipse.ui 4 4 2021-03-07 11:59:28.572
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@2fdf7da2)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@205db141)}
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:21.888
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:22.381
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:22.381
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:22.381
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:22.405
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:22.405
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:22.405
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:28.429
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:28.429
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:28.429
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:28.464
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:28.464
+!MESSAGE return "/channels/remote31/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:28.464
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:28.500
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:28.501
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:28.501
+!MESSAGE processor_stop {/channels/remote31/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:29.914
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:29.914
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:29.914
+!MESSAGE processor_download_elf {/channels/remote31/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_app\bladerf_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:29.929
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:29.929
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:29.929
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:29.932
+!MESSAGE Connecting to System Console on port 53616
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:30.015
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:30.015
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote32/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:30.015
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:30.023
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:30.023
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:30.023
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:32.053
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:32.053
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:28:32.053
+!MESSAGE close_service processor {/channels/remote31/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 4 4 2021-03-07 13:28:32.058
+!MESSAGE 
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-07 13:28:32.062
+!MESSAGE Unexpected error
+!STACK 0
+java.lang.NullPointerException
+	at com.altera.sbt4e.launch.hardware.Nios2HardwareLaunchDelegate.getDebugCommand(Nios2HardwareLaunchDelegate.java:699)
+	at com.altera.sbt4e.launch.hardware.Nios2HardwareLaunchDelegate.startGdbServer(Nios2HardwareLaunchDelegate.java:604)
+	at com.altera.sbt4e.launch.hardware.Nios2HardwareLaunchDelegate.startDebugSession(Nios2HardwareLaunchDelegate.java:485)
+	at com.altera.sbt4e.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:297)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:27.852
+!MESSAGE Connecting to System Console on port 60660
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:28.420
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:28.420
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:28.420
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:34.184
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:34.184
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:34.185
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:34.190
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:34.190
+!MESSAGE return "JTAG_CABLE_NAME \{USB-Blaster on localhost (USB-0)\} DEVICE_NAME 5CE(BA4|FA4)@1#USB-0 DESIGN_HASH 0x4c39038871701c327949"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:34.190
+!MESSAGE marker_get_info {/devices/5CE(BA4|FA4)@1#USB-0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:34.194
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:34.194
+!MESSAGE return "TYPE_NAME nios2_oci.jtag VERSION 3 SLD_INSTANCE 0 SLD_ENCODED_ID 420496896 JTAG_CABLE_NAME \{USB-Blaster on localhost (USB-0)\} JTAG_DEVICE_INDEX 1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:34.194
+!MESSAGE marker_node_info {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:41.201
+!MESSAGE Connecting to System Console on port 60660
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:41.268
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:41.268
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:41.268
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:41.274
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:41.274
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:41.274
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:47.290
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:47.290
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:47.290
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:47.294
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:47.294
+!MESSAGE return "JTAG_CABLE_NAME \{USB-Blaster on localhost (USB-0)\} DEVICE_NAME 5CE(BA4|FA4)@1#USB-0 DESIGN_HASH 0x4c39038871701c327949"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:47.294
+!MESSAGE marker_get_info {/devices/5CE(BA4|FA4)@1#USB-0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:47.298
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:47.298
+!MESSAGE return "TYPE_NAME nios2_oci.jtag VERSION 3 SLD_INSTANCE 0 SLD_ENCODED_ID 420496896 JTAG_CABLE_NAME \{USB-Blaster on localhost (USB-0)\} JTAG_DEVICE_INDEX 1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:47.298
+!MESSAGE marker_node_info {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.357
+!MESSAGE Connecting to System Console on port 60660
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.419
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.419
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.419
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.422
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.422
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.422
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.425
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.425
+!MESSAGE return "JTAG_CABLE_NAME \{USB-Blaster on localhost (USB-0)\} DEVICE_NAME 5CE(BA4|FA4)@1#USB-0 DESIGN_HASH 0x4c39038871701c327949"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.425
+!MESSAGE marker_get_info {/devices/5CE(BA4|FA4)@1#USB-0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.431
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.431
+!MESSAGE error "java.util.concurrent.ExecutionException: java.lang.Exception: marker_node_info: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0 is not an open marker service\n    invoked from within\n\"marker_node_info \{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}\"\n    invoked from within\n\"interp eval \$slave \{\nmarker_node_info \{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}\n\n\}\""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.431
+!MESSAGE marker_node_info {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.445
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.445
+!MESSAGE return "TYPE_NAME jtag_uart.jtag VERSION 1 SLD_INSTANCE 0 SLD_ENCODED_ID 201354752 JTAG_CABLE_NAME \{USB-Blaster on localhost (USB-0)\} JTAG_DEVICE_INDEX 1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.445
+!MESSAGE marker_get_info {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.448
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.448
+!MESSAGE return "JTAG_CABLE_NAME \{USB-Blaster on localhost (USB-0)\} DEVICE_NAME 5CE(BA4|FA4)@1#USB-0 DESIGN_HASH 0x4c39038871701c327949"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.448
+!MESSAGE marker_get_info {/devices/5CE(BA4|FA4)@1#USB-0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.451
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.451
+!MESSAGE error "java.util.concurrent.ExecutionException: java.lang.Exception: marker_get_info: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0 is not an open marker service\n    invoked from within\n\"marker_get_info \{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}\"\n    invoked from within\n\"interp eval \$slave \{\nmarker_get_info \{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}\n\n\}\""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:49.451
+!MESSAGE marker_get_info {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:50.985
+!MESSAGE Connecting to System Console on port 60660
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:51.036
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:51.036
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:51.036
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:51.041
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:51.041
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:51.041
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.048
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.048
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.048
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.051
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.051
+!MESSAGE return "JTAG_CABLE_NAME \{USB-Blaster on localhost (USB-0)\} DEVICE_NAME 5CE(BA4|FA4)@1#USB-0 DESIGN_HASH 0x4c39038871701c327949"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.051
+!MESSAGE marker_get_info {/devices/5CE(BA4|FA4)@1#USB-0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.054
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.054
+!MESSAGE error "java.util.concurrent.ExecutionException: java.lang.Exception: marker_node_info: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0 is not an open marker service\n    invoked from within\n\"marker_node_info \{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}\"\n    invoked from within\n\"interp eval \$slave \{\nmarker_node_info \{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}\n\n\}\""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.054
+!MESSAGE marker_node_info {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.058
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.058
+!MESSAGE return "TYPE_NAME jtag_uart.jtag VERSION 1 SLD_INSTANCE 0 SLD_ENCODED_ID 201354752 JTAG_CABLE_NAME \{USB-Blaster on localhost (USB-0)\} JTAG_DEVICE_INDEX 1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.058
+!MESSAGE marker_get_info {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.062
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.062
+!MESSAGE return "JTAG_CABLE_NAME \{USB-Blaster on localhost (USB-0)\} DEVICE_NAME 5CE(BA4|FA4)@1#USB-0 DESIGN_HASH 0x4c39038871701c327949"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.062
+!MESSAGE marker_get_info {/devices/5CE(BA4|FA4)@1#USB-0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.066
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.066
+!MESSAGE error "java.util.concurrent.ExecutionException: java.lang.Exception: marker_get_info: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0 is not an open marker service\n    invoked from within\n\"marker_get_info \{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}\"\n    invoked from within\n\"interp eval \$slave \{\nmarker_get_info \{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}\n\n\}\""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:30:57.066
+!MESSAGE marker_get_info {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:02.240
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:02.653
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:02.653
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:02.653
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:02.668
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:02.668
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:02.668
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:08.414
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:08.414
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:08.414
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:08.596
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:08.596
+!MESSAGE return "/channels/remote1/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:08.596
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:08.636
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:08.636
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:08.636
+!MESSAGE processor_stop {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.484
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.484
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.484
+!MESSAGE processor_download_elf {/channels/remote1/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.502
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.502
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.502
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.506
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.576
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.576
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote2/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.576
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.581
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.581
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:11.582
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:13.602
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:13.602
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:32:13.602
+!MESSAGE close_service processor {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 13:32:13.606
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-07 13:36:11.062
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:17.205
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:17.282
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:17.282
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:17.282
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:17.287
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:17.287
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:17.287
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:23.318
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:23.318
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:23.318
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:23.490
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:23.490
+!MESSAGE return "/channels/remote3/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:23.490
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:23.525
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:23.525
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:23.525
+!MESSAGE processor_stop {/channels/remote3/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.297
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.297
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.297
+!MESSAGE processor_download_elf {/channels/remote3/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.305
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.305
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.305
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.310
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.397
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.397
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote4/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.397
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.401
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.401
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:26.401
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:28.422
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:28.422
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:36:28.422
+!MESSAGE close_service processor {/channels/remote3/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 13:36:28.433
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-07 13:40:25.892
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:31.414
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:31.474
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:31.474
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:31.474
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:31.478
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:31.478
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:31.478
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:37.509
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:37.509
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:37.509
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:37.555
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:37.555
+!MESSAGE return "/channels/remote5/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:37.555
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:37.591
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:37.591
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:37.591
+!MESSAGE processor_stop {/channels/remote5/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.468
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.468
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.468
+!MESSAGE processor_download_elf {/channels/remote5/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.475
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.475
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.475
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.478
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.571
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.571
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote6/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.571
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.574
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.575
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:40.575
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:42.593
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:42.594
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 13:40:42.594
+!MESSAGE close_service processor {/channels/remote5/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 4 4 2021-03-07 13:40:42.597
+!MESSAGE 
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 13:40:42.599
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-07 14:28:13.710
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:19.603
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:19.736
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:19.736
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:19.736
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:19.744
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:19.744
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:19.744
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:25.792
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:25.793
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:25.793
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:25.824
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:25.824
+!MESSAGE return "/channels/remote7/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:25.824
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:25.859
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:25.860
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:25.860
+!MESSAGE processor_stop {/channels/remote7/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.581
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.581
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.581
+!MESSAGE processor_download_elf {/channels/remote7/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.595
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.595
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.595
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.599
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.701
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.701
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote8/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.701
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.704
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.704
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:28.704
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:30.727
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:30.727
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 14:28:30.727
+!MESSAGE close_service processor {/channels/remote7/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 4 4 2021-03-07 14:28:30.730
+!MESSAGE 
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 14:28:30.734
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:33.185
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:33.405
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:33.405
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:33.405
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:33.409
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:33.409
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:33.409
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:39.444
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:39.444
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:39.444
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:39.613
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:39.613
+!MESSAGE return "/channels/remote9/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:39.613
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:39.658
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:39.658
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:39.658
+!MESSAGE processor_stop {/channels/remote9/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.463
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.463
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.463
+!MESSAGE processor_download_elf {/channels/remote9/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.475
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.475
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.475
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.479
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.570
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.570
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote10/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.570
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.582
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.582
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:42.582
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:44.602
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:44.602
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:24:44.602
+!MESSAGE close_service processor {/channels/remote9/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 4 4 2021-03-07 16:24:44.607
+!MESSAGE 
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 16:24:44.608
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-07 16:27:14.989
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:20.589
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:20.696
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:20.696
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:20.696
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:20.700
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:20.700
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:20.700
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:26.726
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:26.726
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:26.726
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:26.891
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:26.891
+!MESSAGE return "/channels/remote11/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:26.891
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:26.928
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:26.928
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:26.928
+!MESSAGE processor_stop {/channels/remote11/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.744
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.744
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.744
+!MESSAGE processor_download_elf {/channels/remote11/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.755
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.756
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.756
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.759
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.857
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.857
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote12/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.857
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.861
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.861
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:29.861
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:31.888
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:31.888
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 16:27:31.888
+!MESSAGE close_service processor {/channels/remote11/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 16:27:31.893
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:18.779
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:18.980
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:18.980
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:18.980
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:18.984
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:18.984
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:18.984
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:25.007
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:25.008
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:25.008
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:25.170
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:25.170
+!MESSAGE return "/channels/remote13/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:25.170
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:25.209
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:25.209
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:25.209
+!MESSAGE processor_stop {/channels/remote13/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.018
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.018
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.018
+!MESSAGE processor_download_elf {/channels/remote13/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.028
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.028
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.028
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.031
+!MESSAGE Connecting to System Console on port 60678
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.132
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.132
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote14/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.132
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.138
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.138
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:28.138
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:30.161
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:30.161
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:05:30.161
+!MESSAGE close_service processor {/channels/remote13/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 18:05:30.164
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:16.504
+!MESSAGE Connecting to System Console on port 62042
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:17.015
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:17.015
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:17.015
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:17.023
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:17.023
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:17.023
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:22.771
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:22.771
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:22.771
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:22.941
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:22.941
+!MESSAGE return "/channels/remote1/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:22.941
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:22.977
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:22.977
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:22.977
+!MESSAGE processor_stop {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.798
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.798
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.798
+!MESSAGE processor_download_elf {/channels/remote1/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.805
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.805
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.805
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.808
+!MESSAGE Connecting to System Console on port 62042
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.867
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.867
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote2/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.867
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.872
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.872
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:25.872
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:27.893
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:27.893
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:22:27.893
+!MESSAGE close_service processor {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 18:22:27.897
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:45:59.434
+!MESSAGE Connecting to System Console on port 62119
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:45:59.899
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:45:59.899
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:45:59.899
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:45:59.912
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:45:59.912
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:45:59.912
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:05.671
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:05.671
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:05.671
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:05.843
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:05.843
+!MESSAGE return "/channels/remote1/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:05.843
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:05.883
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:05.883
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:05.883
+!MESSAGE processor_stop {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.785
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.785
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.785
+!MESSAGE processor_download_elf {/channels/remote1/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.790
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.790
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.790
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.793
+!MESSAGE Connecting to System Console on port 62119
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.863
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.863
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote2/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.863
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.867
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.867
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:08.867
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:10.889
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:10.889
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 18:46:10.889
+!MESSAGE close_service processor {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 4 4 2021-03-07 18:46:10.892
+!MESSAGE 
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 18:46:10.895
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:06.873
+!MESSAGE Connecting to System Console on port 62857
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:07.549
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:07.549
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:07.549
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:07.560
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:07.560
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:07.560
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:13.236
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:13.236
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:13.236
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:13.415
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:13.415
+!MESSAGE return "/channels/remote1/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:13.415
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:13.455
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:13.455
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:13.455
+!MESSAGE processor_stop {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.198
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.198
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.198
+!MESSAGE processor_download_elf {/channels/remote1/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.202
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.202
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.202
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.207
+!MESSAGE Connecting to System Console on port 62857
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.291
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.291
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote2/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.291
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.297
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.297
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:16.297
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:18.321
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:18.321
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:50:18.321
+!MESSAGE close_service processor {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 20:50:18.325
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.launch 4 4 2021-03-07 20:57:55.928
+!MESSAGE Terminated launch with processor path: /devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:01.290
+!MESSAGE Connecting to System Console on port 62857
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:01.389
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:01.389
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:01.389
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:01.393
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:01.393
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:01.393
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:07.404
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:07.404
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:07.404
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:07.568
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:07.568
+!MESSAGE return "/channels/remote3/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:07.568
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:07.603
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:07.603
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:07.603
+!MESSAGE processor_stop {/channels/remote3/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.351
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.351
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.351
+!MESSAGE processor_download_elf {/channels/remote3/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.356
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.356
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.356
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.359
+!MESSAGE Connecting to System Console on port 62857
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.427
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.427
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote4/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.427
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.431
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.431
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:10.431
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:12.454
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:12.454
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 20:58:12.454
+!MESSAGE close_service processor {/channels/remote3/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 20:58:12.458
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+!SESSION 2021-03-07 21:37:12.147 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/20.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/20.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2021-03-07 21:37:38.155
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-03-07 21:37:48.444
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\GMateusDP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:42:59.457
+!MESSAGE Connecting to System Console on port 63064
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:00.005
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:00.005
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:00.005
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:00.026
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:00.026
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:00.026
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:05.763
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:05.763
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:05.764
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:05.954
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:05.954
+!MESSAGE return "/channels/remote1/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:05.955
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:05.997
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:05.997
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:05.997
+!MESSAGE processor_stop {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.256
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.256
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.256
+!MESSAGE processor_download_elf {/channels/remote1/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.261
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.261
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.261
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.267
+!MESSAGE Connecting to System Console on port 63064
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.318
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.318
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote2/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.318
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.323
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.324
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:09.324
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:11.346
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:11.346
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:43:11.346
+!MESSAGE close_service processor {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 21:43:11.353
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:14.329
+!MESSAGE Connecting to System Console on port 63110
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:14.633
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:14.633
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:14.633
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:14.879
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:14.879
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:14.879
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:20.887
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:20.887
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:20.887
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:21.063
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:21.063
+!MESSAGE return "/channels/remote1/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:21.063
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:21.102
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:21.102
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:21.102
+!MESSAGE processor_stop {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.362
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.362
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.362
+!MESSAGE processor_download_elf {/channels/remote1/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.368
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.368
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.368
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.382
+!MESSAGE Connecting to System Console on port 63110
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.450
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.450
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote2/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.450
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.455
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.455
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:24.455
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:26.479
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:26.479
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 21:57:26.479
+!MESSAGE close_service processor {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 21:57:26.483
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:19:57.317
+!MESSAGE Connecting to System Console on port 63185
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:19:57.691
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:19:57.691
+!MESSAGE return "20.1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:19:57.691
+!MESSAGE package require systemconsole 20.1
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:19:57.696
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:19:57.696
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:19:57.696
+!MESSAGE refresh_connections
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:03.533
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:03.533
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:03.533
+!MESSAGE get_service_paths processor
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:03.729
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:03.729
+!MESSAGE return "/channels/remote1/(lib)/processor_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:03.729
+!MESSAGE claim_service processor {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(70:34 v3 #0)/nios2_0} ""
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:03.767
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:03.767
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:03.767
+!MESSAGE processor_stop {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.042
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.043
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.043
+!MESSAGE processor_download_elf {/channels/remote1/(lib)/processor_1} {C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\trobina_controller_app\trobina_controller_app.elf}
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.051
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.051
+!MESSAGE return "\{/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0\}"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.051
+!MESSAGE get_service_paths bytestream
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.055
+!MESSAGE Connecting to System Console on port 63185
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.160
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.160
+!MESSAGE # First command must be: package require systemconsole <version>
+return "/channels/remote2/(lib)/bytestream_1"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.160
+!MESSAGE set bc [ claim_service bytestream {/devices/5CE(BA4|FA4)@1#USB-0/(link)/JTAG/(110:128 v1 #0)/jtaguart_0} "" ]
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.167
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.167
+!MESSAGE return "OK"
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:07.168
+!MESSAGE enable_binary_protocol $bc
+
+
+!ENTRY com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:09.189
+!MESSAGE Complete response received
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:09.189
+!MESSAGE return ""
+
+!SUBENTRY 1 com.altera.sbt4e.systemconsole 1 1 2021-03-07 22:20:09.189
+!MESSAGE close_service processor {/channels/remote1/(lib)/processor_1}
+
+
+!ENTRY com.altera.sbt4e.launch 1 0 2021-03-07 22:20:09.194
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, wsl nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto]

@@ -8,32 +8,66 @@ use IEEE.numeric_std.all;
 
 entity nios_cpu is
 	port (
-		clk_clk             : in  std_logic                     := '0';             --      clk.clk
-		dac_MISO            : in  std_logic                     := '0';             --      dac.MISO
-		dac_MOSI            : out std_logic;                                        --         .MOSI
-		dac_SCLK            : out std_logic;                                        --         .SCLK
-		dac_SS_n            : out std_logic_vector(1 downto 0);                     --         .SS_n
-		gpio_in_port        : in  std_logic_vector(31 downto 0) := (others => '0'); --     gpio.in_port
-		gpio_out_port       : out std_logic_vector(31 downto 0);                    --         .out_port
-		gpio_rf_in_port     : in  std_logic_vector(31 downto 0) := (others => '0'); --  gpio_rf.in_port
-		gpio_rf_out_port    : out std_logic_vector(31 downto 0);                    --         .out_port
-		oc_i2c_scl_pad_o    : out std_logic;                                        --   oc_i2c.scl_pad_o
-		oc_i2c_scl_padoen_o : out std_logic;                                        --         .scl_padoen_o
-		oc_i2c_sda_pad_i    : in  std_logic                     := '0';             --         .sda_pad_i
-		oc_i2c_sda_pad_o    : out std_logic;                                        --         .sda_pad_o
-		oc_i2c_sda_padoen_o : out std_logic;                                        --         .sda_padoen_o
-		oc_i2c_arst_i       : in  std_logic                     := '0';             --         .arst_i
-		oc_i2c_scl_pad_i    : in  std_logic                     := '0';             --         .scl_pad_i
-		pll_MISO            : in  std_logic                     := '0';             --      pll.MISO
-		pll_MOSI            : out std_logic;                                        --         .MOSI
-		pll_SCLK            : out std_logic;                                        --         .SCLK
-		pll_SS_n            : out std_logic;                                        --         .SS_n
-		reset_reset_n       : in  std_logic                     := '0';             --    reset.reset_n
-		xb_gpios_export     : in  std_logic_vector(7 downto 0)  := (others => '0')  -- xb_gpios.export
+		adi_stream_rx_clk_p       : in  std_logic                     := '0';             --  adi_stream.rx_clk_p
+		adi_stream_frame_p        : in  std_logic                     := '0';             --            .frame_p
+		adi_stream_data_p         : in  std_logic_vector(5 downto 0)  := (others => '0'); --            .data_p
+		adi_stream_data_n         : in  std_logic_vector(5 downto 0)  := (others => '0'); --            .data_n
+		adi_stream_frame_n        : in  std_logic                     := '0';             --            .frame_n
+		adi_stream_rx_clk_n       : in  std_logic                     := '0';             --            .rx_clk_n
+		adi_stream_tx_clk_p       : out std_logic;                                        --            .tx_clk_p
+		adi_stream_tx_clk_n       : out std_logic;                                        --            .tx_clk_n
+		clk_clk                   : in  std_logic                     := '0';             --         clk.clk
+		dac_MISO                  : in  std_logic                     := '0';             --         dac.MISO
+		dac_MOSI                  : out std_logic;                                        --            .MOSI
+		dac_SCLK                  : out std_logic;                                        --            .SCLK
+		dac_SS_n                  : out std_logic_vector(1 downto 0);                     --            .SS_n
+		gpio_in_port              : in  std_logic_vector(31 downto 0) := (others => '0'); --        gpio.in_port
+		gpio_out_port             : out std_logic_vector(31 downto 0);                    --            .out_port
+		gpio_mini_export          : out std_logic_vector(7 downto 0);                     --   gpio_mini.export
+		gpio_rf_in_port           : in  std_logic_vector(31 downto 0) := (others => '0'); --     gpio_rf.in_port
+		gpio_rf_out_port          : out std_logic_vector(31 downto 0);                    --            .out_port
+		index_in_export           : in  std_logic_vector(7 downto 0)  := (others => '0'); --    index_in.export
+		index_out_index_frequency : out std_logic_vector(7 downto 0);                     --   index_out.index_frequency
+		intern_gpio_export        : in  std_logic_vector(7 downto 0)  := (others => '0'); -- intern_gpio.export
+		oc_i2c_scl_pad_o          : out std_logic;                                        --      oc_i2c.scl_pad_o
+		oc_i2c_scl_padoen_o       : out std_logic;                                        --            .scl_padoen_o
+		oc_i2c_sda_pad_i          : in  std_logic                     := '0';             --            .sda_pad_i
+		oc_i2c_sda_pad_o          : out std_logic;                                        --            .sda_pad_o
+		oc_i2c_sda_padoen_o       : out std_logic;                                        --            .sda_padoen_o
+		oc_i2c_arst_i             : in  std_logic                     := '0';             --            .arst_i
+		oc_i2c_scl_pad_i          : in  std_logic                     := '0';             --            .scl_pad_i
+		pll_MISO                  : in  std_logic                     := '0';             --         pll.MISO
+		pll_MOSI                  : out std_logic;                                        --            .MOSI
+		pll_SCLK                  : out std_logic;                                        --            .SCLK
+		pll_SS_n                  : out std_logic;                                        --            .SS_n
+		reset_reset_n             : in  std_logic                     := '0';             --       reset.reset_n
+		spi_ad9361_MISO           : in  std_logic                     := '0';             --  spi_ad9361.MISO
+		spi_ad9361_MOSI           : out std_logic;                                        --            .MOSI
+		spi_ad9361_SCLK           : out std_logic;                                        --            .SCLK
+		spi_ad9361_SS_n           : out std_logic;                                        --            .SS_n
+		xb_gpios_export           : in  std_logic_vector(7 downto 0)  := (others => '0')  --    xb_gpios.export
 	);
 end entity nios_cpu;
 
 architecture rtl of nios_cpu is
+	component nios_cpu_ad9361 is
+		port (
+			clk           : in  std_logic                     := 'X';             -- clk
+			reset_n       : in  std_logic                     := 'X';             -- reset_n
+			data_from_cpu : in  std_logic_vector(15 downto 0) := (others => 'X'); -- writedata
+			data_to_cpu   : out std_logic_vector(15 downto 0);                    -- readdata
+			mem_addr      : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- address
+			read_n        : in  std_logic                     := 'X';             -- read_n
+			spi_select    : in  std_logic                     := 'X';             -- chipselect
+			write_n       : in  std_logic                     := 'X';             -- write_n
+			irq           : out std_logic;                                        -- irq
+			MISO          : in  std_logic                     := 'X';             -- export
+			MOSI          : out std_logic;                                        -- export
+			SCLK          : out std_logic;                                        -- export
+			SS_n          : out std_logic                                         -- export
+		);
+	end component nios_cpu_ad9361;
+
 	component nios_cpu_adf5610 is
 		port (
 			clk           : in  std_logic                     := 'X';             -- clk
@@ -66,6 +100,16 @@ architecture rtl of nios_cpu is
 		);
 	end component nios_cpu_control;
 
+	component nios_cpu_index_input is
+		port (
+			clk      : in  std_logic                     := 'X';             -- clk
+			reset_n  : in  std_logic                     := 'X';             -- reset_n
+			address  : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- address
+			readdata : out std_logic_vector(31 downto 0);                    -- readdata
+			in_port  : in  std_logic_vector(7 downto 0)  := (others => 'X')  -- export
+		);
+	end component nios_cpu_index_input;
+
 	component nios_cpu_jtag_uart is
 		port (
 			clk            : in  std_logic                     := 'X';             -- clk
@@ -81,12 +125,22 @@ architecture rtl of nios_cpu is
 		);
 	end component nios_cpu_jtag_uart;
 
+	component max_frequency_top is
+		port (
+			clk       : in  std_logic                     := 'X';             -- clk
+			reset     : in  std_logic                     := 'X';             -- reset
+			rx_in_re  : in  std_logic_vector(11 downto 0) := (others => 'X'); -- re_data
+			rx_in_im  : in  std_logic_vector(11 downto 0) := (others => 'X'); -- im_data
+			index_max : out std_logic_vector(7 downto 0)                      -- index_frequency
+		);
+	end component max_frequency_top;
+
 	component nios_cpu_nios2 is
 		port (
 			clk                                 : in  std_logic                     := 'X';             -- clk
 			reset_n                             : in  std_logic                     := 'X';             -- reset_n
 			reset_req                           : in  std_logic                     := 'X';             -- reset_req
-			d_address                           : out std_logic_vector(18 downto 0);                    -- address
+			d_address                           : out std_logic_vector(19 downto 0);                    -- address
 			d_byteenable                        : out std_logic_vector(3 downto 0);                     -- byteenable
 			d_read                              : out std_logic;                                        -- read
 			d_readdata                          : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
@@ -94,7 +148,7 @@ architecture rtl of nios_cpu is
 			d_write                             : out std_logic;                                        -- write
 			d_writedata                         : out std_logic_vector(31 downto 0);                    -- writedata
 			debug_mem_slave_debugaccess_to_roms : out std_logic;                                        -- debugaccess
-			i_address                           : out std_logic_vector(18 downto 0);                    -- address
+			i_address                           : out std_logic_vector(19 downto 0);                    -- address
 			i_read                              : out std_logic;                                        -- read
 			i_readdata                          : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
 			i_waitrequest                       : in  std_logic                     := 'X';             -- waitrequest
@@ -155,10 +209,23 @@ architecture rtl of nios_cpu is
 		);
 	end component nios_cpu_peripheral_spi;
 
+	component nios_cpu_pio_mini is
+		port (
+			clk        : in  std_logic                     := 'X';             -- clk
+			reset_n    : in  std_logic                     := 'X';             -- reset_n
+			address    : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- address
+			write_n    : in  std_logic                     := 'X';             -- write_n
+			writedata  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			chipselect : in  std_logic                     := 'X';             -- chipselect
+			readdata   : out std_logic_vector(31 downto 0);                    -- readdata
+			out_port   : out std_logic_vector(7 downto 0)                      -- export
+		);
+	end component nios_cpu_pio_mini;
+
 	component nios_cpu_ram is
 		port (
 			clk        : in  std_logic                     := 'X';             -- clk
-			address    : in  std_logic_vector(14 downto 0) := (others => 'X'); -- address
+			address    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- address
 			clken      : in  std_logic                     := 'X';             -- clken
 			chipselect : in  std_logic                     := 'X';             -- chipselect
 			write      : in  std_logic                     := 'X';             -- write
@@ -170,6 +237,48 @@ architecture rtl of nios_cpu is
 			freeze     : in  std_logic                     := 'X'              -- freeze
 		);
 	end component nios_cpu_ram;
+
+	component spin_sensor_top is
+		generic (
+			FPGA_TECHNOLOGY : string := "CYCLONE5"
+		);
+		port (
+			s_axi_aclk    : in  std_logic                     := 'X';             -- clk
+			s_axi_aresetn : in  std_logic                     := 'X';             -- reset_n
+			rx_clk_p_in   : in  std_logic                     := 'X';             -- rx_clk_p
+			frame_p_in    : in  std_logic                     := 'X';             -- frame_p
+			data_p_in     : in  std_logic_vector(5 downto 0)  := (others => 'X'); -- data_p
+			data_n_in     : in  std_logic_vector(5 downto 0)  := (others => 'X'); -- data_n
+			frame_n_in    : in  std_logic                     := 'X';             -- frame_n
+			rx_clk_n_in   : in  std_logic                     := 'X';             -- rx_clk_n
+			tx_clk_p_out  : out std_logic;                                        -- tx_clk_p
+			tx_clk_n_out  : out std_logic;                                        -- tx_clk_n
+			re_data_out   : out std_logic_vector(11 downto 0);                    -- re_data
+			im_data_out   : out std_logic_vector(11 downto 0);                    -- im_data
+			l_clk_out     : out std_logic;                                        -- clk
+			rst_out       : out std_logic;                                        -- reset
+			clk_in        : in  std_logic                     := 'X';             -- clk
+			s_axi_awvalid : in  std_logic                     := 'X';             -- awvalid
+			s_axi_awaddr  : in  std_logic_vector(15 downto 0) := (others => 'X'); -- awaddr
+			s_axi_awprot  : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- awprot
+			s_axi_awready : out std_logic;                                        -- awready
+			s_axi_wvalid  : in  std_logic                     := 'X';             -- wvalid
+			s_axi_wdata   : in  std_logic_vector(31 downto 0) := (others => 'X'); -- wdata
+			s_axi_wstrb   : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- wstrb
+			s_axi_wready  : out std_logic;                                        -- wready
+			s_axi_bvalid  : out std_logic;                                        -- bvalid
+			s_axi_bresp   : out std_logic_vector(1 downto 0);                     -- bresp
+			s_axi_bready  : in  std_logic                     := 'X';             -- bready
+			s_axi_arvalid : in  std_logic                     := 'X';             -- arvalid
+			s_axi_araddr  : in  std_logic_vector(15 downto 0) := (others => 'X'); -- araddr
+			s_axi_arprot  : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- arprot
+			s_axi_arready : out std_logic;                                        -- arready
+			s_axi_rvalid  : out std_logic;                                        -- rvalid
+			s_axi_rdata   : out std_logic_vector(31 downto 0);                    -- rdata
+			s_axi_rresp   : out std_logic_vector(1 downto 0);                     -- rresp
+			s_axi_rready  : in  std_logic                     := 'X'              -- rready
+		);
+	end component spin_sensor_top;
 
 	component nios_cpu_xb_gpio is
 		port (
@@ -183,10 +292,29 @@ architecture rtl of nios_cpu is
 
 	component nios_cpu_mm_interconnect_0 is
 		port (
+			tranceiver_s_axi_awaddr                         : out std_logic_vector(15 downto 0);                    -- awaddr
+			tranceiver_s_axi_awprot                         : out std_logic_vector(2 downto 0);                     -- awprot
+			tranceiver_s_axi_awvalid                        : out std_logic;                                        -- awvalid
+			tranceiver_s_axi_awready                        : in  std_logic                     := 'X';             -- awready
+			tranceiver_s_axi_wdata                          : out std_logic_vector(31 downto 0);                    -- wdata
+			tranceiver_s_axi_wstrb                          : out std_logic_vector(3 downto 0);                     -- wstrb
+			tranceiver_s_axi_wvalid                         : out std_logic;                                        -- wvalid
+			tranceiver_s_axi_wready                         : in  std_logic                     := 'X';             -- wready
+			tranceiver_s_axi_bresp                          : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- bresp
+			tranceiver_s_axi_bvalid                         : in  std_logic                     := 'X';             -- bvalid
+			tranceiver_s_axi_bready                         : out std_logic;                                        -- bready
+			tranceiver_s_axi_araddr                         : out std_logic_vector(15 downto 0);                    -- araddr
+			tranceiver_s_axi_arprot                         : out std_logic_vector(2 downto 0);                     -- arprot
+			tranceiver_s_axi_arvalid                        : out std_logic;                                        -- arvalid
+			tranceiver_s_axi_arready                        : in  std_logic                     := 'X';             -- arready
+			tranceiver_s_axi_rdata                          : in  std_logic_vector(31 downto 0) := (others => 'X'); -- rdata
+			tranceiver_s_axi_rresp                          : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- rresp
+			tranceiver_s_axi_rvalid                         : in  std_logic                     := 'X';             -- rvalid
+			tranceiver_s_axi_rready                         : out std_logic;                                        -- rready
 			clk_0_clk_clk                                   : in  std_logic                     := 'X';             -- clk
 			jtag_uart_reset_reset_bridge_in_reset_reset     : in  std_logic                     := 'X';             -- reset
 			nios2_reset_reset_bridge_in_reset_reset         : in  std_logic                     := 'X';             -- reset
-			nios2_data_master_address                       : in  std_logic_vector(18 downto 0) := (others => 'X'); -- address
+			nios2_data_master_address                       : in  std_logic_vector(19 downto 0) := (others => 'X'); -- address
 			nios2_data_master_waitrequest                   : out std_logic;                                        -- waitrequest
 			nios2_data_master_byteenable                    : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- byteenable
 			nios2_data_master_read                          : in  std_logic                     := 'X';             -- read
@@ -194,10 +322,16 @@ architecture rtl of nios_cpu is
 			nios2_data_master_write                         : in  std_logic                     := 'X';             -- write
 			nios2_data_master_writedata                     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
 			nios2_data_master_debugaccess                   : in  std_logic                     := 'X';             -- debugaccess
-			nios2_instruction_master_address                : in  std_logic_vector(18 downto 0) := (others => 'X'); -- address
+			nios2_instruction_master_address                : in  std_logic_vector(19 downto 0) := (others => 'X'); -- address
 			nios2_instruction_master_waitrequest            : out std_logic;                                        -- waitrequest
 			nios2_instruction_master_read                   : in  std_logic                     := 'X';             -- read
 			nios2_instruction_master_readdata               : out std_logic_vector(31 downto 0);                    -- readdata
+			ad9361_spi_control_port_address                 : out std_logic_vector(2 downto 0);                     -- address
+			ad9361_spi_control_port_write                   : out std_logic;                                        -- write
+			ad9361_spi_control_port_read                    : out std_logic;                                        -- read
+			ad9361_spi_control_port_readdata                : in  std_logic_vector(15 downto 0) := (others => 'X'); -- readdata
+			ad9361_spi_control_port_writedata               : out std_logic_vector(15 downto 0);                    -- writedata
+			ad9361_spi_control_port_chipselect              : out std_logic;                                        -- chipselect
 			adf5610_spi_control_port_address                : out std_logic_vector(2 downto 0);                     -- address
 			adf5610_spi_control_port_write                  : out std_logic;                                        -- write
 			adf5610_spi_control_port_read                   : out std_logic;                                        -- read
@@ -214,6 +348,10 @@ architecture rtl of nios_cpu is
 			gpio_rffe_s1_readdata                           : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
 			gpio_rffe_s1_writedata                          : out std_logic_vector(31 downto 0);                    -- writedata
 			gpio_rffe_s1_chipselect                         : out std_logic;                                        -- chipselect
+			index_input_s1_address                          : out std_logic_vector(1 downto 0);                     -- address
+			index_input_s1_readdata                         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			intern_pio_s1_address                           : out std_logic_vector(1 downto 0);                     -- address
+			intern_pio_s1_readdata                          : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
 			jtag_uart_avalon_jtag_slave_address             : out std_logic_vector(0 downto 0);                     -- address
 			jtag_uart_avalon_jtag_slave_write               : out std_logic;                                        -- write
 			jtag_uart_avalon_jtag_slave_read                : out std_logic;                                        -- read
@@ -242,7 +380,12 @@ architecture rtl of nios_cpu is
 			peripheral_spi_spi_control_port_readdata        : in  std_logic_vector(15 downto 0) := (others => 'X'); -- readdata
 			peripheral_spi_spi_control_port_writedata       : out std_logic_vector(15 downto 0);                    -- writedata
 			peripheral_spi_spi_control_port_chipselect      : out std_logic;                                        -- chipselect
-			ram_s1_address                                  : out std_logic_vector(14 downto 0);                    -- address
+			pio_mini_s1_address                             : out std_logic_vector(2 downto 0);                     -- address
+			pio_mini_s1_write                               : out std_logic;                                        -- write
+			pio_mini_s1_readdata                            : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			pio_mini_s1_writedata                           : out std_logic_vector(31 downto 0);                    -- writedata
+			pio_mini_s1_chipselect                          : out std_logic;                                        -- chipselect
+			ram_s1_address                                  : out std_logic_vector(15 downto 0);                    -- address
 			ram_s1_write                                    : out std_logic;                                        -- write
 			ram_s1_readdata                                 : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
 			ram_s1_writedata                                : out std_logic_vector(31 downto 0);                    -- writedata
@@ -262,6 +405,7 @@ architecture rtl of nios_cpu is
 			receiver1_irq : in  std_logic                     := 'X'; -- irq
 			receiver2_irq : in  std_logic                     := 'X'; -- irq
 			receiver3_irq : in  std_logic                     := 'X'; -- irq
+			receiver4_irq : in  std_logic                     := 'X'; -- irq
 			sender_irq    : out std_logic_vector(31 downto 0)         -- irq
 		);
 	end component nios_cpu_irq_mapper;
@@ -398,17 +542,86 @@ architecture rtl of nios_cpu is
 		);
 	end component nios_cpu_rst_controller_001;
 
+	component nios_cpu_rst_controller_002 is
+		generic (
+			NUM_RESET_INPUTS          : integer := 6;
+			OUTPUT_RESET_SYNC_EDGES   : string  := "deassert";
+			SYNC_DEPTH                : integer := 2;
+			RESET_REQUEST_PRESENT     : integer := 0;
+			RESET_REQ_WAIT_TIME       : integer := 1;
+			MIN_RST_ASSERTION_TIME    : integer := 3;
+			RESET_REQ_EARLY_DSRT_TIME : integer := 1;
+			USE_RESET_REQUEST_IN0     : integer := 0;
+			USE_RESET_REQUEST_IN1     : integer := 0;
+			USE_RESET_REQUEST_IN2     : integer := 0;
+			USE_RESET_REQUEST_IN3     : integer := 0;
+			USE_RESET_REQUEST_IN4     : integer := 0;
+			USE_RESET_REQUEST_IN5     : integer := 0;
+			USE_RESET_REQUEST_IN6     : integer := 0;
+			USE_RESET_REQUEST_IN7     : integer := 0;
+			USE_RESET_REQUEST_IN8     : integer := 0;
+			USE_RESET_REQUEST_IN9     : integer := 0;
+			USE_RESET_REQUEST_IN10    : integer := 0;
+			USE_RESET_REQUEST_IN11    : integer := 0;
+			USE_RESET_REQUEST_IN12    : integer := 0;
+			USE_RESET_REQUEST_IN13    : integer := 0;
+			USE_RESET_REQUEST_IN14    : integer := 0;
+			USE_RESET_REQUEST_IN15    : integer := 0;
+			ADAPT_RESET_REQUEST       : integer := 0
+		);
+		port (
+			reset_in0      : in  std_logic := 'X'; -- reset_in0.reset
+			clk            : in  std_logic := 'X'; --       clk.clk
+			reset_out      : out std_logic;        -- reset_out.reset
+			reset_in1      : in  std_logic := 'X';
+			reset_in10     : in  std_logic := 'X';
+			reset_in11     : in  std_logic := 'X';
+			reset_in12     : in  std_logic := 'X';
+			reset_in13     : in  std_logic := 'X';
+			reset_in14     : in  std_logic := 'X';
+			reset_in15     : in  std_logic := 'X';
+			reset_in2      : in  std_logic := 'X';
+			reset_in3      : in  std_logic := 'X';
+			reset_in4      : in  std_logic := 'X';
+			reset_in5      : in  std_logic := 'X';
+			reset_in6      : in  std_logic := 'X';
+			reset_in7      : in  std_logic := 'X';
+			reset_in8      : in  std_logic := 'X';
+			reset_in9      : in  std_logic := 'X';
+			reset_req      : out std_logic;
+			reset_req_in0  : in  std_logic := 'X';
+			reset_req_in1  : in  std_logic := 'X';
+			reset_req_in10 : in  std_logic := 'X';
+			reset_req_in11 : in  std_logic := 'X';
+			reset_req_in12 : in  std_logic := 'X';
+			reset_req_in13 : in  std_logic := 'X';
+			reset_req_in14 : in  std_logic := 'X';
+			reset_req_in15 : in  std_logic := 'X';
+			reset_req_in2  : in  std_logic := 'X';
+			reset_req_in3  : in  std_logic := 'X';
+			reset_req_in4  : in  std_logic := 'X';
+			reset_req_in5  : in  std_logic := 'X';
+			reset_req_in6  : in  std_logic := 'X';
+			reset_req_in7  : in  std_logic := 'X';
+			reset_req_in8  : in  std_logic := 'X';
+			reset_req_in9  : in  std_logic := 'X'
+		);
+	end component nios_cpu_rst_controller_002;
+
+	signal tranceiver_clk_out_clk                                            : std_logic;                     -- tranceiver:l_clk_out -> [max_frequency_index_0:clk, rst_controller_002:clk, tranceiver:clk_in]
+	signal tranceiver_iq_data_out_im_data                                    : std_logic_vector(11 downto 0); -- tranceiver:im_data_out -> max_frequency_index_0:rx_in_im
+	signal tranceiver_iq_data_out_re_data                                    : std_logic_vector(11 downto 0); -- tranceiver:re_data_out -> max_frequency_index_0:rx_in_re
 	signal nios2_data_master_readdata                                        : std_logic_vector(31 downto 0); -- mm_interconnect_0:nios2_data_master_readdata -> nios2:d_readdata
 	signal nios2_data_master_waitrequest                                     : std_logic;                     -- mm_interconnect_0:nios2_data_master_waitrequest -> nios2:d_waitrequest
 	signal nios2_data_master_debugaccess                                     : std_logic;                     -- nios2:debug_mem_slave_debugaccess_to_roms -> mm_interconnect_0:nios2_data_master_debugaccess
-	signal nios2_data_master_address                                         : std_logic_vector(18 downto 0); -- nios2:d_address -> mm_interconnect_0:nios2_data_master_address
+	signal nios2_data_master_address                                         : std_logic_vector(19 downto 0); -- nios2:d_address -> mm_interconnect_0:nios2_data_master_address
 	signal nios2_data_master_byteenable                                      : std_logic_vector(3 downto 0);  -- nios2:d_byteenable -> mm_interconnect_0:nios2_data_master_byteenable
 	signal nios2_data_master_read                                            : std_logic;                     -- nios2:d_read -> mm_interconnect_0:nios2_data_master_read
 	signal nios2_data_master_write                                           : std_logic;                     -- nios2:d_write -> mm_interconnect_0:nios2_data_master_write
 	signal nios2_data_master_writedata                                       : std_logic_vector(31 downto 0); -- nios2:d_writedata -> mm_interconnect_0:nios2_data_master_writedata
 	signal nios2_instruction_master_readdata                                 : std_logic_vector(31 downto 0); -- mm_interconnect_0:nios2_instruction_master_readdata -> nios2:i_readdata
 	signal nios2_instruction_master_waitrequest                              : std_logic;                     -- mm_interconnect_0:nios2_instruction_master_waitrequest -> nios2:i_waitrequest
-	signal nios2_instruction_master_address                                  : std_logic_vector(18 downto 0); -- nios2:i_address -> mm_interconnect_0:nios2_instruction_master_address
+	signal nios2_instruction_master_address                                  : std_logic_vector(19 downto 0); -- nios2:i_address -> mm_interconnect_0:nios2_instruction_master_address
 	signal nios2_instruction_master_read                                     : std_logic;                     -- nios2:i_read -> mm_interconnect_0:nios2_instruction_master_read
 	signal mm_interconnect_0_jtag_uart_avalon_jtag_slave_chipselect          : std_logic;                     -- mm_interconnect_0:jtag_uart_avalon_jtag_slave_chipselect -> jtag_uart:av_chipselect
 	signal mm_interconnect_0_jtag_uart_avalon_jtag_slave_readdata            : std_logic_vector(31 downto 0); -- jtag_uart:av_readdata -> mm_interconnect_0:jtag_uart_avalon_jtag_slave_readdata
@@ -434,7 +647,7 @@ architecture rtl of nios_cpu is
 	signal mm_interconnect_0_nios2_debug_mem_slave_writedata                 : std_logic_vector(31 downto 0); -- mm_interconnect_0:nios2_debug_mem_slave_writedata -> nios2:debug_mem_slave_writedata
 	signal mm_interconnect_0_ram_s1_chipselect                               : std_logic;                     -- mm_interconnect_0:ram_s1_chipselect -> ram:chipselect
 	signal mm_interconnect_0_ram_s1_readdata                                 : std_logic_vector(31 downto 0); -- ram:readdata -> mm_interconnect_0:ram_s1_readdata
-	signal mm_interconnect_0_ram_s1_address                                  : std_logic_vector(14 downto 0); -- mm_interconnect_0:ram_s1_address -> ram:address
+	signal mm_interconnect_0_ram_s1_address                                  : std_logic_vector(15 downto 0); -- mm_interconnect_0:ram_s1_address -> ram:address
 	signal mm_interconnect_0_ram_s1_byteenable                               : std_logic_vector(3 downto 0);  -- mm_interconnect_0:ram_s1_byteenable -> ram:byteenable
 	signal mm_interconnect_0_ram_s1_write                                    : std_logic;                     -- mm_interconnect_0:ram_s1_write -> ram:write
 	signal mm_interconnect_0_ram_s1_writedata                                : std_logic_vector(31 downto 0); -- mm_interconnect_0:ram_s1_writedata -> ram:writedata
@@ -451,6 +664,34 @@ architecture rtl of nios_cpu is
 	signal mm_interconnect_0_gpio_rffe_s1_writedata                          : std_logic_vector(31 downto 0); -- mm_interconnect_0:gpio_rffe_s1_writedata -> gpio_rffe:writedata
 	signal mm_interconnect_0_xb_gpio_s1_readdata                             : std_logic_vector(31 downto 0); -- xb_gpio:readdata -> mm_interconnect_0:xb_gpio_s1_readdata
 	signal mm_interconnect_0_xb_gpio_s1_address                              : std_logic_vector(2 downto 0);  -- mm_interconnect_0:xb_gpio_s1_address -> xb_gpio:address
+	signal mm_interconnect_0_intern_pio_s1_readdata                          : std_logic_vector(31 downto 0); -- intern_pio:readdata -> mm_interconnect_0:intern_pio_s1_readdata
+	signal mm_interconnect_0_intern_pio_s1_address                           : std_logic_vector(1 downto 0);  -- mm_interconnect_0:intern_pio_s1_address -> intern_pio:address
+	signal mm_interconnect_0_index_input_s1_readdata                         : std_logic_vector(31 downto 0); -- index_input:readdata -> mm_interconnect_0:index_input_s1_readdata
+	signal mm_interconnect_0_index_input_s1_address                          : std_logic_vector(1 downto 0);  -- mm_interconnect_0:index_input_s1_address -> index_input:address
+	signal mm_interconnect_0_pio_mini_s1_chipselect                          : std_logic;                     -- mm_interconnect_0:pio_mini_s1_chipselect -> pio_mini:chipselect
+	signal mm_interconnect_0_pio_mini_s1_readdata                            : std_logic_vector(31 downto 0); -- pio_mini:readdata -> mm_interconnect_0:pio_mini_s1_readdata
+	signal mm_interconnect_0_pio_mini_s1_address                             : std_logic_vector(2 downto 0);  -- mm_interconnect_0:pio_mini_s1_address -> pio_mini:address
+	signal mm_interconnect_0_pio_mini_s1_write                               : std_logic;                     -- mm_interconnect_0:pio_mini_s1_write -> mm_interconnect_0_pio_mini_s1_write:in
+	signal mm_interconnect_0_pio_mini_s1_writedata                           : std_logic_vector(31 downto 0); -- mm_interconnect_0:pio_mini_s1_writedata -> pio_mini:writedata
+	signal mm_interconnect_0_tranceiver_s_axi_awaddr                         : std_logic_vector(15 downto 0); -- mm_interconnect_0:tranceiver_s_axi_awaddr -> tranceiver:s_axi_awaddr
+	signal mm_interconnect_0_tranceiver_s_axi_bresp                          : std_logic_vector(1 downto 0);  -- tranceiver:s_axi_bresp -> mm_interconnect_0:tranceiver_s_axi_bresp
+	signal mm_interconnect_0_tranceiver_s_axi_arready                        : std_logic;                     -- tranceiver:s_axi_arready -> mm_interconnect_0:tranceiver_s_axi_arready
+	signal mm_interconnect_0_tranceiver_s_axi_rdata                          : std_logic_vector(31 downto 0); -- tranceiver:s_axi_rdata -> mm_interconnect_0:tranceiver_s_axi_rdata
+	signal mm_interconnect_0_tranceiver_s_axi_wstrb                          : std_logic_vector(3 downto 0);  -- mm_interconnect_0:tranceiver_s_axi_wstrb -> tranceiver:s_axi_wstrb
+	signal mm_interconnect_0_tranceiver_s_axi_wready                         : std_logic;                     -- tranceiver:s_axi_wready -> mm_interconnect_0:tranceiver_s_axi_wready
+	signal mm_interconnect_0_tranceiver_s_axi_awready                        : std_logic;                     -- tranceiver:s_axi_awready -> mm_interconnect_0:tranceiver_s_axi_awready
+	signal mm_interconnect_0_tranceiver_s_axi_rready                         : std_logic;                     -- mm_interconnect_0:tranceiver_s_axi_rready -> tranceiver:s_axi_rready
+	signal mm_interconnect_0_tranceiver_s_axi_bready                         : std_logic;                     -- mm_interconnect_0:tranceiver_s_axi_bready -> tranceiver:s_axi_bready
+	signal mm_interconnect_0_tranceiver_s_axi_wvalid                         : std_logic;                     -- mm_interconnect_0:tranceiver_s_axi_wvalid -> tranceiver:s_axi_wvalid
+	signal mm_interconnect_0_tranceiver_s_axi_araddr                         : std_logic_vector(15 downto 0); -- mm_interconnect_0:tranceiver_s_axi_araddr -> tranceiver:s_axi_araddr
+	signal mm_interconnect_0_tranceiver_s_axi_arprot                         : std_logic_vector(2 downto 0);  -- mm_interconnect_0:tranceiver_s_axi_arprot -> tranceiver:s_axi_arprot
+	signal mm_interconnect_0_tranceiver_s_axi_rresp                          : std_logic_vector(1 downto 0);  -- tranceiver:s_axi_rresp -> mm_interconnect_0:tranceiver_s_axi_rresp
+	signal mm_interconnect_0_tranceiver_s_axi_awprot                         : std_logic_vector(2 downto 0);  -- mm_interconnect_0:tranceiver_s_axi_awprot -> tranceiver:s_axi_awprot
+	signal mm_interconnect_0_tranceiver_s_axi_wdata                          : std_logic_vector(31 downto 0); -- mm_interconnect_0:tranceiver_s_axi_wdata -> tranceiver:s_axi_wdata
+	signal mm_interconnect_0_tranceiver_s_axi_arvalid                        : std_logic;                     -- mm_interconnect_0:tranceiver_s_axi_arvalid -> tranceiver:s_axi_arvalid
+	signal mm_interconnect_0_tranceiver_s_axi_bvalid                         : std_logic;                     -- tranceiver:s_axi_bvalid -> mm_interconnect_0:tranceiver_s_axi_bvalid
+	signal mm_interconnect_0_tranceiver_s_axi_awvalid                        : std_logic;                     -- mm_interconnect_0:tranceiver_s_axi_awvalid -> tranceiver:s_axi_awvalid
+	signal mm_interconnect_0_tranceiver_s_axi_rvalid                         : std_logic;                     -- tranceiver:s_axi_rvalid -> mm_interconnect_0:tranceiver_s_axi_rvalid
 	signal mm_interconnect_0_peripheral_spi_spi_control_port_chipselect      : std_logic;                     -- mm_interconnect_0:peripheral_spi_spi_control_port_chipselect -> peripheral_spi:spi_select
 	signal mm_interconnect_0_peripheral_spi_spi_control_port_readdata        : std_logic_vector(15 downto 0); -- peripheral_spi:data_to_cpu -> mm_interconnect_0:peripheral_spi_spi_control_port_readdata
 	signal mm_interconnect_0_peripheral_spi_spi_control_port_address         : std_logic_vector(2 downto 0);  -- mm_interconnect_0:peripheral_spi_spi_control_port_address -> peripheral_spi:mem_addr
@@ -463,30 +704,59 @@ architecture rtl of nios_cpu is
 	signal mm_interconnect_0_adf5610_spi_control_port_read                   : std_logic;                     -- mm_interconnect_0:adf5610_spi_control_port_read -> mm_interconnect_0_adf5610_spi_control_port_read:in
 	signal mm_interconnect_0_adf5610_spi_control_port_write                  : std_logic;                     -- mm_interconnect_0:adf5610_spi_control_port_write -> mm_interconnect_0_adf5610_spi_control_port_write:in
 	signal mm_interconnect_0_adf5610_spi_control_port_writedata              : std_logic_vector(15 downto 0); -- mm_interconnect_0:adf5610_spi_control_port_writedata -> adf5610:data_from_cpu
+	signal mm_interconnect_0_ad9361_spi_control_port_chipselect              : std_logic;                     -- mm_interconnect_0:ad9361_spi_control_port_chipselect -> ad9361:spi_select
+	signal mm_interconnect_0_ad9361_spi_control_port_readdata                : std_logic_vector(15 downto 0); -- ad9361:data_to_cpu -> mm_interconnect_0:ad9361_spi_control_port_readdata
+	signal mm_interconnect_0_ad9361_spi_control_port_address                 : std_logic_vector(2 downto 0);  -- mm_interconnect_0:ad9361_spi_control_port_address -> ad9361:mem_addr
+	signal mm_interconnect_0_ad9361_spi_control_port_read                    : std_logic;                     -- mm_interconnect_0:ad9361_spi_control_port_read -> mm_interconnect_0_ad9361_spi_control_port_read:in
+	signal mm_interconnect_0_ad9361_spi_control_port_write                   : std_logic;                     -- mm_interconnect_0:ad9361_spi_control_port_write -> mm_interconnect_0_ad9361_spi_control_port_write:in
+	signal mm_interconnect_0_ad9361_spi_control_port_writedata               : std_logic_vector(15 downto 0); -- mm_interconnect_0:ad9361_spi_control_port_writedata -> ad9361:data_from_cpu
 	signal irq_mapper_receiver0_irq                                          : std_logic;                     -- opencores_i2c:wb_inta_o -> irq_mapper:receiver0_irq
 	signal irq_mapper_receiver1_irq                                          : std_logic;                     -- jtag_uart:av_irq -> irq_mapper:receiver1_irq
 	signal irq_mapper_receiver2_irq                                          : std_logic;                     -- peripheral_spi:irq -> irq_mapper:receiver2_irq
 	signal irq_mapper_receiver3_irq                                          : std_logic;                     -- adf5610:irq -> irq_mapper:receiver3_irq
+	signal irq_mapper_receiver4_irq                                          : std_logic;                     -- ad9361:irq -> irq_mapper:receiver4_irq
 	signal nios2_irq_irq                                                     : std_logic_vector(31 downto 0); -- irq_mapper:sender_irq -> nios2:irq
 	signal rst_controller_reset_out_reset                                    : std_logic;                     -- rst_controller:reset_out -> [mm_interconnect_0:jtag_uart_reset_reset_bridge_in_reset_reset, opencores_i2c:wb_rst_i, ram:reset, rst_controller_reset_out_reset:in, rst_translator:in_reset]
 	signal rst_controller_reset_out_reset_req                                : std_logic;                     -- rst_controller:reset_req -> [ram:reset_req, rst_translator:reset_req_in]
 	signal rst_controller_001_reset_out_reset                                : std_logic;                     -- rst_controller_001:reset_out -> [irq_mapper:reset, mm_interconnect_0:nios2_reset_reset_bridge_in_reset_reset, rst_controller_001_reset_out_reset:in]
 	signal rst_controller_001_reset_out_reset_req                            : std_logic;                     -- rst_controller_001:reset_req -> [nios2:reset_req, rst_translator_001:reset_req_in]
 	signal nios2_debug_reset_request_reset                                   : std_logic;                     -- nios2:debug_reset_request -> rst_controller_001:reset_in1
+	signal rst_controller_002_reset_out_reset                                : std_logic;                     -- rst_controller_002:reset_out -> max_frequency_index_0:reset
+	signal tranceiver_reset_source_reset                                     : std_logic;                     -- tranceiver:rst_out -> rst_controller_002:reset_in0
 	signal reset_reset_n_ports_inv                                           : std_logic;                     -- reset_reset_n:inv -> [rst_controller:reset_in0, rst_controller_001:reset_in0]
 	signal mm_interconnect_0_jtag_uart_avalon_jtag_slave_read_ports_inv      : std_logic;                     -- mm_interconnect_0_jtag_uart_avalon_jtag_slave_read:inv -> jtag_uart:av_read_n
 	signal mm_interconnect_0_jtag_uart_avalon_jtag_slave_write_ports_inv     : std_logic;                     -- mm_interconnect_0_jtag_uart_avalon_jtag_slave_write:inv -> jtag_uart:av_write_n
 	signal mm_interconnect_0_opencores_i2c_bladerf_oc_i2c_master_inv         : std_logic;                     -- opencores_i2c_bladerf_oc_i2c_master_waitrequest:inv -> mm_interconnect_0:opencores_i2c_bladerf_oc_i2c_master_waitrequest
 	signal mm_interconnect_0_control_s1_write_ports_inv                      : std_logic;                     -- mm_interconnect_0_control_s1_write:inv -> control:write_n
 	signal mm_interconnect_0_gpio_rffe_s1_write_ports_inv                    : std_logic;                     -- mm_interconnect_0_gpio_rffe_s1_write:inv -> gpio_rffe:write_n
+	signal mm_interconnect_0_pio_mini_s1_write_ports_inv                     : std_logic;                     -- mm_interconnect_0_pio_mini_s1_write:inv -> pio_mini:write_n
 	signal mm_interconnect_0_peripheral_spi_spi_control_port_read_ports_inv  : std_logic;                     -- mm_interconnect_0_peripheral_spi_spi_control_port_read:inv -> peripheral_spi:read_n
 	signal mm_interconnect_0_peripheral_spi_spi_control_port_write_ports_inv : std_logic;                     -- mm_interconnect_0_peripheral_spi_spi_control_port_write:inv -> peripheral_spi:write_n
 	signal mm_interconnect_0_adf5610_spi_control_port_read_ports_inv         : std_logic;                     -- mm_interconnect_0_adf5610_spi_control_port_read:inv -> adf5610:read_n
 	signal mm_interconnect_0_adf5610_spi_control_port_write_ports_inv        : std_logic;                     -- mm_interconnect_0_adf5610_spi_control_port_write:inv -> adf5610:write_n
-	signal rst_controller_reset_out_reset_ports_inv                          : std_logic;                     -- rst_controller_reset_out_reset:inv -> [adf5610:reset_n, control:reset_n, gpio_rffe:reset_n, jtag_uart:rst_n, peripheral_spi:reset_n, xb_gpio:reset_n]
+	signal mm_interconnect_0_ad9361_spi_control_port_read_ports_inv          : std_logic;                     -- mm_interconnect_0_ad9361_spi_control_port_read:inv -> ad9361:read_n
+	signal mm_interconnect_0_ad9361_spi_control_port_write_ports_inv         : std_logic;                     -- mm_interconnect_0_ad9361_spi_control_port_write:inv -> ad9361:write_n
+	signal rst_controller_reset_out_reset_ports_inv                          : std_logic;                     -- rst_controller_reset_out_reset:inv -> [ad9361:reset_n, adf5610:reset_n, control:reset_n, gpio_rffe:reset_n, index_input:reset_n, intern_pio:reset_n, jtag_uart:rst_n, peripheral_spi:reset_n, pio_mini:reset_n, tranceiver:s_axi_aresetn, xb_gpio:reset_n]
 	signal rst_controller_001_reset_out_reset_ports_inv                      : std_logic;                     -- rst_controller_001_reset_out_reset:inv -> nios2:reset_n
 
 begin
+
+	ad9361 : component nios_cpu_ad9361
+		port map (
+			clk           => clk_clk,                                                   --              clk.clk
+			reset_n       => rst_controller_reset_out_reset_ports_inv,                  --            reset.reset_n
+			data_from_cpu => mm_interconnect_0_ad9361_spi_control_port_writedata,       -- spi_control_port.writedata
+			data_to_cpu   => mm_interconnect_0_ad9361_spi_control_port_readdata,        --                 .readdata
+			mem_addr      => mm_interconnect_0_ad9361_spi_control_port_address,         --                 .address
+			read_n        => mm_interconnect_0_ad9361_spi_control_port_read_ports_inv,  --                 .read_n
+			spi_select    => mm_interconnect_0_ad9361_spi_control_port_chipselect,      --                 .chipselect
+			write_n       => mm_interconnect_0_ad9361_spi_control_port_write_ports_inv, --                 .write_n
+			irq           => irq_mapper_receiver4_irq,                                  --              irq.irq
+			MISO          => spi_ad9361_MISO,                                           --         external.export
+			MOSI          => spi_ad9361_MOSI,                                           --                 .export
+			SCLK          => spi_ad9361_SCLK,                                           --                 .export
+			SS_n          => spi_ad9361_SS_n                                            --                 .export
+		);
 
 	adf5610 : component nios_cpu_adf5610
 		port map (
@@ -531,6 +801,24 @@ begin
 			out_port   => gpio_rf_out_port                                --                    .export
 		);
 
+	index_input : component nios_cpu_index_input
+		port map (
+			clk      => clk_clk,                                   --                 clk.clk
+			reset_n  => rst_controller_reset_out_reset_ports_inv,  --               reset.reset_n
+			address  => mm_interconnect_0_index_input_s1_address,  --                  s1.address
+			readdata => mm_interconnect_0_index_input_s1_readdata, --                    .readdata
+			in_port  => index_in_export                            -- external_connection.export
+		);
+
+	intern_pio : component nios_cpu_index_input
+		port map (
+			clk      => clk_clk,                                  --                 clk.clk
+			reset_n  => rst_controller_reset_out_reset_ports_inv, --               reset.reset_n
+			address  => mm_interconnect_0_intern_pio_s1_address,  --                  s1.address
+			readdata => mm_interconnect_0_intern_pio_s1_readdata, --                    .readdata
+			in_port  => intern_gpio_export                        -- external_connection.export
+		);
+
 	jtag_uart : component nios_cpu_jtag_uart
 		port map (
 			clk            => clk_clk,                                                       --               clk.clk
@@ -543,6 +831,15 @@ begin
 			av_writedata   => mm_interconnect_0_jtag_uart_avalon_jtag_slave_writedata,       --                  .writedata
 			av_waitrequest => mm_interconnect_0_jtag_uart_avalon_jtag_slave_waitrequest,     --                  .waitrequest
 			av_irq         => irq_mapper_receiver1_irq                                       --               irq.irq
+		);
+
+	max_frequency_index_0 : component max_frequency_top
+		port map (
+			clk       => tranceiver_clk_out_clk,             --              clock.clk
+			reset     => rst_controller_002_reset_out_reset, --              reset.reset
+			rx_in_re  => tranceiver_iq_data_out_re_data,     -- iq_complex_samples.re_data
+			rx_in_im  => tranceiver_iq_data_out_im_data,     --                   .im_data
+			index_max => index_out_index_frequency           --    index_frequency.index_frequency
 		);
 
 	nios2 : component nios_cpu_nios2
@@ -616,6 +913,18 @@ begin
 			SS_n          => dac_SS_n                                                           --                 .export
 		);
 
+	pio_mini : component nios_cpu_pio_mini
+		port map (
+			clk        => clk_clk,                                       --                 clk.clk
+			reset_n    => rst_controller_reset_out_reset_ports_inv,      --               reset.reset_n
+			address    => mm_interconnect_0_pio_mini_s1_address,         --                  s1.address
+			write_n    => mm_interconnect_0_pio_mini_s1_write_ports_inv, --                    .write_n
+			writedata  => mm_interconnect_0_pio_mini_s1_writedata,       --                    .writedata
+			chipselect => mm_interconnect_0_pio_mini_s1_chipselect,      --                    .chipselect
+			readdata   => mm_interconnect_0_pio_mini_s1_readdata,        --                    .readdata
+			out_port   => gpio_mini_export                               -- external_connection.export
+		);
+
 	ram : component nios_cpu_ram
 		port map (
 			clk        => clk_clk,                             --   clk1.clk
@@ -631,6 +940,47 @@ begin
 			freeze     => '0'                                  -- (terminated)
 		);
 
+	tranceiver : component spin_sensor_top
+		generic map (
+			FPGA_TECHNOLOGY => "CYCLONE5"
+		)
+		port map (
+			s_axi_aclk    => clk_clk,                                    --  s_axi_clock.clk
+			s_axi_aresetn => rst_controller_reset_out_reset_ports_inv,   --  s_axi_reset.reset_n
+			rx_clk_p_in   => adi_stream_rx_clk_p,                        --      data_if.rx_clk_p
+			frame_p_in    => adi_stream_frame_p,                         --             .frame_p
+			data_p_in     => adi_stream_data_p,                          --             .data_p
+			data_n_in     => adi_stream_data_n,                          --             .data_n
+			frame_n_in    => adi_stream_frame_n,                         --             .frame_n
+			rx_clk_n_in   => adi_stream_rx_clk_n,                        --             .rx_clk_n
+			tx_clk_p_out  => adi_stream_tx_clk_p,                        --             .tx_clk_p
+			tx_clk_n_out  => adi_stream_tx_clk_n,                        --             .tx_clk_n
+			re_data_out   => tranceiver_iq_data_out_re_data,             --  iq_data_out.re_data
+			im_data_out   => tranceiver_iq_data_out_im_data,             --             .im_data
+			l_clk_out     => tranceiver_clk_out_clk,                     --      clk_out.clk
+			rst_out       => tranceiver_reset_source_reset,              -- reset_source.reset
+			clk_in        => tranceiver_clk_out_clk,                     -- device_clock.clk
+			s_axi_awvalid => mm_interconnect_0_tranceiver_s_axi_awvalid, --        s_axi.awvalid
+			s_axi_awaddr  => mm_interconnect_0_tranceiver_s_axi_awaddr,  --             .awaddr
+			s_axi_awprot  => mm_interconnect_0_tranceiver_s_axi_awprot,  --             .awprot
+			s_axi_awready => mm_interconnect_0_tranceiver_s_axi_awready, --             .awready
+			s_axi_wvalid  => mm_interconnect_0_tranceiver_s_axi_wvalid,  --             .wvalid
+			s_axi_wdata   => mm_interconnect_0_tranceiver_s_axi_wdata,   --             .wdata
+			s_axi_wstrb   => mm_interconnect_0_tranceiver_s_axi_wstrb,   --             .wstrb
+			s_axi_wready  => mm_interconnect_0_tranceiver_s_axi_wready,  --             .wready
+			s_axi_bvalid  => mm_interconnect_0_tranceiver_s_axi_bvalid,  --             .bvalid
+			s_axi_bresp   => mm_interconnect_0_tranceiver_s_axi_bresp,   --             .bresp
+			s_axi_bready  => mm_interconnect_0_tranceiver_s_axi_bready,  --             .bready
+			s_axi_arvalid => mm_interconnect_0_tranceiver_s_axi_arvalid, --             .arvalid
+			s_axi_araddr  => mm_interconnect_0_tranceiver_s_axi_araddr,  --             .araddr
+			s_axi_arprot  => mm_interconnect_0_tranceiver_s_axi_arprot,  --             .arprot
+			s_axi_arready => mm_interconnect_0_tranceiver_s_axi_arready, --             .arready
+			s_axi_rvalid  => mm_interconnect_0_tranceiver_s_axi_rvalid,  --             .rvalid
+			s_axi_rdata   => mm_interconnect_0_tranceiver_s_axi_rdata,   --             .rdata
+			s_axi_rresp   => mm_interconnect_0_tranceiver_s_axi_rresp,   --             .rresp
+			s_axi_rready  => mm_interconnect_0_tranceiver_s_axi_rready   --             .rready
+		);
+
 	xb_gpio : component nios_cpu_xb_gpio
 		port map (
 			clk      => clk_clk,                                  --                 clk.clk
@@ -642,6 +992,25 @@ begin
 
 	mm_interconnect_0 : component nios_cpu_mm_interconnect_0
 		port map (
+			tranceiver_s_axi_awaddr                         => mm_interconnect_0_tranceiver_s_axi_awaddr,                        --                      tranceiver_s_axi.awaddr
+			tranceiver_s_axi_awprot                         => mm_interconnect_0_tranceiver_s_axi_awprot,                        --                                      .awprot
+			tranceiver_s_axi_awvalid                        => mm_interconnect_0_tranceiver_s_axi_awvalid,                       --                                      .awvalid
+			tranceiver_s_axi_awready                        => mm_interconnect_0_tranceiver_s_axi_awready,                       --                                      .awready
+			tranceiver_s_axi_wdata                          => mm_interconnect_0_tranceiver_s_axi_wdata,                         --                                      .wdata
+			tranceiver_s_axi_wstrb                          => mm_interconnect_0_tranceiver_s_axi_wstrb,                         --                                      .wstrb
+			tranceiver_s_axi_wvalid                         => mm_interconnect_0_tranceiver_s_axi_wvalid,                        --                                      .wvalid
+			tranceiver_s_axi_wready                         => mm_interconnect_0_tranceiver_s_axi_wready,                        --                                      .wready
+			tranceiver_s_axi_bresp                          => mm_interconnect_0_tranceiver_s_axi_bresp,                         --                                      .bresp
+			tranceiver_s_axi_bvalid                         => mm_interconnect_0_tranceiver_s_axi_bvalid,                        --                                      .bvalid
+			tranceiver_s_axi_bready                         => mm_interconnect_0_tranceiver_s_axi_bready,                        --                                      .bready
+			tranceiver_s_axi_araddr                         => mm_interconnect_0_tranceiver_s_axi_araddr,                        --                                      .araddr
+			tranceiver_s_axi_arprot                         => mm_interconnect_0_tranceiver_s_axi_arprot,                        --                                      .arprot
+			tranceiver_s_axi_arvalid                        => mm_interconnect_0_tranceiver_s_axi_arvalid,                       --                                      .arvalid
+			tranceiver_s_axi_arready                        => mm_interconnect_0_tranceiver_s_axi_arready,                       --                                      .arready
+			tranceiver_s_axi_rdata                          => mm_interconnect_0_tranceiver_s_axi_rdata,                         --                                      .rdata
+			tranceiver_s_axi_rresp                          => mm_interconnect_0_tranceiver_s_axi_rresp,                         --                                      .rresp
+			tranceiver_s_axi_rvalid                         => mm_interconnect_0_tranceiver_s_axi_rvalid,                        --                                      .rvalid
+			tranceiver_s_axi_rready                         => mm_interconnect_0_tranceiver_s_axi_rready,                        --                                      .rready
 			clk_0_clk_clk                                   => clk_clk,                                                          --                             clk_0_clk.clk
 			jtag_uart_reset_reset_bridge_in_reset_reset     => rst_controller_reset_out_reset,                                   -- jtag_uart_reset_reset_bridge_in_reset.reset
 			nios2_reset_reset_bridge_in_reset_reset         => rst_controller_001_reset_out_reset,                               --     nios2_reset_reset_bridge_in_reset.reset
@@ -657,6 +1026,12 @@ begin
 			nios2_instruction_master_waitrequest            => nios2_instruction_master_waitrequest,                             --                                      .waitrequest
 			nios2_instruction_master_read                   => nios2_instruction_master_read,                                    --                                      .read
 			nios2_instruction_master_readdata               => nios2_instruction_master_readdata,                                --                                      .readdata
+			ad9361_spi_control_port_address                 => mm_interconnect_0_ad9361_spi_control_port_address,                --               ad9361_spi_control_port.address
+			ad9361_spi_control_port_write                   => mm_interconnect_0_ad9361_spi_control_port_write,                  --                                      .write
+			ad9361_spi_control_port_read                    => mm_interconnect_0_ad9361_spi_control_port_read,                   --                                      .read
+			ad9361_spi_control_port_readdata                => mm_interconnect_0_ad9361_spi_control_port_readdata,               --                                      .readdata
+			ad9361_spi_control_port_writedata               => mm_interconnect_0_ad9361_spi_control_port_writedata,              --                                      .writedata
+			ad9361_spi_control_port_chipselect              => mm_interconnect_0_ad9361_spi_control_port_chipselect,             --                                      .chipselect
 			adf5610_spi_control_port_address                => mm_interconnect_0_adf5610_spi_control_port_address,               --              adf5610_spi_control_port.address
 			adf5610_spi_control_port_write                  => mm_interconnect_0_adf5610_spi_control_port_write,                 --                                      .write
 			adf5610_spi_control_port_read                   => mm_interconnect_0_adf5610_spi_control_port_read,                  --                                      .read
@@ -673,6 +1048,10 @@ begin
 			gpio_rffe_s1_readdata                           => mm_interconnect_0_gpio_rffe_s1_readdata,                          --                                      .readdata
 			gpio_rffe_s1_writedata                          => mm_interconnect_0_gpio_rffe_s1_writedata,                         --                                      .writedata
 			gpio_rffe_s1_chipselect                         => mm_interconnect_0_gpio_rffe_s1_chipselect,                        --                                      .chipselect
+			index_input_s1_address                          => mm_interconnect_0_index_input_s1_address,                         --                        index_input_s1.address
+			index_input_s1_readdata                         => mm_interconnect_0_index_input_s1_readdata,                        --                                      .readdata
+			intern_pio_s1_address                           => mm_interconnect_0_intern_pio_s1_address,                          --                         intern_pio_s1.address
+			intern_pio_s1_readdata                          => mm_interconnect_0_intern_pio_s1_readdata,                         --                                      .readdata
 			jtag_uart_avalon_jtag_slave_address             => mm_interconnect_0_jtag_uart_avalon_jtag_slave_address,            --           jtag_uart_avalon_jtag_slave.address
 			jtag_uart_avalon_jtag_slave_write               => mm_interconnect_0_jtag_uart_avalon_jtag_slave_write,              --                                      .write
 			jtag_uart_avalon_jtag_slave_read                => mm_interconnect_0_jtag_uart_avalon_jtag_slave_read,               --                                      .read
@@ -701,6 +1080,11 @@ begin
 			peripheral_spi_spi_control_port_readdata        => mm_interconnect_0_peripheral_spi_spi_control_port_readdata,       --                                      .readdata
 			peripheral_spi_spi_control_port_writedata       => mm_interconnect_0_peripheral_spi_spi_control_port_writedata,      --                                      .writedata
 			peripheral_spi_spi_control_port_chipselect      => mm_interconnect_0_peripheral_spi_spi_control_port_chipselect,     --                                      .chipselect
+			pio_mini_s1_address                             => mm_interconnect_0_pio_mini_s1_address,                            --                           pio_mini_s1.address
+			pio_mini_s1_write                               => mm_interconnect_0_pio_mini_s1_write,                              --                                      .write
+			pio_mini_s1_readdata                            => mm_interconnect_0_pio_mini_s1_readdata,                           --                                      .readdata
+			pio_mini_s1_writedata                           => mm_interconnect_0_pio_mini_s1_writedata,                          --                                      .writedata
+			pio_mini_s1_chipselect                          => mm_interconnect_0_pio_mini_s1_chipselect,                         --                                      .chipselect
 			ram_s1_address                                  => mm_interconnect_0_ram_s1_address,                                 --                                ram_s1.address
 			ram_s1_write                                    => mm_interconnect_0_ram_s1_write,                                   --                                      .write
 			ram_s1_readdata                                 => mm_interconnect_0_ram_s1_readdata,                                --                                      .readdata
@@ -720,6 +1104,7 @@ begin
 			receiver1_irq => irq_mapper_receiver1_irq,           -- receiver1.irq
 			receiver2_irq => irq_mapper_receiver2_irq,           -- receiver2.irq
 			receiver3_irq => irq_mapper_receiver3_irq,           -- receiver3.irq
+			receiver4_irq => irq_mapper_receiver4_irq,           -- receiver4.irq
 			sender_irq    => nios2_irq_irq                       --    sender.irq
 		);
 
@@ -853,6 +1238,71 @@ begin
 			reset_req_in15 => '0'                                     -- (terminated)
 		);
 
+	rst_controller_002 : component nios_cpu_rst_controller_002
+		generic map (
+			NUM_RESET_INPUTS          => 1,
+			OUTPUT_RESET_SYNC_EDGES   => "deassert",
+			SYNC_DEPTH                => 2,
+			RESET_REQUEST_PRESENT     => 0,
+			RESET_REQ_WAIT_TIME       => 1,
+			MIN_RST_ASSERTION_TIME    => 3,
+			RESET_REQ_EARLY_DSRT_TIME => 1,
+			USE_RESET_REQUEST_IN0     => 0,
+			USE_RESET_REQUEST_IN1     => 0,
+			USE_RESET_REQUEST_IN2     => 0,
+			USE_RESET_REQUEST_IN3     => 0,
+			USE_RESET_REQUEST_IN4     => 0,
+			USE_RESET_REQUEST_IN5     => 0,
+			USE_RESET_REQUEST_IN6     => 0,
+			USE_RESET_REQUEST_IN7     => 0,
+			USE_RESET_REQUEST_IN8     => 0,
+			USE_RESET_REQUEST_IN9     => 0,
+			USE_RESET_REQUEST_IN10    => 0,
+			USE_RESET_REQUEST_IN11    => 0,
+			USE_RESET_REQUEST_IN12    => 0,
+			USE_RESET_REQUEST_IN13    => 0,
+			USE_RESET_REQUEST_IN14    => 0,
+			USE_RESET_REQUEST_IN15    => 0,
+			ADAPT_RESET_REQUEST       => 0
+		)
+		port map (
+			reset_in0      => tranceiver_reset_source_reset,      -- reset_in0.reset
+			clk            => tranceiver_clk_out_clk,             --       clk.clk
+			reset_out      => rst_controller_002_reset_out_reset, -- reset_out.reset
+			reset_req      => open,                               -- (terminated)
+			reset_req_in0  => '0',                                -- (terminated)
+			reset_in1      => '0',                                -- (terminated)
+			reset_req_in1  => '0',                                -- (terminated)
+			reset_in2      => '0',                                -- (terminated)
+			reset_req_in2  => '0',                                -- (terminated)
+			reset_in3      => '0',                                -- (terminated)
+			reset_req_in3  => '0',                                -- (terminated)
+			reset_in4      => '0',                                -- (terminated)
+			reset_req_in4  => '0',                                -- (terminated)
+			reset_in5      => '0',                                -- (terminated)
+			reset_req_in5  => '0',                                -- (terminated)
+			reset_in6      => '0',                                -- (terminated)
+			reset_req_in6  => '0',                                -- (terminated)
+			reset_in7      => '0',                                -- (terminated)
+			reset_req_in7  => '0',                                -- (terminated)
+			reset_in8      => '0',                                -- (terminated)
+			reset_req_in8  => '0',                                -- (terminated)
+			reset_in9      => '0',                                -- (terminated)
+			reset_req_in9  => '0',                                -- (terminated)
+			reset_in10     => '0',                                -- (terminated)
+			reset_req_in10 => '0',                                -- (terminated)
+			reset_in11     => '0',                                -- (terminated)
+			reset_req_in11 => '0',                                -- (terminated)
+			reset_in12     => '0',                                -- (terminated)
+			reset_req_in12 => '0',                                -- (terminated)
+			reset_in13     => '0',                                -- (terminated)
+			reset_req_in13 => '0',                                -- (terminated)
+			reset_in14     => '0',                                -- (terminated)
+			reset_req_in14 => '0',                                -- (terminated)
+			reset_in15     => '0',                                -- (terminated)
+			reset_req_in15 => '0'                                 -- (terminated)
+		);
+
 	reset_reset_n_ports_inv <= not reset_reset_n;
 
 	mm_interconnect_0_jtag_uart_avalon_jtag_slave_read_ports_inv <= not mm_interconnect_0_jtag_uart_avalon_jtag_slave_read;
@@ -865,6 +1315,8 @@ begin
 
 	mm_interconnect_0_gpio_rffe_s1_write_ports_inv <= not mm_interconnect_0_gpio_rffe_s1_write;
 
+	mm_interconnect_0_pio_mini_s1_write_ports_inv <= not mm_interconnect_0_pio_mini_s1_write;
+
 	mm_interconnect_0_peripheral_spi_spi_control_port_read_ports_inv <= not mm_interconnect_0_peripheral_spi_spi_control_port_read;
 
 	mm_interconnect_0_peripheral_spi_spi_control_port_write_ports_inv <= not mm_interconnect_0_peripheral_spi_spi_control_port_write;
@@ -872,6 +1324,10 @@ begin
 	mm_interconnect_0_adf5610_spi_control_port_read_ports_inv <= not mm_interconnect_0_adf5610_spi_control_port_read;
 
 	mm_interconnect_0_adf5610_spi_control_port_write_ports_inv <= not mm_interconnect_0_adf5610_spi_control_port_write;
+
+	mm_interconnect_0_ad9361_spi_control_port_read_ports_inv <= not mm_interconnect_0_ad9361_spi_control_port_read;
+
+	mm_interconnect_0_ad9361_spi_control_port_write_ports_inv <= not mm_interconnect_0_ad9361_spi_control_port_write;
 
 	rst_controller_reset_out_reset_ports_inv <= not rst_controller_reset_out_reset;
 

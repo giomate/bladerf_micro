@@ -119,6 +119,7 @@ architecture arch of bladerf_pll is
     
     signal nios_gpio              : nios_gpio_t;
     signal nios_gpo_slv           : std_logic_vector(31 downto 0);
+	 signal intern_gpio_in        : std_logic_vector(7 downto 0) := (others => '0');
 
     signal i2c_scl_in             : std_logic;
     signal i2c_scl_out            : std_logic;
@@ -177,6 +178,7 @@ architecture arch of bladerf_pll is
 		gpio_out_port       : out std_logic_vector(31 downto 0);                    --        .out_port
 		gpio_rf_in_port     : in  std_logic_vector(31 downto 0) := (others => '0'); -- gpio_rf.in_port
 		gpio_rf_out_port    : out std_logic_vector(31 downto 0);                    --        .out_port
+		intern_gpio_export  : in  std_logic_vector(7 downto 0)  := (others => '0'); -- intern_gpio.export
 		oc_i2c_scl_pad_o    : out std_logic;                                        --  oc_i2c.scl_pad_o
 		oc_i2c_scl_padoen_o : out std_logic;                                        --        .scl_padoen_o
 		oc_i2c_sda_pad_i    : in  std_logic                     := '0';             --        .sda_pad_i
@@ -278,7 +280,8 @@ begin
             gpio_out_port                   => nios_gpo_slv,
             gpio_rf_in_port             => pack(rffe_gpio),
             gpio_rf_out_port            => rffe_gpio.o,                    --        .out_port
-			   oc_i2c_arst_i                   => '0',
+			   intern_gpio_export		=>		intern_gpio_in,
+				oc_i2c_arst_i                   => '0',
             oc_i2c_scl_pad_i                => i2c_scl_in,
             oc_i2c_scl_pad_o                => i2c_scl_out,
             oc_i2c_scl_padoen_o             => i2c_scl_oen,
@@ -377,6 +380,7 @@ begin
 
     nios_sdo <= adf_muxout when ((nios_ss_n(1) = '0') and (nios_gpio.o.adf_chip_enable = '1'))
                 else '0';
+	intern_gpio_in(0)<=adf5610_spi_sdo;
 
     -- Power monitor I2C
     pwr_scl     <= i2c_scl_out when i2c_scl_oen = '0' else 'Z';

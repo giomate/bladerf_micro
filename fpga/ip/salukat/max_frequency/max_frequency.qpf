@@ -19,14 +19,14 @@
 #
 # Quartus Prime
 # Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-# Date created = 11:54:03  January 03, 2021
+# Date created = 14:00:20  March 06, 2021
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "20.1"
-DATE = "11:54:03  January 03, 2021"
+DATE = "14:00:20  March 06, 2021"
 
 # Revisions
 
-PROJECT_REVISION = "max_index_memory"
 PROJECT_REVISION = "max_index_frequency"
+PROJECT_REVISION = "max_index_memory"

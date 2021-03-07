@@ -72,6 +72,26 @@
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <interface
+   name="spin_sensor_receiver_0_data_if"
+   internal="spin_sensor_receiver_0.data_if"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="spin_sensor_receiver_0_iq_data_out"
+   internal="spin_sensor_receiver_0.iq_data_out"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="spin_sensor_receiver_0_reset_source"
+   internal="spin_sensor_receiver_0.reset_source"
+   type="reset"
+   dir="start" />
+ <interface
+   name="spin_sensor_receiver_0_s_axi"
+   internal="spin_sensor_receiver_0.s_axi"
+   type="axi4lite"
+   dir="end" />
  <module name="clk_0" kind="clock_source" version="20.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />

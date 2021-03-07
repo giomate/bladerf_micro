@@ -2,9 +2,9 @@
  * alt_sys_init.c - HAL initialization source
  *
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios_cpu'
- * SOPC Builder design path: D:/Salukat/Development/Software/Quartus/bladerf_micro/bladerf_micro/nios_cpu.sopcinfo
+ * SOPC Builder design path: C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/bladerf_micro/nios_cpu.sopcinfo
  *
- * Generated: Fri Mar 05 08:29:41 CET 2021
+ * Generated: Sat Mar 06 10:52:35 CET 2021
  */
 
 /*

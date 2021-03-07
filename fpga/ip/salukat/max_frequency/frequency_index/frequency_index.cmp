@@ -1,0 +1,10 @@
+	component frequency_index is
+		port (
+			clk_clk                                               : in  std_logic                     := 'X';             -- clk
+			max_frequency_index_0_index_frequency_index_frequency : out std_logic_vector(7 downto 0);                     -- index_frequency
+			max_frequency_index_0_iq_complex_samples_re_data      : in  std_logic_vector(11 downto 0) := (others => 'X'); -- re_data
+			max_frequency_index_0_iq_complex_samples_im_data      : in  std_logic_vector(11 downto 0) := (others => 'X'); -- im_data
+			reset_reset_n                                         : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component frequency_index;
+

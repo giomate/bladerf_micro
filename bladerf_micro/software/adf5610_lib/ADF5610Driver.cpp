@@ -54,7 +54,7 @@ ADF5610_Driver::~ADF5610_Driver() {
 	// TODO Auto-generated destructor stub
 }
 
-void ADF5610_Driver::Init(void){
+bool ADF5610_Driver::Init(void){
 	//spi=&staticSPI;
 	spi->Init(ADF5610_BASE,0);
 
@@ -62,7 +62,7 @@ void ADF5610_Driver::Init(void){
 	//spi->Init();
 
 	 InitiateRegisters();
-	 InitPLL();
+	 return InitPLL();
 	// CompleteConfigurationFlow(0);
 
 
@@ -84,6 +84,15 @@ void ADF5610_Driver::SetNextFrequency(void)     // Freq hier lokal oben global
 {
 
   CalculateVCOValues();
+
+
+
+}
+void ADF5610_Driver::SetFrequency(double tf)     // Freq hier lokal oben global
+{
+	target_frequency=tf;
+  CalculateVCOValues();
+	ShortConfigurationFlow();
 
 
 
@@ -146,7 +155,8 @@ bool ADF5610_Driver::LockDetect(void){
 }
 
 bool ADF5610_Driver::IsLocked(void){
-	bool bool_temp=(IORD_ALTERA_AVALON_SPI_RXDATA(ADF5610_BASE)&0x01)>0;
+	reg_value=IORD_8DIRECT(INTERN_PIO_BASE, 0);
+	 bool_temp=(reg_value&0x01)>0;
 #ifdef NOT_SDO
 	is_locked= bool_temp;
 #else
@@ -378,7 +388,7 @@ void ADF5610_Driver::CompleteConfigurationFlow(unsigned int k){
       }
 	   WriteRegisters(5);
 
-    }else if((i!=4)|(i!=3)){
+    }else if((i!=4)&(i!=3)){
       WriteRegisters(i);
     }
   }
@@ -633,7 +643,7 @@ bool	ADF5610_Driver::SelfTest(uint8_t cycles){
 
 
 		 }
-		 usleep(1000);
+		 usleep(100);
 	}
 	return true;
 }

@@ -30,7 +30,7 @@
 //INPUT_CLOCK: 80000000
 //ISMASTER: 1
 //DATABITS: 8
-//TARGETCLOCK: 960000
+//TARGETCLOCK: 9600000
 //NUMSLAVES: 2
 //CPOL: 1
 //CPHA: 1
@@ -115,7 +115,7 @@ wire             p1_data_rd_strobe;
 wire    [ 15: 0] p1_data_to_cpu;
 wire             p1_data_wr_strobe;
 wire             p1_rd_strobe;
-wire    [  5: 0] p1_slowcount;
+wire    [  2: 0] p1_slowcount;
 wire             p1_wr_strobe;
 reg              rd_strobe;
 wire             readyfordata;
@@ -123,7 +123,7 @@ reg     [  7: 0] rx_holding_reg;
 reg     [  7: 0] shift_reg;
 wire             slaveselect_wr_strobe;
 wire             slowclock;
-reg     [  5: 0] slowcount;
+reg     [  2: 0] slowcount;
 wire    [ 10: 0] spi_control;
 reg     [ 15: 0] spi_slave_select_holding_reg;
 reg     [ 15: 0] spi_slave_select_reg;
@@ -256,11 +256,11 @@ wire             write_tx_holding;
     end
 
 
-  // slowclock is active once every 42 system clock pulses.
-  assign slowclock = slowcount == 6'h29;
+  // slowclock is active once every 5 system clock pulses.
+  assign slowclock = slowcount == 3'h4;
 
-  assign p1_slowcount = ({6 {(transmitting && !slowclock)}} & (slowcount + 1)) |
-    ({6 {(~((transmitting && !slowclock)))}} & 0);
+  assign p1_slowcount = ({3 {(transmitting && !slowclock)}} & (slowcount + 1)) |
+    ({3 {(~((transmitting && !slowclock)))}} & 0);
 
   // Divide counter for SPI clock.
   always @(posedge clk or negedge reset_n)

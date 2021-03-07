@@ -4,8 +4,38 @@
 
 `timescale 1 ps / 1 ps
 module sensor_reader (
-		input  wire  clk_clk,       //   clk.clk
-		input  wire  reset_reset_n  // reset.reset_n
+		input  wire        clk_clk,                                    //                                 clk.clk
+		input  wire        reset_reset_n,                              //                               reset.reset_n
+		input  wire        spin_sensor_receiver_0_data_if_rx_clk_p,    //      spin_sensor_receiver_0_data_if.rx_clk_p
+		input  wire        spin_sensor_receiver_0_data_if_frame_p,     //                                    .frame_p
+		input  wire [5:0]  spin_sensor_receiver_0_data_if_data_p,      //                                    .data_p
+		input  wire [5:0]  spin_sensor_receiver_0_data_if_data_n,      //                                    .data_n
+		input  wire        spin_sensor_receiver_0_data_if_frame_n,     //                                    .frame_n
+		input  wire        spin_sensor_receiver_0_data_if_rx_clk_n,    //                                    .rx_clk_n
+		output wire        spin_sensor_receiver_0_data_if_tc_clk,      //                                    .tc_clk
+		output wire        spin_sensor_receiver_0_data_if_tx_clk,      //                                    .tx_clk
+		output wire [11:0] spin_sensor_receiver_0_iq_data_out_re_data, //  spin_sensor_receiver_0_iq_data_out.re_data
+		output wire [11:0] spin_sensor_receiver_0_iq_data_out_im_data, //                                    .im_data
+		output wire        spin_sensor_receiver_0_reset_source_reset,  // spin_sensor_receiver_0_reset_source.reset
+		input  wire        spin_sensor_receiver_0_s_axi_awvalid,       //        spin_sensor_receiver_0_s_axi.awvalid
+		input  wire [15:0] spin_sensor_receiver_0_s_axi_awaddr,        //                                    .awaddr
+		input  wire [2:0]  spin_sensor_receiver_0_s_axi_awprot,        //                                    .awprot
+		output wire        spin_sensor_receiver_0_s_axi_awready,       //                                    .awready
+		input  wire        spin_sensor_receiver_0_s_axi_wvalid,        //                                    .wvalid
+		input  wire [31:0] spin_sensor_receiver_0_s_axi_wdata,         //                                    .wdata
+		input  wire [3:0]  spin_sensor_receiver_0_s_axi_wstrb,         //                                    .wstrb
+		output wire        spin_sensor_receiver_0_s_axi_wready,        //                                    .wready
+		output wire        spin_sensor_receiver_0_s_axi_bvalid,        //                                    .bvalid
+		output wire [1:0]  spin_sensor_receiver_0_s_axi_bresp,         //                                    .bresp
+		input  wire        spin_sensor_receiver_0_s_axi_bready,        //                                    .bready
+		input  wire        spin_sensor_receiver_0_s_axi_arvalid,       //                                    .arvalid
+		input  wire [15:0] spin_sensor_receiver_0_s_axi_araddr,        //                                    .araddr
+		input  wire [2:0]  spin_sensor_receiver_0_s_axi_arprot,        //                                    .arprot
+		output wire        spin_sensor_receiver_0_s_axi_arready,       //                                    .arready
+		output wire        spin_sensor_receiver_0_s_axi_rvalid,        //                                    .rvalid
+		output wire [31:0] spin_sensor_receiver_0_s_axi_rdata,         //                                    .rdata
+		output wire [1:0]  spin_sensor_receiver_0_s_axi_rresp,         //                                    .rresp
+		input  wire        spin_sensor_receiver_0_s_axi_rready         //                                    .rready
 	);
 
 	wire    spin_sensor_receiver_0_clk_out_clk; // spin_sensor_receiver_0:l_clk_out -> spin_sensor_receiver_0:clk_in
@@ -14,38 +44,40 @@ module sensor_reader (
 	spin_sensor_top #(
 		.FPGA_TECHNOLOGY ("CYCLONE5")
 	) spin_sensor_receiver_0 (
-		.s_axi_awvalid (),                                   // altera_axi4lite_slave.awvalid
-		.s_axi_awaddr  (),                                   //                      .awaddr
-		.s_axi_awprot  (),                                   //                      .awprot
-		.s_axi_awready (),                                   //                      .awready
-		.s_axi_wvalid  (),                                   //                      .wvalid
-		.s_axi_wdata   (),                                   //                      .wdata
-		.s_axi_wstrb   (),                                   //                      .wstrb
-		.s_axi_wready  (),                                   //                      .wready
-		.s_axi_bvalid  (),                                   //                      .bvalid
-		.s_axi_bresp   (),                                   //                      .bresp
-		.s_axi_bready  (),                                   //                      .bready
-		.s_axi_arvalid (),                                   //                      .arvalid
-		.s_axi_araddr  (),                                   //                      .araddr
-		.s_axi_arprot  (),                                   //                      .arprot
-		.s_axi_arready (),                                   //                      .arready
-		.s_axi_rvalid  (),                                   //                      .rvalid
-		.s_axi_rdata   (),                                   //                      .rdata
-		.s_axi_rresp   (),                                   //                      .rresp
-		.s_axi_rready  (),                                   //                      .rready
-		.s_axi_aclk    (clk_clk),                            //           s_axi_clock.clk
-		.s_axi_aresetn (~rst_controller_reset_out_reset),    //           s_axi_reset.reset_n
-		.rx_clk_p_in   (),                                   //               data_if.rx_clk_p
-		.frame_p_in    (),                                   //                      .frame_p
-		.data_p_in     (),                                   //                      .data_p
-		.data_n_in     (),                                   //                      .data_n
-		.frame_n_in    (),                                   //                      .frame_n
-		.rx_clk_n_in   (),                                   //                      .rx_clk_n
-		.re_data_out   (),                                   //           iq_data_out.real
-		.im_data_out   (),                                   //                      .im
-		.l_clk_out     (spin_sensor_receiver_0_clk_out_clk), //               clk_out.clk
-		.rst_out       (),                                   //          reset_source.reset
-		.clk_in        (spin_sensor_receiver_0_clk_out_clk)  //          device_clock.clk
+		.s_axi_aclk    (clk_clk),                                    //  s_axi_clock.clk
+		.s_axi_aresetn (~rst_controller_reset_out_reset),            //  s_axi_reset.reset_n
+		.rx_clk_p_in   (spin_sensor_receiver_0_data_if_rx_clk_p),    //      data_if.rx_clk_p
+		.frame_p_in    (spin_sensor_receiver_0_data_if_frame_p),     //             .frame_p
+		.data_p_in     (spin_sensor_receiver_0_data_if_data_p),      //             .data_p
+		.data_n_in     (spin_sensor_receiver_0_data_if_data_n),      //             .data_n
+		.frame_n_in    (spin_sensor_receiver_0_data_if_frame_n),     //             .frame_n
+		.rx_clk_n_in   (spin_sensor_receiver_0_data_if_rx_clk_n),    //             .rx_clk_n
+		.tx_clk_p_out  (spin_sensor_receiver_0_data_if_tc_clk),      //             .tc_clk
+		.tx_clk_n_out  (spin_sensor_receiver_0_data_if_tx_clk),      //             .tx_clk
+		.re_data_out   (spin_sensor_receiver_0_iq_data_out_re_data), //  iq_data_out.re_data
+		.im_data_out   (spin_sensor_receiver_0_iq_data_out_im_data), //             .im_data
+		.l_clk_out     (spin_sensor_receiver_0_clk_out_clk),         //      clk_out.clk
+		.rst_out       (spin_sensor_receiver_0_reset_source_reset),  // reset_source.reset
+		.clk_in        (spin_sensor_receiver_0_clk_out_clk),         // device_clock.clk
+		.s_axi_awvalid (spin_sensor_receiver_0_s_axi_awvalid),       //        s_axi.awvalid
+		.s_axi_awaddr  (spin_sensor_receiver_0_s_axi_awaddr),        //             .awaddr
+		.s_axi_awprot  (spin_sensor_receiver_0_s_axi_awprot),        //             .awprot
+		.s_axi_awready (spin_sensor_receiver_0_s_axi_awready),       //             .awready
+		.s_axi_wvalid  (spin_sensor_receiver_0_s_axi_wvalid),        //             .wvalid
+		.s_axi_wdata   (spin_sensor_receiver_0_s_axi_wdata),         //             .wdata
+		.s_axi_wstrb   (spin_sensor_receiver_0_s_axi_wstrb),         //             .wstrb
+		.s_axi_wready  (spin_sensor_receiver_0_s_axi_wready),        //             .wready
+		.s_axi_bvalid  (spin_sensor_receiver_0_s_axi_bvalid),        //             .bvalid
+		.s_axi_bresp   (spin_sensor_receiver_0_s_axi_bresp),         //             .bresp
+		.s_axi_bready  (spin_sensor_receiver_0_s_axi_bready),        //             .bready
+		.s_axi_arvalid (spin_sensor_receiver_0_s_axi_arvalid),       //             .arvalid
+		.s_axi_araddr  (spin_sensor_receiver_0_s_axi_araddr),        //             .araddr
+		.s_axi_arprot  (spin_sensor_receiver_0_s_axi_arprot),        //             .arprot
+		.s_axi_arready (spin_sensor_receiver_0_s_axi_arready),       //             .arready
+		.s_axi_rvalid  (spin_sensor_receiver_0_s_axi_rvalid),        //             .rvalid
+		.s_axi_rdata   (spin_sensor_receiver_0_s_axi_rdata),         //             .rdata
+		.s_axi_rresp   (spin_sensor_receiver_0_s_axi_rresp),         //             .rresp
+		.s_axi_rready  (spin_sensor_receiver_0_s_axi_rready)         //             .rready
 	);
 
 	altera_reset_controller #(

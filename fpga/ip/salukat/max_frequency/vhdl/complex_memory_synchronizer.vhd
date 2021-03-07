@@ -35,7 +35,7 @@ architecture arch of complex_memory_synchronizer is
 
 begin
 
-    synchronize : process( clock, enable )
+    synchronize : process(clock, enable)
     begin
         if( enable = '0' ) then
         --    sync <= (others=>UNVALID_LEVEL);

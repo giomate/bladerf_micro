@@ -41,8 +41,8 @@
 # is 80 MHz, output clock is 40 MHz, so it's a division by 2.
 set adi_sclk_divisor 2
 
-create_generated_clock -name adi_sclk_reg -source [get_pins $system_clock] -divide_by $adi_sclk_divisor [get_registers {*rffe_spi|SCLK_reg}]
-create_generated_clock -name adi_sclk_pin -source [get_registers -no_duplicates {*rffe_spi|SCLK_reg}] [get_ports {adi_spi_sclk}]
+create_generated_clock -name adi_sclk_reg -source [get_pins $system_clock] -divide_by $adi_sclk_divisor [get_registers {*ad9361|SCLK_reg}]
+create_generated_clock -name adi_sclk_pin -source [get_registers -no_duplicates {*ad9361|SCLK_reg}] [get_ports {adi_spi_sclk}]
 
 set_max_skew -from [get_clocks {adi_sclk_pin}] -to [get_ports {adi_spi_sclk}] 0.2
 
@@ -61,11 +61,11 @@ set adi_spi_enb_th  0.0
 # Constraints for adi_spi_do (AD9361 -> FPGA)
 # Max input delay = tco_max + (data_trace_delay + src_clock_trace_delay)
 set v [expr {$adi_spi_data_tco_max + ($adi_spi_do_trace_delay + $adi_spi_clk_trace_delay)}]
-set_input_delay -clock [get_clocks adi_sclk_pin] -max $v [get_ports adi_spi_sdo]
+set_input_delay  -clock [get_clocks adi_sclk_pin] -max $v [get_ports adi_spi_sdo]
 
 # Min input delay = tco_min + (data_trace_delay + src_clock_trace_delay)
 set v [expr {$adi_spi_data_tco_min + ($adi_spi_do_trace_delay + $adi_spi_clk_trace_delay)}]
-set_input_delay -clock [get_clocks adi_sclk_pin] -min 3.119 [get_ports adi_spi_sdo]
+set_input_delay  -clock [get_clocks adi_sclk_pin] -min 3.119 [get_ports adi_spi_sdo]
 
 # Multicycle constraints
 set_multicycle_path -setup -start -from [get_clocks {adi_sclk_pin}] -to [get_clocks $system_clock] [expr {$adi_sclk_divisor}]
@@ -75,17 +75,17 @@ set_multicycle_path -hold  -start -from [get_clocks {adi_sclk_pin}] -to [get_clo
 # Constraints for adi_spi_di/enb (FPGA -> AD9361)
 # Max output delay = setup + (data_trace_delay + src_clock_trace_delay)
 set v [expr {$adi_spi_data_ts + ($adi_spi_di_trace_delay + $adi_spi_clk_trace_delay)}]
-set_output_delay -clock [get_clocks adi_sclk_pin] -max $v [get_ports {adi_spi_sdi}]
+set_output_delay  -clock [get_clocks adi_sclk_pin] -max $v [get_ports {adi_spi_sdi}]
 
 set v [expr {$adi_spi_enb_ts + ($adi_spi_enb_trace_delay + $adi_spi_clk_trace_delay)}]
-set_output_delay -clock [get_clocks adi_sclk_pin] -max $v [get_ports {adi_spi_csn}]
+set_output_delay   -clock [get_clocks adi_sclk_pin] -max $v [get_ports {adi_spi_csn}]
 
 # Min output delay = -1 * hold + (data_trace_delay + src_clock_trace_delay)
 set v [expr {(-1 * $adi_spi_data_th) + ($adi_spi_di_trace_delay + $adi_spi_clk_trace_delay)}]
-set_output_delay -clock [get_clocks adi_sclk_pin] -min $v [get_ports {adi_spi_sdi}]
+set_output_delay  -clock [get_clocks adi_sclk_pin] -min $v [get_ports {adi_spi_sdi}]
 
 set v [expr {(-1 * $adi_spi_enb_th) + ($adi_spi_enb_trace_delay + $adi_spi_clk_trace_delay)}]
-set_output_delay -clock [get_clocks adi_sclk_pin] -min $v [get_ports {adi_spi_csn}]
+set_output_delay  -clock [get_clocks adi_sclk_pin] -min $v [get_ports {adi_spi_csn}]
 
 ### AD9361 Discretes ###
 

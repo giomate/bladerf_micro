@@ -31,9 +31,9 @@ private:
 	char receivedChars[5];   // an array to store the received data
 	double step,target_frequency;
 	 int dir;
-	 bool is_locked;
+	 bool is_locked,bool_temp;
 	  uint32_t aux_register;
-	    uint8_t local_index;
+	    uint8_t local_index,reg_value;
 		 uint32_t recibido32;
 
 
@@ -49,7 +49,7 @@ private:
 public:
 	ADF5610_Driver();
 	virtual ~ADF5610_Driver();
-	void Init(void);
+	bool Init(void);
 	void SetNextFrequency(void);
 	void CalculateVCOValues(void);
 	void WriteRegisters(uint8_t d);
@@ -64,6 +64,7 @@ public:
 	long CalculateGCD(long a, long b);
 	bool SelfTest(uint8_t cycles);
 	bool IsLocked(void);
+	void SetFrequency(double tf);
 private:
 	void ConvertU32FourByteArray(uint8_t *array,uint32_t  data);
 	bool  InitPLL(void);

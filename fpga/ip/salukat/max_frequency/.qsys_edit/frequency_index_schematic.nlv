@@ -1,0 +1,13 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst frequency_index -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst frequency_index.max_frequency_index_0 -pg 1 -lvl 2 -y 50
+preplace inst frequency_index.clk_0 -pg 1 -lvl 1 -y 30
+preplace netloc EXPORT<net_container>frequency_index</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)frequency_index.reset) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>frequency_index</net_container>(MASTER)clk_0.clk_reset,(SLAVE)max_frequency_index_0.reset) 1 1 1 410
+preplace netloc EXPORT<net_container>frequency_index</net_container>(SLAVE)max_frequency_index_0.iq_complex_samples,(SLAVE)frequency_index.max_frequency_index_0_iq_complex_samples) 1 0 2 NJ 120 NJ
+preplace netloc FAN_OUT<net_container>frequency_index</net_container>(MASTER)clk_0.clk,(SLAVE)max_frequency_index_0.clock,(SLAVE)max_frequency_index_0.memory_clk) 1 1 1 430
+preplace netloc EXPORT<net_container>frequency_index</net_container>(SLAVE)frequency_index.max_frequency_index_0_index_frequency,(SLAVE)max_frequency_index_0.index_frequency) 1 0 2 NJ 100 NJ
+preplace netloc EXPORT<net_container>frequency_index</net_container>(SLAVE)frequency_index.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+levelinfo -pg 1 0 200 630
+levelinfo -hier frequency_index 210 240 460 620

@@ -1,0 +1,90 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 800 240)
+	(text "frequency_index" (rect 352 -1 419 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 352 72)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "max_frequency_index_0_iq_complex_samples_re_data[11..0]" (rect 0 0 250 12)(font "Arial" (font_size 8)))
+		(text "max_frequency_index_0_iq_complex_samples_re_data[11..0]" (rect 4 141 334 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 352 152)(line_width 3))
+	)
+	(port
+		(pt 0 168)
+		(input)
+		(text "max_frequency_index_0_iq_complex_samples_im_data[11..0]" (rect 0 0 251 12)(font "Arial" (font_size 8)))
+		(text "max_frequency_index_0_iq_complex_samples_im_data[11..0]" (rect 4 157 334 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 352 168)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 197 82 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 352 208)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "max_frequency_index_0_index_frequency_index_frequency[7..0]" (rect 0 0 267 12)(font "Arial" (font_size 8)))
+		(text "max_frequency_index_0_index_frequency_index_frequency[7..0]" (rect 4 101 358 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 352 112)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 337 43 692 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 357 67 732 144)(font "Arial" (color 0 0 0)))
+		(text "max_frequency_index_0_index_frequency" (rect 108 83 438 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "index_frequency" (rect 357 107 804 224)(font "Arial" (color 0 0 0)))
+		(text "max_frequency_index_0_iq_complex_samples" (rect 81 123 402 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "re_data" (rect 357 147 756 304)(font "Arial" (color 0 0 0)))
+		(text "im_data" (rect 357 163 756 336)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 323 179 676 371)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 357 203 756 416)(font "Arial" (color 0 0 0)))
+		(text " frequency_index " (rect 725 224 1552 458)(font "Arial" ))
+		(line (pt 352 32)(pt 448 32)(line_width 1))
+		(line (pt 448 32)(pt 448 224)(line_width 1))
+		(line (pt 352 224)(pt 448 224)(line_width 1))
+		(line (pt 352 32)(pt 352 224)(line_width 1))
+		(line (pt 353 52)(pt 353 76)(line_width 1))
+		(line (pt 354 52)(pt 354 76)(line_width 1))
+		(line (pt 353 92)(pt 353 116)(line_width 1))
+		(line (pt 354 92)(pt 354 116)(line_width 1))
+		(line (pt 353 132)(pt 353 172)(line_width 1))
+		(line (pt 354 132)(pt 354 172)(line_width 1))
+		(line (pt 353 188)(pt 353 212)(line_width 1))
+		(line (pt 354 188)(pt 354 212)(line_width 1))
+		(line (pt 0 0)(pt 800 0)(line_width 1))
+		(line (pt 800 0)(pt 800 240)(line_width 1))
+		(line (pt 0 240)(pt 800 240)(line_width 1))
+		(line (pt 0 0)(pt 0 240)(line_width 1))
+	)
+)

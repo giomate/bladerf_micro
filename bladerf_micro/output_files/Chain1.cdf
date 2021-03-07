@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("D:/Salukat/Development/Software/Quartus/bladerf_micro/bladerf_micro/output_files/") File("bladerf_i2c.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/bladerf_micro/output_files/") File("trobina_controller.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

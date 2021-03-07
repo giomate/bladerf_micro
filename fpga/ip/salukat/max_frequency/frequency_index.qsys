@@ -25,6 +25,14 @@
          type = "String";
       }
    }
+   element frequency_index
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
    element max_frequency_index_0
    {
       datum _sortIndex
@@ -76,22 +84,12 @@
    name="max_frequency_index_0"
    kind="max_frequency_index"
    version="1.0"
-   enabled="1">
-  <parameter name="ADDR_WIDTH" value="5" />
-  <parameter name="DATA_WIDTH" value="24" />
-  <parameter name="INDEX_WIDTH" value="8" />
-  <parameter name="NUM_REGISTERS" value="32" />
- </module>
+   enabled="1" />
  <connection
    kind="clock"
    version="20.1"
    start="clk_0.clk"
    end="max_frequency_index_0.clock" />
- <connection
-   kind="clock"
-   version="20.1"
-   start="clk_0.clk"
-   end="max_frequency_index_0.memory_clk" />
  <connection
    kind="reset"
    version="20.1"

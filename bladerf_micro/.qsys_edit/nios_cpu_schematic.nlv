@@ -1,30 +1,49 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
 preplace inst nios_cpu.nios2.clock_bridge -pg 1
+preplace inst nios_cpu.index_input -pg 1 -lvl 4 -y 1150
 preplace inst nios_cpu -pg 1 -lvl 1 -y 40 -regy -20
-preplace inst nios_cpu.nios2 -pg 1 -lvl 3 -y 470
-preplace inst nios_cpu.control -pg 1 -lvl 4 -y 840
+preplace inst nios_cpu.nios2 -pg 1 -lvl 3 -y 670
+preplace inst nios_cpu.control -pg 1 -lvl 4 -y 1040
+preplace inst nios_cpu.clock_bridge_0 -pg 1 -lvl 8 -y 290
 preplace inst nios_cpu.opencores_i2c -pg 1 -lvl 4 -y 30
-preplace inst nios_cpu.gpio_rffe -pg 1 -lvl 4 -y 730
-preplace inst nios_cpu.jtag_uart -pg 1 -lvl 4 -y 530
-preplace inst nios_cpu.ram -pg 1 -lvl 4 -y 640
-preplace inst nios_cpu.adf5610 -pg 1 -lvl 4 -y 400
-preplace inst nios_cpu.xb_gpio -pg 1 -lvl 4 -y 160
-preplace inst nios_cpu.peripheral_spi -pg 1 -lvl 4 -y 270
+preplace inst nios_cpu.gpio_rffe -pg 1 -lvl 4 -y 930
+preplace inst nios_cpu.max_frequency_index_0 -pg 1 -lvl 10 -y 250
+preplace inst nios_cpu.jtag_uart -pg 1 -lvl 4 -y 730
+preplace inst nios_cpu.tranceiver -pg 1 -lvl 7 -y 270
+preplace inst nios_cpu.ram -pg 1 -lvl 4 -y 840
+preplace inst nios_cpu.adf5610 -pg 1 -lvl 4 -y 600
+preplace inst nios_cpu.xb_gpio -pg 1 -lvl 4 -y 270
+preplace inst nios_cpu.reset_bridge_0 -pg 1 -lvl 9 -y 310
+preplace inst nios_cpu.peripheral_spi -pg 1 -lvl 4 -y 470
 preplace inst nios_cpu.nios2.cpu -pg 1
-preplace inst nios_cpu.clk_0 -pg 1 -lvl 1 -y 600
+preplace inst nios_cpu.ad9361 -pg 1 -lvl 4 -y 1370
+preplace inst nios_cpu.clk_0 -pg 1 -lvl 1 -y 680
+preplace inst nios_cpu.pio_mini -pg 1 -lvl 4 -y 160
 preplace inst nios_cpu.nios2.reset_bridge -pg 1
-preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.xb_gpios,(SLAVE)xb_gpio.external_connection) 1 0 4 NJ 190 NJ 190 NJ 190 NJ
-preplace netloc INTERCONNECT<net_container>nios_cpu</net_container>(SLAVE)jtag_uart.reset,(SLAVE)opencores_i2c.reset_sink,(SLAVE)xb_gpio.reset,(SLAVE)control.reset,(SLAVE)nios2.reset,(SLAVE)peripheral_spi.reset,(SLAVE)adf5610.reset,(MASTER)clk_0.clk_reset,(MASTER)nios2.debug_reset_request,(SLAVE)gpio_rffe.reset,(SLAVE)ram.reset1) 1 1 3 N 630 450 660 1000
-preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)nios_cpu.reset) 1 0 1 NJ
-preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.pll,(SLAVE)adf5610.external) 1 0 4 NJ 430 NJ 430 NJ 430 NJ
-preplace netloc FAN_OUT<net_container>nios_cpu</net_container>(MASTER)nios2.irq,(SLAVE)adf5610.irq,(SLAVE)jtag_uart.irq,(SLAVE)peripheral_spi.irq,(SLAVE)opencores_i2c.interrupt_sender) 1 3 1 1020
-preplace netloc INTERCONNECT<net_container>nios_cpu</net_container>(SLAVE)xb_gpio.s1,(MASTER)nios2.instruction_master,(SLAVE)nios2.debug_mem_slave,(SLAVE)ram.s1,(SLAVE)control.s1,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)gpio_rffe.s1,(SLAVE)peripheral_spi.spi_control_port,(SLAVE)opencores_i2c.bladerf_oc_i2c_master,(SLAVE)adf5610.spi_control_port,(MASTER)nios2.data_master) 1 2 2 490 620 980
-preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
-preplace netloc FAN_OUT<net_container>nios_cpu</net_container>(SLAVE)nios2.clk,(SLAVE)peripheral_spi.clk,(SLAVE)opencores_i2c.clock_sink,(SLAVE)control.clk,(MASTER)clk_0.clk,(SLAVE)ram.clk1,(SLAVE)jtag_uart.clk,(SLAVE)adf5610.clk,(SLAVE)xb_gpio.clk,(SLAVE)gpio_rffe.clk) 1 1 3 N 610 470 640 1040
-preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.gpio,(SLAVE)control.external_connection) 1 0 4 NJ 870 NJ 870 NJ 870 NJ
-preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)peripheral_spi.external,(SLAVE)nios_cpu.dac) 1 0 4 NJ 300 NJ 300 NJ 300 NJ
-preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.oc_i2c,(SLAVE)opencores_i2c.conduit_end) 1 0 4 NJ 80 NJ 80 NJ 80 NJ
-preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.gpio_rf,(SLAVE)gpio_rffe.external_connection) 1 0 4 NJ 760 NJ 760 NJ 760 NJ
-levelinfo -pg 1 0 60 1250
-levelinfo -hier nios_cpu 70 100 430 750 1080 1240
+preplace inst nios_cpu.intern_pio -pg 1 -lvl 4 -y 1260
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.xb_gpios,(SLAVE)xb_gpio.external_connection) 1 0 4 NJ 300 NJ 300 NJ 300 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.spi_ad9361,(SLAVE)ad9361.external) 1 0 4 NJ 1400 NJ 1400 NJ 1400 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.intern_gpio,(SLAVE)intern_pio.external_connection) 1 0 4 NJ 1290 NJ 1290 NJ 1290 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)pio_mini.external_connection,(SLAVE)nios_cpu.gpio_mini) 1 0 4 NJ 190 NJ 190 NJ 190 NJ
+preplace netloc FAN_OUT<net_container>nios_cpu</net_container>(SLAVE)opencores_i2c.interrupt_sender,(MASTER)nios2.irq,(SLAVE)adf5610.irq,(SLAVE)jtag_uart.irq,(SLAVE)ad9361.irq,(SLAVE)peripheral_spi.irq) 1 3 1 1020
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)adf5610.external,(SLAVE)nios_cpu.pll) 1 0 4 NJ 630 NJ 630 NJ 630 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)opencores_i2c.conduit_end,(SLAVE)nios_cpu.oc_i2c) 1 0 4 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)max_frequency_index_0.index_frequency,(SLAVE)nios_cpu.index_out) 1 0 10 NJ 380 NJ 380 NJ 380 NJ 380 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc POINT_TO_POINT<net_container>nios_cpu</net_container>(MASTER)tranceiver.clk_out,(SLAVE)clock_bridge_0.in_clk) 1 7 1 1880
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)peripheral_spi.external,(SLAVE)nios_cpu.dac) 1 0 4 NJ 500 NJ 500 NJ 500 NJ
+preplace netloc INTERCONNECT<net_container>nios_cpu</net_container>(SLAVE)index_input.s1,(SLAVE)peripheral_spi.spi_control_port,(SLAVE)adf5610.spi_control_port,(SLAVE)pio_mini.s1,(SLAVE)ram.s1,(SLAVE)intern_pio.s1,(SLAVE)control.s1,(SLAVE)tranceiver.s_axi,(SLAVE)gpio_rffe.s1,(SLAVE)jtag_uart.avalon_jtag_slave,(MASTER)nios2.data_master,(MASTER)nios2.instruction_master,(SLAVE)ad9361.spi_control_port,(SLAVE)opencores_i2c.bladerf_oc_i2c_master,(SLAVE)nios2.debug_mem_slave,(SLAVE)xb_gpio.s1) 1 2 5 510 840 1000 420 NJ 340 NJ 340 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)control.external_connection,(SLAVE)nios_cpu.gpio) 1 0 4 NJ 1070 NJ 1070 NJ 1070 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.adi_stream,(SLAVE)tranceiver.data_if) 1 0 7 NJ 400 NJ 400 NJ 400 NJ 400 NJ 280 NJ 280 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.index_in,(SLAVE)index_input.external_connection) 1 0 4 NJ 1180 NJ 1180 NJ 1180 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)clk_0.clk_in,(SLAVE)nios_cpu.clk) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>nios_cpu</net_container>(SLAVE)xb_gpio.reset,(SLAVE)index_input.reset,(SLAVE)jtag_uart.reset,(SLAVE)opencores_i2c.reset_sink,(SLAVE)ad9361.reset,(SLAVE)nios2.reset,(SLAVE)pio_mini.reset,(SLAVE)intern_pio.reset,(SLAVE)gpio_rffe.reset,(SLAVE)adf5610.reset,(SLAVE)ram.reset1,(SLAVE)control.reset,(MASTER)nios2.debug_reset_request,(MASTER)clk_0.clk_reset,(SLAVE)tranceiver.s_axi_reset,(SLAVE)peripheral_spi.reset) 1 1 6 N 710 470 860 1040 460 NJ 380 NJ 380 NJ
+preplace netloc EXPORT<net_container>nios_cpu</net_container>(SLAVE)nios_cpu.gpio_rf,(SLAVE)gpio_rffe.external_connection) 1 0 4 NJ 960 NJ 960 NJ 960 NJ
+preplace netloc POINT_TO_POINT<net_container>nios_cpu</net_container>(SLAVE)max_frequency_index_0.reset,(MASTER)reset_bridge_0.out_reset) 1 9 1 N
+preplace netloc POINT_TO_POINT<net_container>nios_cpu</net_container>(MASTER)tranceiver.reset_source,(SLAVE)reset_bridge_0.in_reset) 1 7 2 1860 280 NJ
+preplace netloc FAN_OUT<net_container>nios_cpu</net_container>(SLAVE)index_input.clk,(SLAVE)ram.clk1,(SLAVE)jtag_uart.clk,(SLAVE)adf5610.clk,(SLAVE)control.clk,(SLAVE)tranceiver.s_axi_clock,(SLAVE)xb_gpio.clk,(SLAVE)nios2.clk,(SLAVE)ad9361.clk,(SLAVE)gpio_rffe.clk,(SLAVE)pio_mini.clk,(SLAVE)intern_pio.clk,(MASTER)clk_0.clk,(SLAVE)peripheral_spi.clk,(SLAVE)opencores_i2c.clock_sink) 1 1 6 N 690 490 820 1060 440 NJ 360 NJ 360 NJ
+preplace netloc POINT_TO_POINT<net_container>nios_cpu</net_container>(SLAVE)tranceiver.iq_data_out,(SLAVE)max_frequency_index_0.iq_complex_samples) 1 6 4 1550 220 NJ 220 NJ 220 2210
+preplace netloc FAN_OUT<net_container>nios_cpu</net_container>(SLAVE)max_frequency_index_0.clock,(SLAVE)tranceiver.device_clock,(SLAVE)reset_bridge_0.clk,(MASTER)clock_bridge_0.out_clk) 1 6 4 1570 420 NJ 420 2050 300 2190
+levelinfo -pg 1 0 80 2430
+levelinfo -hier nios_cpu 90 120 450 770 1150 1410 1530 1710 1910 2080 2260 2420

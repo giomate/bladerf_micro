@@ -2,9 +2,9 @@
  * system.h - SOPC Builder system and BSP software package information
  *
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios_cpu'
- * SOPC Builder design path: D:/Salukat/Development/Software/Quartus/bladerf_micro/bladerf_micro/nios_cpu.sopcinfo
+ * SOPC Builder design path: C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/bladerf_micro/nios_cpu.sopcinfo
  *
- * Generated: Fri Mar 05 08:29:40 CET 2021
+ * Generated: Sat Mar 06 12:48:26 CET 2021
  */
 
 /*
@@ -157,19 +157,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x410a8
+#define ALT_STDERR_BASE 0x410b8
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x410a8
+#define ALT_STDIN_BASE 0x410b8
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x410a8
+#define ALT_STDOUT_BASE 0x410b8
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -182,7 +182,7 @@
  *
  */
 
-#define ADF5610_BASE 0x41020
+#define ADF5610_BASE 0x41000
 #define ADF5610_CLOCKMULT 1
 #define ADF5610_CLOCKPHASE 1
 #define ADF5610_CLOCKPOLARITY 1
@@ -274,12 +274,39 @@
 
 
 /*
+ * intern_pio configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_intern_pio altera_avalon_pio
+#define INTERN_PIO_BASE 0x410a0
+#define INTERN_PIO_BIT_CLEARING_EDGE_REGISTER 0
+#define INTERN_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define INTERN_PIO_CAPTURE 0
+#define INTERN_PIO_DATA_WIDTH 8
+#define INTERN_PIO_DO_TEST_BENCH_WIRING 0
+#define INTERN_PIO_DRIVEN_SIM_VALUE 0
+#define INTERN_PIO_EDGE_TYPE "NONE"
+#define INTERN_PIO_FREQ 80000000
+#define INTERN_PIO_HAS_IN 1
+#define INTERN_PIO_HAS_OUT 0
+#define INTERN_PIO_HAS_TRI 0
+#define INTERN_PIO_IRQ -1
+#define INTERN_PIO_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define INTERN_PIO_IRQ_TYPE "NONE"
+#define INTERN_PIO_NAME "/dev/intern_pio"
+#define INTERN_PIO_RESET_VALUE 0
+#define INTERN_PIO_SPAN 16
+#define INTERN_PIO_TYPE "altera_avalon_pio"
+
+
+/*
  * jtag_uart configuration
  *
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x410a8
+#define JTAG_UART_BASE 0x410b8
 #define JTAG_UART_IRQ 0
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -297,7 +324,7 @@
  */
 
 #define ALT_MODULE_CLASS_opencores_i2c bladerf_oc_i2c_master
-#define OPENCORES_I2C_BASE 0x410a0
+#define OPENCORES_I2C_BASE 0x410b0
 #define OPENCORES_I2C_IRQ 1
 #define OPENCORES_I2C_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define OPENCORES_I2C_NAME "/dev/opencores_i2c"
@@ -311,7 +338,7 @@
  */
 
 #define ALT_MODULE_CLASS_peripheral_spi altera_avalon_spi
-#define PERIPHERAL_SPI_BASE 0x41040
+#define PERIPHERAL_SPI_BASE 0x41020
 #define PERIPHERAL_SPI_CLOCKMULT 1
 #define PERIPHERAL_SPI_CLOCKPHASE 1
 #define PERIPHERAL_SPI_CLOCKPOLARITY 1
@@ -371,7 +398,7 @@
  */
 
 #define ALT_MODULE_CLASS_xb_gpio altera_avalon_pio
-#define XB_GPIO_BASE 0x41000
+#define XB_GPIO_BASE 0x41040
 #define XB_GPIO_BIT_CLEARING_EDGE_REGISTER 0
 #define XB_GPIO_BIT_MODIFYING_OUTPUT_REGISTER 1
 #define XB_GPIO_CAPTURE 0

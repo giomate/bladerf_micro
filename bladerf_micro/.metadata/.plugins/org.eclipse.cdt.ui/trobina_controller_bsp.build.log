@@ -1,0 +1,6 @@
+22:19:24 **** Incremental Build of configuration Nios II for project trobina_controller_bsp ****
+wsl make all 
+[BSP build complete]
+
+22:19:26 Build Finished (took 1s.778ms)
+

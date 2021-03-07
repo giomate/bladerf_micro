@@ -17,29 +17,15 @@ entity frequency_index is
 end entity frequency_index;
 
 architecture rtl of frequency_index is
-	component max_index_memory is
-		generic (
-			NUM_REGISTERS : positive := 32;
-			ADDR_WIDTH    : positive := 5;
-			DATA_WIDTH    : positive := 24;
-			INDEX_WIDTH   : positive := 8
-		);
+	component max_frequency_top is
 		port (
 			clk       : in  std_logic                     := 'X';             -- clk
 			reset     : in  std_logic                     := 'X';             -- reset
-			addr      : in  std_logic_vector(4 downto 0)  := (others => 'X'); -- address
-			din       : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
-			dout      : out std_logic_vector(31 downto 0);                    -- readdata
-			write     : in  std_logic                     := 'X';             -- write
-			read      : in  std_logic                     := 'X';             -- read
-			waitreq   : out std_logic;                                        -- waitrequest
-			readack   : out std_logic;                                        -- readdatavalid
 			rx_in_re  : in  std_logic_vector(11 downto 0) := (others => 'X'); -- re_data
 			rx_in_im  : in  std_logic_vector(11 downto 0) := (others => 'X'); -- im_data
-			index_max : out std_logic_vector(7 downto 0);                     -- index_frequency
-			mem_clk   : in  std_logic                     := 'X'              -- clk
+			index_max : out std_logic_vector(7 downto 0)                      -- index_frequency
 		);
-	end component max_index_memory;
+	end component max_frequency_top;
 
 	component altera_reset_controller is
 		generic (
@@ -112,27 +98,13 @@ architecture rtl of frequency_index is
 
 begin
 
-	max_frequency_index_0 : component max_index_memory
-		generic map (
-			NUM_REGISTERS => 32,
-			ADDR_WIDTH    => 5,
-			DATA_WIDTH    => 24,
-			INDEX_WIDTH   => 8
-		)
+	max_frequency_index_0 : component max_frequency_top
 		port map (
 			clk       => clk_clk,                                               --              clock.clk
 			reset     => rst_controller_reset_out_reset,                        --              reset.reset
-			addr      => open,                                                  --     avalon_slave_0.address
-			din       => open,                                                  --                   .writedata
-			dout      => open,                                                  --                   .readdata
-			write     => open,                                                  --                   .write
-			read      => open,                                                  --                   .read
-			waitreq   => open,                                                  --                   .waitrequest
-			readack   => open,                                                  --                   .readdatavalid
 			rx_in_re  => max_frequency_index_0_iq_complex_samples_re_data,      -- iq_complex_samples.re_data
 			rx_in_im  => max_frequency_index_0_iq_complex_samples_im_data,      --                   .im_data
-			index_max => max_frequency_index_0_index_frequency_index_frequency, --    index_frequency.index_frequency
-			mem_clk   => clk_clk                                                --         memory_clk.clk
+			index_max => max_frequency_index_0_index_frequency_index_frequency  --    index_frequency.index_frequency
 		);
 
 	rst_controller : component altera_reset_controller

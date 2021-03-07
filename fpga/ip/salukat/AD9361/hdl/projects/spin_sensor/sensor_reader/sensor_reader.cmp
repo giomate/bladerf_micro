@@ -1,0 +1,37 @@
+	component sensor_reader is
+		port (
+			clk_clk                                    : in  std_logic                     := 'X';             -- clk
+			reset_reset_n                              : in  std_logic                     := 'X';             -- reset_n
+			spin_sensor_receiver_0_data_if_rx_clk_p    : in  std_logic                     := 'X';             -- rx_clk_p
+			spin_sensor_receiver_0_data_if_frame_p     : in  std_logic                     := 'X';             -- frame_p
+			spin_sensor_receiver_0_data_if_data_p      : in  std_logic_vector(5 downto 0)  := (others => 'X'); -- data_p
+			spin_sensor_receiver_0_data_if_data_n      : in  std_logic_vector(5 downto 0)  := (others => 'X'); -- data_n
+			spin_sensor_receiver_0_data_if_frame_n     : in  std_logic                     := 'X';             -- frame_n
+			spin_sensor_receiver_0_data_if_rx_clk_n    : in  std_logic                     := 'X';             -- rx_clk_n
+			spin_sensor_receiver_0_data_if_tc_clk      : out std_logic;                                        -- tc_clk
+			spin_sensor_receiver_0_data_if_tx_clk      : out std_logic;                                        -- tx_clk
+			spin_sensor_receiver_0_iq_data_out_re_data : out std_logic_vector(11 downto 0);                    -- re_data
+			spin_sensor_receiver_0_iq_data_out_im_data : out std_logic_vector(11 downto 0);                    -- im_data
+			spin_sensor_receiver_0_reset_source_reset  : out std_logic;                                        -- reset
+			spin_sensor_receiver_0_s_axi_awvalid       : in  std_logic                     := 'X';             -- awvalid
+			spin_sensor_receiver_0_s_axi_awaddr        : in  std_logic_vector(15 downto 0) := (others => 'X'); -- awaddr
+			spin_sensor_receiver_0_s_axi_awprot        : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- awprot
+			spin_sensor_receiver_0_s_axi_awready       : out std_logic;                                        -- awready
+			spin_sensor_receiver_0_s_axi_wvalid        : in  std_logic                     := 'X';             -- wvalid
+			spin_sensor_receiver_0_s_axi_wdata         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- wdata
+			spin_sensor_receiver_0_s_axi_wstrb         : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- wstrb
+			spin_sensor_receiver_0_s_axi_wready        : out std_logic;                                        -- wready
+			spin_sensor_receiver_0_s_axi_bvalid        : out std_logic;                                        -- bvalid
+			spin_sensor_receiver_0_s_axi_bresp         : out std_logic_vector(1 downto 0);                     -- bresp
+			spin_sensor_receiver_0_s_axi_bready        : in  std_logic                     := 'X';             -- bready
+			spin_sensor_receiver_0_s_axi_arvalid       : in  std_logic                     := 'X';             -- arvalid
+			spin_sensor_receiver_0_s_axi_araddr        : in  std_logic_vector(15 downto 0) := (others => 'X'); -- araddr
+			spin_sensor_receiver_0_s_axi_arprot        : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- arprot
+			spin_sensor_receiver_0_s_axi_arready       : out std_logic;                                        -- arready
+			spin_sensor_receiver_0_s_axi_rvalid        : out std_logic;                                        -- rvalid
+			spin_sensor_receiver_0_s_axi_rdata         : out std_logic_vector(31 downto 0);                    -- rdata
+			spin_sensor_receiver_0_s_axi_rresp         : out std_logic_vector(1 downto 0);                     -- rresp
+			spin_sensor_receiver_0_s_axi_rready        : in  std_logic                     := 'X'              -- rready
+		);
+	end component sensor_reader;
+

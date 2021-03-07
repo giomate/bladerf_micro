@@ -1,0 +1,33 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\salukat\max_frequency\frequency_index.qsys --block-symbol-file --output-directory=C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\salukat\max_frequency\frequency_index --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading max_frequency/frequency_index.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding max_frequency_index_0 [max_frequency_index 1.0]
+Progress: Parameterizing module max_frequency_index_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\salukat\max_frequency\frequency_index.qsys --synthesis=VHDL --output-directory=C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\fpga\ip\salukat\max_frequency\frequency_index\synthesis --family="Cyclone V" --part=5CEBA4F23C8
+Progress: Loading max_frequency/frequency_index.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding max_frequency_index_0 [max_frequency_index 1.0]
+Progress: Parameterizing module max_frequency_index_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: frequency_index: Generating frequency_index "frequency_index" for QUARTUS_SYNTH
+Info: max_frequency_index_0: "frequency_index" instantiated max_frequency_index "max_frequency_index_0"
+Info: rst_controller: "frequency_index" instantiated altera_reset_controller "rst_controller"
+Info: frequency_index: Done "frequency_index" with 3 modules, 211 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

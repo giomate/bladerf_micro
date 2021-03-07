@@ -8,7 +8,7 @@
    <name preferredWidth="237" />
   </columns>
  </systemtable>
- <library expandedCategories="Project,Library/Salukat,Library" />
- <window width="1936" height="1056" x="1912" y="-8" />
+ <library expandedCategories="Library,Project,Library/Salukat" />
+ <window width="1456" height="916" x="1358" y="-149" />
  <generation synthesis="VERILOG" />
 </preferences>

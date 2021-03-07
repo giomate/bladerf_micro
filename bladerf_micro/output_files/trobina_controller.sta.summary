@@ -1,0 +1,597 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'adi_rx_clock'
+Slack : -3.403
+TNS   : -84.041
+
+Type  : Slow 1100mV 85C Model Setup 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.851
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.142
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'c5_clock2'
+Slack : 3.253
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'adi_sclk_pin'
+Slack : 3.503
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 7.019
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'adi_sclk_reg'
+Slack : 14.964
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'adf_sclk_pin'
+Slack : 36.344
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'dac_sclk_pin'
+Slack : 47.356
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'pwr_scl_pin'
+Slack : 1148.584
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.301
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'adi_sclk_reg'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'c5_clock2'
+Slack : 0.492
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'adi_rx_clock'
+Slack : 0.515
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'adi_sclk_pin'
+Slack : 1.703
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dac_sclk_pin'
+Slack : 57.499
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'adf_sclk_pin'
+Slack : 65.209
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'pwr_scl_pin'
+Slack : 2149.711
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : -8.458
+TNS   : -49.123
+
+Type  : Slow 1100mV 85C Model Recovery 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 6.981
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 12.739
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.219
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 1.535
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.594
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_fclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.980
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.000
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adi_rx_clock'
+Slack : 1.279
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.562
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.397
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 4.651
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adi_sclk_reg'
+Slack : 11.531
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'c5_clock2'
+Slack : 12.116
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.509
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'peri_sclk_reg'
+Slack : 62.131
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'i2c_scl_reg'
+Slack : 1249.785
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'adi_rx_clock'
+Slack : -3.556
+TNS   : -88.948
+
+Type  : Slow 1100mV 0C Model Setup 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.926
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.131
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'c5_clock2'
+Slack : 2.247
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'adi_sclk_pin'
+Slack : 3.705
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 6.941
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'adi_sclk_reg'
+Slack : 14.969
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'adf_sclk_pin'
+Slack : 36.481
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'dac_sclk_pin'
+Slack : 47.349
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'pwr_scl_pin'
+Slack : 1148.625
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.081
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'c5_clock2'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'adi_rx_clock'
+Slack : 0.531
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'adi_sclk_reg'
+Slack : 0.546
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'adi_sclk_pin'
+Slack : 1.607
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dac_sclk_pin'
+Slack : 57.357
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'adf_sclk_pin'
+Slack : 65.191
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'pwr_scl_pin'
+Slack : 2149.680
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : -8.074
+TNS   : -46.930
+
+Type  : Slow 1100mV 0C Model Recovery 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 7.132
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 13.032
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.191
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 1.460
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.513
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_fclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.978
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.000
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adi_rx_clock'
+Slack : 1.136
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.562
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.342
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 4.595
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adi_sclk_reg'
+Slack : 11.635
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'c5_clock2'
+Slack : 12.264
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.490
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'peri_sclk_reg'
+Slack : 62.046
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'i2c_scl_reg'
+Slack : 1249.777
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'adi_rx_clock'
+Slack : 1.188
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 4.553
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'adi_sclk_pin'
+Slack : 6.134
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 6.642
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 10.545
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'c5_clock2'
+Slack : 17.200
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'adi_sclk_reg'
+Slack : 20.438
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'adf_sclk_pin'
+Slack : 37.513
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'dac_sclk_pin'
+Slack : 49.843
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'pwr_scl_pin'
+Slack : 1149.212
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.028
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.104
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.129
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'adi_sclk_reg'
+Slack : 0.176
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'c5_clock2'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'adi_rx_clock'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'adi_sclk_pin'
+Slack : 0.914
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dac_sclk_pin'
+Slack : 58.054
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'adf_sclk_pin'
+Slack : 65.519
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pwr_scl_pin'
+Slack : 2149.672
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : -4.516
+TNS   : -26.071
+
+Type  : Fast 1100mV 85C Model Recovery 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 9.470
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 15.008
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.529
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.545
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.623
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_fclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.988
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.562
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adi_rx_clock'
+Slack : 1.580
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.892
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 5.141
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adi_sclk_reg'
+Slack : 12.084
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'c5_clock2'
+Slack : 12.118
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.589
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'peri_sclk_reg'
+Slack : 62.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'i2c_scl_reg'
+Slack : 1249.756
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'adi_rx_clock'
+Slack : 1.354
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 4.998
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'adi_sclk_pin'
+Slack : 6.674
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 7.417
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 10.668
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'c5_clock2'
+Slack : 17.718
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'adi_sclk_reg'
+Slack : 20.859
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'adf_sclk_pin'
+Slack : 37.727
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'dac_sclk_pin'
+Slack : 50.024
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'pwr_scl_pin'
+Slack : 1149.308
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'adi_sclk_reg'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'c5_clock2'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'adi_rx_clock'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'adi_sclk_pin'
+Slack : 0.831
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dac_sclk_pin'
+Slack : 57.992
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'adf_sclk_pin'
+Slack : 65.522
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'pwr_scl_pin'
+Slack : 2149.657
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : -3.784
+TNS   : -21.781
+
+Type  : Fast 1100mV 0C Model Recovery 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 9.834
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 15.239
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.196
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.487
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.566
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_fclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.988
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.562
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adi_rx_clock'
+Slack : 1.564
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'U_nios_system|tranceiver|if_axi_ad9361|i_dev_if|i_axi_ad9361_lvds_if_c5|i_altlvds_rx|auto_generated|pll_sclk~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.893
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'U_system_pll|system_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 5.143
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'c5_clock2'
+Slack : 12.080
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adi_sclk_reg'
+Slack : 12.086
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.642
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'peri_sclk_reg'
+Slack : 62.197
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'i2c_scl_reg'
+Slack : 1249.808
+TNS   : 0.000
+
+------------------------------------------------------------

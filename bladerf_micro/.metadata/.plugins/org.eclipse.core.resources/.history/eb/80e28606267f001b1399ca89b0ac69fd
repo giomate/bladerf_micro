@@ -1,0 +1,133 @@
+/*
+ * ad9361_Class.h
+ *
+ *  Created on: Jan 5, 2021
+ *      Author: GMateusDP
+ */
+
+#ifndef AD9361_CLASS_H_
+#define AD9361_CLASS_H_
+#include "stdint.h"
+#include "ad9361.h"
+#include "libbladeRF.h"
+#include "fastlock.h"
+#define TONE_FREQUENCY 0
+#define TONE_LEVEL_dB 0
+class AD9361_Class {
+public:
+	bool isOK;
+private:
+	ad9361_rf_phy *ad9361_phy;
+	uint64_t set_rx_pll_frequency,current_rx_pll_frequency;
+	uint64_t set_tx_pll_frequency,current_tx_pll_frequency;
+	uint32_t int32_result,set_tx_tone_frequency,bist_tone_frequency;
+	uint32_t	herz_tolerance;
+	 fastlock_profile fastlocks_rx[NUM_BBP_FASTLOCK_PROFILES];
+	 fastlock_profile fastlocks_tx[NUM_BBP_FASTLOCK_PROFILES];
+	 uint32_t ensm_mode;
+
+public:
+	AD9361_Class();
+	virtual ~AD9361_Class();
+	bool Init(void);
+	bool Init(ad9361_rf_phy *phy,void*);
+	uint32_t Set_RX_PLL_Frequency(uint64_t);
+	uint64_t Get_RX_PLL_Frequency(void);
+	uint32_t Get_rf_phy(void);
+	bool IsLocked(void);
+	bool set_ensm_mode(uint32_t em);
+	uint32_t	get_ensm_mode(void);
+	uint32_t Set_TX_PLL_Frequency(uint64_t fv);
+	uint32_t Set_TX_Tone_Frequency(uint64_t fv);
+
+
+	/**
+	 * Read from AD9361 SPI register(s)
+	 *
+	 * @param   addr    Address to read from
+	 *
+	 * @return  Register data
+	 */
+	uint64_t spi_read(uint16_t addr);
+
+	/**
+	 * Write to AD9361 SPI register(s)
+	 *
+	 * @param   addr    Register address to write to
+	 * @param   data    Data to write
+	 */
+	void spi_write(uint16_t addr, uint64_t data);
+
+	/**
+	 * Read from ADI AXI space
+	 *
+	 * @param   addr    Address to read from
+	 *
+	 * @return  Register data
+	 */
+	uint32_t axi_read(uint16_t addr);
+
+	/**
+	 * Write to ADI AXI space
+	 *
+	 * @param   addr    Register address to write to
+	 * @param   data    Data to write
+	 */
+	void axi_write(uint16_t addr, uint32_t data);
+
+	/**
+	 * Save AD9361 fast lock profile data to Nios memory.
+	 *
+	 * @param is_tx        True if TX profile; false if RX.
+	 * @param rffe_profile AD9361 profile number (0-::NUM_RFFE_FASTLOCK_PROFILES)
+	 * @param nios_profile Nios profile number (0-::NUM_BBP_FASTLOCK_PROFILES)
+	 */
+	void fastlock_save(bool is_tx, uint8_t rffe_profile,
+	                          uint16_t nios_profile);
+
+	/**
+	 * Load fast lock profile from Nios memory into AD9361 RFIC.
+	 *
+	 * @param m    Which module to load.
+	 * @param *p   Fast lock profile structure
+	 */
+	void fastlock_load(bladerf_module m, fastlock_profile *p);
+
+	/**
+	 * Recall a stored fast lock profile.
+	 *
+	 * @param m    Which module to recall.
+	 * @param *p   Fast lock profile structure
+	 */
+	void fastlock_recall(bladerf_module m, fastlock_profile *p);
+
+	/**
+	 * Set the AD9361 port.
+	 *
+	 * @param *p   Fast lock profile structure
+	 */
+	void rfport_select(fastlock_profile *p);
+
+	/**
+	 * Set the RF switches.
+	 *
+	 * @param m    Which module's switches to control.
+	 * @param *p   Fast lock profile structure
+	 */
+	void rfspdt_select(bladerf_module m, fastlock_profile *p);
+
+	/**
+	 * Read from Si5338 clock generator register
+	 *
+	 * @param   addr    Address to read from
+	 *
+	 * @return  Register data
+	 */
+
+};
+
+//} /* namespace ad9361_driver */
+
+
+
+#endif /* AD9361_CLASS_H_ */

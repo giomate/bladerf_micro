@@ -79,7 +79,7 @@ ASM_SRCS :=
 OBJ_ROOT_DIR := obj
 
 # Common arguments for LIB_CFLAGS
-LIB_CFLAGS_DEFINED_SYMBOLS := -DNIOS_BUILD
+LIB_CFLAGS_DEFINED_SYMBOLS := -DNIOS_BUILD -DNOT_SDO
 LIB_CFLAGS_UNDEFINED_SYMBOLS :=
 LIB_CFLAGS_OPTIMIZATION := -O0
 LIB_CFLAGS_DEBUG_LEVEL := -g
@@ -99,7 +99,7 @@ BUILD_PRE_PROCESS :=
 BUILD_POST_PROCESS :=
 
 # Define path to the root of the BSP.
-BSP_ROOT_DIR := ../bladerf_pll_bsp/
+BSP_ROOT_DIR := ../trobina_controller_bsp
 
 # List of public include directories for -I compiler option (-I added when used).
 

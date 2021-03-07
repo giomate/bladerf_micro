@@ -3,7 +3,7 @@
 	<name>bladerf_lib</name>
 	<comment></comment>
 	<projects>
-		<project>bladerf_pll_bsp</project>
+		<project>trobina_controller_bsp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

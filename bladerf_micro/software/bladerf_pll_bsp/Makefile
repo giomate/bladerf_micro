@@ -99,7 +99,7 @@ ACDS_VERSION := 20.1
 # BUILD_NUMBER: 711
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := D:/Salukat/Development/Software/Quartus/bladerf_micro/bladerf_micro/nios_cpu.sopcinfo
+SOPC_FILE := C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/bladerf_micro/nios_cpu.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

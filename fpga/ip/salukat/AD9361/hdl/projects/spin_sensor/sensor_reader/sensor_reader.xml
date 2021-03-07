@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2021.01.03.12:32:52"
- outputDirectory="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/">
+ date="2021.03.07.09:40:13"
+ outputDirectory="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -62,16 +62,193 @@
    <property name="synchronousEdges" value="NONE" />
    <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
   </interface>
+  <interface name="spin_sensor_receiver_0_data_if" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="spin_sensor_receiver_0_data_if_rx_clk_p"
+       direction="input"
+       role="rx_clk_p"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_data_if_frame_p"
+       direction="input"
+       role="frame_p"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_data_if_data_p"
+       direction="input"
+       role="data_p"
+       width="6" />
+   <port
+       name="spin_sensor_receiver_0_data_if_data_n"
+       direction="input"
+       role="data_n"
+       width="6" />
+   <port
+       name="spin_sensor_receiver_0_data_if_frame_n"
+       direction="input"
+       role="frame_n"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_data_if_rx_clk_n"
+       direction="input"
+       role="rx_clk_n"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_data_if_tc_clk"
+       direction="output"
+       role="tc_clk"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_data_if_tx_clk"
+       direction="output"
+       role="tx_clk"
+       width="1" />
+  </interface>
+  <interface name="spin_sensor_receiver_0_iq_data_out" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="spin_sensor_receiver_0_iq_data_out_re_data"
+       direction="output"
+       role="re_data"
+       width="12" />
+   <port
+       name="spin_sensor_receiver_0_iq_data_out_im_data"
+       direction="output"
+       role="im_data"
+       width="12" />
+  </interface>
+  <interface name="spin_sensor_receiver_0_reset_source" kind="reset" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="none" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port
+       name="spin_sensor_receiver_0_reset_source_reset"
+       direction="output"
+       role="reset"
+       width="1" />
+  </interface>
+  <interface name="spin_sensor_receiver_0_s_axi" kind="axi4lite" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <property name="trustzoneAware" value="true" />
+   <property name="maximumOutstandingReads" value="1" />
+   <property name="maximumOutstandingWrites" value="1" />
+   <property name="maximumOutstandingTransactions" value="1" />
+   <property name="readAcceptanceCapability" value="1" />
+   <property name="writeAcceptanceCapability" value="1" />
+   <property name="combinedAcceptanceCapability" value="1" />
+   <property name="readDataReorderingDepth" value="1" />
+   <property name="bridgesToMaster" value="" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_awvalid"
+       direction="input"
+       role="awvalid"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_awaddr"
+       direction="input"
+       role="awaddr"
+       width="16" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_awprot"
+       direction="input"
+       role="awprot"
+       width="3" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_awready"
+       direction="output"
+       role="awready"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_wvalid"
+       direction="input"
+       role="wvalid"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_wdata"
+       direction="input"
+       role="wdata"
+       width="32" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_wstrb"
+       direction="input"
+       role="wstrb"
+       width="4" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_wready"
+       direction="output"
+       role="wready"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_bvalid"
+       direction="output"
+       role="bvalid"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_bresp"
+       direction="output"
+       role="bresp"
+       width="2" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_bready"
+       direction="input"
+       role="bready"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_arvalid"
+       direction="input"
+       role="arvalid"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_araddr"
+       direction="input"
+       role="araddr"
+       width="16" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_arprot"
+       direction="input"
+       role="arprot"
+       width="3" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_arready"
+       direction="output"
+       role="arready"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_rvalid"
+       direction="output"
+       role="rvalid"
+       width="1" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_rdata"
+       direction="output"
+       role="rdata"
+       width="32" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_rresp"
+       direction="output"
+       role="rresp"
+       width="2" />
+   <port
+       name="spin_sensor_receiver_0_s_axi_rready"
+       direction="input"
+       role="rready"
+       width="1" />
+  </interface>
  </perimeter>
  <entity
    path=""
-   parameterizationKey="sensor_reader:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CEBA4F23C8,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1609673569,AUTO_UNIQUE_ID=(clock_source:20.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(altera_clock_bridge:20.1:DERIVED_CLOCK_RATE=0,EXPLICIT_CLOCK_RATE=0,NUM_CLOCK_OUTPUTS=1)(spin_sensor_receiver:1.0:FPGA_TECHNOLOGY=CYCLONE5)(clock:20.1:)(clock:20.1:)(clock:20.1:)(reset:20.1:)"
+   parameterizationKey="sensor_reader:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CEBA4F23C8,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1615106410,AUTO_UNIQUE_ID=(clock_source:20.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(altera_clock_bridge:20.1:DERIVED_CLOCK_RATE=0,EXPLICIT_CLOCK_RATE=0,NUM_CLOCK_OUTPUTS=1)(spin_sensor_receiver:1.0:FPGA_TECHNOLOGY=CYCLONE5)(clock:20.1:)(clock:20.1:)(clock:20.1:)(reset:20.1:)"
    instancePathKey="sensor_reader"
    kind="sensor_reader"
    version="1.0"
    name="sensor_reader">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1609673569" />
+  <parameter name="AUTO_GENERATION_ID" value="1615106410" />
   <parameter name="AUTO_DEVICE" value="5CEBA4F23C8" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
@@ -80,326 +257,326 @@
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
   <generatedFiles>
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/sensor_reader.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/sensor_reader.v"
        type="VERILOG" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/spin_sensor_top.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/spin_sensor_top.v"
        type="VERILOG"
        attributes="TOP_LEVEL_FILE" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_channel.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_channel.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_pnmon.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_pnmon.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd_if.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd_if.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx_channel.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx_channel.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_rx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_rx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_tx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_tx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_cmos_if.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_cmos_if.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_10.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_10.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_c5.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_c5.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_3w_spi.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_3w_spi.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_addsub.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_addsub.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_adl5904_rst.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_adl5904_rst.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_axis_inf_rx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_axis_inf_rx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_b2g.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_b2g.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_bus_mux.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_bus_mux.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_CrYCb2RGB.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_CrYCb2RGB.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_RGB2CrYCb.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_RGB2CrYCb.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_datafmt.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_datafmt.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_1.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_1.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_2.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_2.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_cordic_pipe.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_cordic_pipe.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine_cordic.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine_cordic.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_edge_detect.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_edge_detect.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_g2b.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_g2b.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iobuf.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iobuf.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iqcor.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iqcor.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem_asym.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem_asym.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux_core.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux_core.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_perfect_shuffle.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_perfect_shuffle.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pngen.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pngen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pnmon.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pnmon.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pps_receiver.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pps_receiver.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_rst.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_rst.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_422to444.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_422to444.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_444to422.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_444to422.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_sysref_gen.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_sysref_gen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_tdd_control.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_tdd_control.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_xcvr_rx_if.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_xcvr_rx_if.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ctrlif.vhd"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ctrlif.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_rx_fifo.vhd"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_rx_fifo.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_tx_fifo.vhd"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_tx_fifo.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/dma_fifo.vhd"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/dma_fifo.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/pl330_dma_fifo.vhd"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/pl330_dma_fifo.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_channel.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_channel.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_common.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_common.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_axi.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_axi.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clkgen.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clkgen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clock_mon.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clock_mon.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_channel.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_channel.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_common.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_common.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_delay_cntrl.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_delay_cntrl.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_rx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_rx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_tx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_tx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_pmod.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_pmod.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_tdd_cntrl.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_tdd_cntrl.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_cntrl.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_cntrl.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_status.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_status.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_axis_upscale.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_axis_upscale.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_dec256sinc24b.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_dec256sinc24b.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_delay.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_delay.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_pulse_gen.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_pulse_gen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dcfilter.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dcfilter.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mul.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mul.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_synchronizer.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_synchronizer.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.sdc"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.sdc"
        type="SDC"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader.qsys" />
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader.qsys" />
   </sourceFiles>
   <childSourceFiles>
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/spin_sensor_receiver_hw.tcl" />
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/spin_sensor_receiver_hw.tcl" />
    <file
        path="C:/intelfpga_lite/20.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
   </childSourceFiles>
@@ -443,306 +620,306 @@
   <parameter name="FPGA_TECHNOLOGY" value="CYCLONE5" />
   <generatedFiles>
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/spin_sensor_top.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/spin_sensor_top.v"
        type="VERILOG"
        attributes="TOP_LEVEL_FILE" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_channel.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_channel.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_pnmon.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_rx_pnmon.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd_if.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tdd_if.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx_channel.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_tx_channel.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_rx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_rx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_tx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_alt_lvds_tx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_cmos_if.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_cmos_if.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_10.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_10.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_c5.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ad9361_lvds_if_c5.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_3w_spi.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_3w_spi.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_addsub.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_addsub.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_adl5904_rst.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_adl5904_rst.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_axis_inf_rx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_axis_inf_rx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_b2g.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_b2g.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_bus_mux.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_bus_mux.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_CrYCb2RGB.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_CrYCb2RGB.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_RGB2CrYCb.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_csc_RGB2CrYCb.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_datafmt.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_datafmt.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_1.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_1.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_2.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_2.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_cordic_pipe.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_cordic_pipe.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine_cordic.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dds_sine_cordic.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_edge_detect.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_edge_detect.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_g2b.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_g2b.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iobuf.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iobuf.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iqcor.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_iqcor.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem_asym.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mem_asym.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux_core.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mux_core.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_perfect_shuffle.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_perfect_shuffle.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pngen.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pngen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pnmon.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pnmon.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pps_receiver.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_pps_receiver.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_rst.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_rst.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_422to444.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_422to444.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_444to422.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_ss_444to422.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_sysref_gen.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_sysref_gen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_tdd_control.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_tdd_control.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_xcvr_rx_if.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_xcvr_rx_if.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ctrlif.vhd"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_ctrlif.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_rx_fifo.vhd"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_rx_fifo.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_tx_fifo.vhd"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/axi_streaming_dma_tx_fifo.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/dma_fifo.vhd"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/dma_fifo.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/pl330_dma_fifo.vhd"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/pl330_dma_fifo.vhd"
        type="VHDL"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_channel.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_channel.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_common.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_adc_common.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_axi.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_axi.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clkgen.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clkgen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clock_mon.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_clock_mon.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_channel.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_channel.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_common.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_dac_common.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_delay_cntrl.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_delay_cntrl.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_rx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_rx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_tx.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_hdmi_tx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_pmod.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_pmod.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_tdd_cntrl.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_tdd_cntrl.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_cntrl.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_cntrl.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_status.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/up_xfer_status.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_axis_upscale.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_axis_upscale.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_dec256sinc24b.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_dec256sinc24b.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_delay.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_delay.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_pulse_gen.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/util_pulse_gen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dcfilter.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_dcfilter.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mul.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/ad_mul.v"
        type="VERILOG"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles/>
   <sourceFiles>
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/spin_sensor_receiver_hw.tcl" />
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/spin_sensor_receiver_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
   <instantiator instantiator="sensor_reader" as="spin_sensor_receiver_0" />
@@ -760,15 +937,15 @@
    name="altera_reset_controller">
   <generatedFiles>
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_synchronizer.v"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_synchronizer.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="D:/Salukat/Development/Software/AnalogDevices/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.sdc"
+       path="C:/Users/GMateusDP/Documents/Trobina/Development/Software/BladeRF/fpga/ip/salukat/AD9361/hdl/projects/spin_sensor/sensor_reader/synthesis/submodules/altera_reset_controller.sdc"
        type="SDC"
        attributes="" />
   </generatedFiles>

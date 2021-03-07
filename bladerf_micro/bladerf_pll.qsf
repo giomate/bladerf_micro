@@ -87,7 +87,6 @@ set_location_assignment PIN_R22 -to rx_bias_en
 set_location_assignment PIN_T22 -to si_clock_sel
 set_location_assignment PIN_R21 -to tx_bias_en
 set_location_assignment PIN_T19 -to ufl_clock_oe
-set_global_assignment -name HEX_FILE "../../BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/bladeRF_nios/mem_init/nios_system_vctcxo_tamer_0.hex"
 set_global_assignment -name QIP_FILE software/bladerf_app/mem_init/meminit.qip
 set_global_assignment -name VHDL_FILE ../fpga/ip/nuand/synthesis/fifo_readwrite_p.vhd
 set_global_assignment -name VHDL_FILE ../fpga/ip/nuand/ps_sync/vhdl/ps_sync.vhd

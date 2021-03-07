@@ -1,0 +1,51 @@
+22:19:38 **** Incremental Build of configuration Nios II for project trobina_controller_app ****
+wsl make all 
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../bladerf_lib
+make --no-print-directory -C ../bladerf_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libbladerf_lib.a libbladerf_lib.a
+Info: Building ../trobina_controller_lib
+make --no-print-directory -C ../trobina_controller_lib
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../adf5610_lib
+make --no-print-directory -C ../adf5610_lib
+Info: Building ../trobina_controller_bsp
+make --no-print-directory -C ../trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libadf5610_lib.a libadf5610_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+cp -f obj/default/libtrobina_controller_lib.a libtrobina_controller_lib.a
+Info: Building ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+make --no-print-directory -C ../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib
+Info: Building ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+make --no-print-directory -C ../../../../../../../../Software/BladeRF/bladerf_micro/software/trobina_controller_bsp
+[BSP build complete]
+cp -f obj/default/libad9361_lib.a libad9361_lib.a
+Info: Building ../trobina_controller_bsp/
+make --no-print-directory -C ../trobina_controller_bsp/
+[BSP build complete]
+Info: Linking trobina_controller_app.elf
+nios2-elf-g++.exe  -T'../trobina_controller_bsp//linker.x' -msys-crt0='../trobina_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../adf5610_lib -L../bladerf_lib -L../trobina_controller_lib -L../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib -L../trobina_controller_bsp/ -L../../../../../Hardware/BladeRF/hdl/quartus/work/bladerf-micro-A4-hosted/software/ad9361_lib   -Wl,-Map=trobina_controller_app.map -DBOARD_BLADERF_MICRO -DNUAND_MODIFICATIONS -DBLADERF_NIOS_BUILD -DTROBINA_MODIFICATIONS -DNIOS_BUILD -DNOT_SDO  -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o trobina_controller_app.elf obj/default/main.o -ladf5610_lib -lbladerf_lib -ltrobina_controller_lib -lad9361_lib -lm -lad9361_lib -lbladerf_lib -ladf5610_lib -ltrobina_controller_lib -msys-lib=m
+nios2-elf-insert.exe trobina_controller_app.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_cpu
+Unable to determine program-size.
+Info: Creating trobina_controller_app.objdump
+nios2-elf-objdump.exe --disassemble --syms --all-header trobina_controller_app.elf >trobina_controller_app.objdump
+[trobina_controller_app build complete]
+
+22:19:54 Build Finished (took 15s.587ms)
+

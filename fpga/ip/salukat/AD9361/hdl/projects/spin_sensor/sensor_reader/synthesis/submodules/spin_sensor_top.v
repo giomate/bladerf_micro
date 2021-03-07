@@ -18,6 +18,9 @@ module spin_sensor_top #(
 	input   [5:0]  data_p_in,
 	input   [5:0]  data_n_in,
 	
+ output          tx_clk_p_out,
+  output          tx_clk_n_out,
+	
 	// ensm control
 
   output          enable,
@@ -140,6 +143,9 @@ module spin_sensor_top #(
 		.rx_data_in_p(data_p_in),
 		.rx_data_in_n(data_n_in),
 			
+		.tx_clk_out_p(rx_clk_p_out),
+		.tx_clk_out_n(rx_clk_n_out),	
+			
 		.s_axi_aclk(s_axi_aclk),
 		.s_axi_aresetn(s_axi_aresetn),
 		.s_axi_awvalid(s_axi_awvalid),
@@ -189,7 +195,9 @@ module spin_sensor_top #(
 			if(adc_valid_i0==1'b1) begin
 				adc_data_i_out<=adc_data_i0;
 				
-			end else if(adc_valid_q0==1'b1) begin
+				
+			end 
+			if(adc_valid_q0==1'b1) begin
 				adc_data_q_out<=adc_data_q0;
 			end
 		end

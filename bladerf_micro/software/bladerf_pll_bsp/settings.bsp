@@ -2,11 +2,11 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 5, 2021 8:29:39 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1614929379251</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>D:\Salukat\Development\Software\Quartus\bladerf_micro\bladerf_micro\software\bladerf_pll_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
-        <SopcDesignFile>D:\Salukat\Development\Software\Quartus\bladerf_micro\bladerf_micro\nios_cpu.sopcinfo</SopcDesignFile>
+        <BspGeneratedTimeStamp>Mar 6, 2021 12:48:25 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1615031305324</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\software\bladerf_pll_bsp</BspGeneratedLocation>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
+        <SopcDesignFile>C:\Users\GMateusDP\Documents\Trobina\Development\Software\BladeRF\bladerf_micro\nios_cpu.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>nios2</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
@@ -905,19 +905,19 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>xb_gpio</slaveDescriptor>
+                <slaveDescriptor>adf5610</slaveDescriptor>
                 <addressRange>0x00041000 - 0x0004101F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>adf5610</slaveDescriptor>
+                <slaveDescriptor>peripheral_spi</slaveDescriptor>
                 <addressRange>0x00041020 - 0x0004103F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>peripheral_spi</slaveDescriptor>
+                <slaveDescriptor>xb_gpio</slaveDescriptor>
                 <addressRange>0x00041040 - 0x0004105F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
@@ -935,14 +935,20 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>intern_pio</slaveDescriptor>
+                <addressRange>0x000410A0 - 0x000410AF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>opencores_i2c</slaveDescriptor>
-                <addressRange>0x000410A0 - 0x000410A7</addressRange>
+                <addressRange>0x000410B0 - 0x000410B7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x000410A8 - 0x000410AF</addressRange>
+                <addressRange>0x000410B8 - 0x000410BF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

@@ -1,0 +1,1036 @@
+/*
+ * SENSORREADERCLASS.cpp
+ *
+ *  Created on: Jan 6, 2021
+ *      Author: GMateusDP
+ */
+
+#include "SENSORREADERCLASS.h"
+#include "unistd.h"
+#include "ad9361_api.h"
+#include "stdio.h"
+//#include "bladerf2_common.h"
+
+static AD9361_Class  local_adi;
+static RFFE_Class  local_rffe;
+static rfic_state local_state;
+static bool tx_mute_state[2] = { false };
+SENSOR_READER_CLASS *ptr_sensor_class;
+
+SENSOR_READER_CLASS::SENSOR_READER_CLASS() {
+	// TODO Auto-generated constructor stub
+	adi=&local_adi;
+	rffe=&local_rffe;
+	isOK=false;
+	ptr_sensor_class=this;
+	channel=0;
+	herz_tolerance=1000;
+
+}
+
+SENSOR_READER_CLASS::~SENSOR_READER_CLASS() {
+	// TODO Auto-generated destructor stub
+}
+bool SENSOR_READER_CLASS::Init(void){
+	printf("!!!	initiating receiver	!!!\n");
+	ptr_sensor_class=this;
+	adi=&local_adi;
+	rffe=&local_rffe;
+	state=&local_state;
+	init_param= &bladerf2_rfic_init_params;
+	state->init_state = BLADERF_RFIC_INIT_STATE_OFF;
+
+		size_t i;
+
+		/* Unset RFFE bits controlling RFIC */
+		rffe->_clear_ctrl();
+
+		/* Initialize AD9361 if it isn't initialized */
+
+
+		//DBG("--- Initializing AD9361 ---\n");
+
+		/* Hard-reset the RFIC */
+		_reset_rfic(true);
+		usleep(1000);
+		_reset_rfic(false);
+
+		isOK= adi->Init(state->phy,(void*)ptr_sensor_class);
+		state->phy=(ad9361_rf_phy *)(adi->Get_rf_phy());
+		if ((!isOK) |( NULL == state->phy->pdata)){
+			/* Oh no */
+			printf("!!!	ad9361 not init	!!!\n");
+			ad9361_deinit(phy);
+			phy = NULL;
+			isOK=false;
+
+
+		}else{
+			printf("!!!	ad9361 looks OK	!!!\n");
+			if (BLADERF_RFIC_INIT_STATE_OFF == state->init_state) {
+				for (uint8_t rx_index=0; rx_index<2; rx_index++){
+					ch = CHANNEL_IDX(0x00, rx_index);
+
+					if (BLADERF_CHANNEL_IS_TX(ch)) {
+						init_freq     = init_param->tx_synthesizer_frequency_hz;
+						init_samprate = init_param->tx_path_clock_frequencies[5];
+					} else {
+						init_freq     = init_param->rx_synthesizer_frequency_hz;
+						init_samprate = init_param->rx_path_clock_frequencies[5];
+					}
+
+					/* Switching the frequency twice seems essential for calibration
+					 * to be successful. */
+					CHECK_BOOL(_rfic_cmd_wr_frequency(state, ch, RESET_FREQUENCY));
+
+					CHECK_BOOL(_rfic_cmd_wr_filter(state, ch,
+												   (BLADERF_TX == 0x00)
+													   ? BLADERF_RFIC_TXFIR_DEFAULT
+													   : BLADERF_RFIC_RXFIR_DEFAULT));
+
+					CHECK_BOOL(_rfic_cmd_wr_samplerate(state, ch, init_samprate));
+
+					CHECK_BOOL(_rfic_cmd_wr_frequency(state, ch, init_freq));
+			     }
+			}
+		 /* Per-channel initialization */
+		    FOR_EACH_CHANNEL(BLADERF_TX, 2, i, ch)
+		    {
+		        switch (state->init_state) {
+		            case BLADERF_RFIC_INIT_STATE_OFF:
+		                /* Initialize TX Mute */
+		                CHECK_BOOL(txmute_set_cached(state->phy, ch,
+		                                             init_param->tx_attenuation_mdB));
+		                CHECK_BOOL(txmute_set(state->phy, ch, false));
+		                break;
+
+		            case BLADERF_RFIC_INIT_STATE_STANDBY:
+		                /* Restore saved TX Mute state */
+		                CHECK_BOOL(
+		                    txmute_set(state->phy, ch, (state->tx_mute_state[i])));
+		                break;
+
+		            default:
+		                break;
+		        }
+		    }
+
+		    /* Update state */
+		    state->init_state = BLADERF_RFIC_INIT_STATE_ON;
+
+		    DBG("*** RFIC Control Initialized ***\n");
+		    isOK=_rfic_cmd_wr_enable(state, channel, 1);
+		    usleep(100);
+		    isOK=_rfic_cmd_rd_enable(state, channel, &enabled);
+		    if(enabled>0){
+		    	isOK=configure_rx_path();
+		    }else{
+		    	isOK=false;
+		    }
+
+		}
+
+		return isOK ;
+}
+
+bool SENSOR_READER_CLASS::configure_rx_path(void){
+	uint32_t result;
+	bool retval=true;
+	CHECK_BOOL(_rfic_cmd_rd_filter(state,channel,&result));
+	if (result>0){
+		retval=false;
+		CHECK_BOOL(_rfic_cmd_wr_filter(state, channel, BLADERF_RFIC_RXFIR_BYPASS));
+		retval=true;
+	}
+
+	CHECK_BOOL(_rfic_cmd_rd_bandwidth(state, channel,&result));
+	if (result<MAX_RX_BANDWIDTH){
+		retval=false;
+		CHECK_BOOL(_rfic_cmd_wr_bandwidth(state, channel,MAX_RX_BANDWIDTH));
+		retval=true;
+	}
+	CHECK_BOOL(_rfic_cmd_rd_samplerate(state, channel,&result));
+	if (result<MAX_SAMPLINGRATE){
+		retval=false;
+		CHECK_BOOL(_rfic_cmd_wr_samplerate(state, channel,MAX_SAMPLINGRATE));
+		retval=true;
+	}
+	CHECK_BOOL(_rfic_cmd_rd_gainmode(state, channel,&result));
+	if (result!=BLADERF_GAIN_FASTATTACK_AGC){
+		retval=false;
+		CHECK_BOOL(_rfic_cmd_wr_gainmode(state, channel,BLADERF_GAIN_FASTATTACK_AGC));
+		retval=true;
+	}
+	CHECK_BOOL(_rfic_cmd_rd_enable(state, channel,&result));
+		if (result==0){
+			retval=false;
+			CHECK_BOOL(_rfic_cmd_wr_enable(state, channel,1));
+			retval=true;
+		}
+
+	return retval;
+}
+uint32_t SENSOR_READER_CLASS::force_ENSM_RX_mode(void){
+	ensm_mode=adi->get_ensm_mode();
+	if(ensm_mode!=ENSM_MODE_RX){
+		adi->set_ensm_mode(ENSM_MODE_RX);
+	}
+	return ensm_mode;
+}
+
+void SENSOR_READER_CLASS::_reset_rfic(bool state)
+{
+   uint32_t reg;
+
+   reg = rffe->csr_read();
+
+   if (state) {
+       reg &= ~(1 << RFFE_CONTROL_RESET_N);
+   } else {
+       reg |= 1 << RFFE_CONTROL_RESET_N;
+   }
+
+   rffe->csr_write(reg);
+}
+bool SENSOR_READER_CLASS::enable_port(bool en){
+	return _rfic_cmd_wr_enable(state,channel,(uint32_t)en);
+}
+/**
+ * @brief       Set the enabled status for a given channel
+ *
+ * @param[in]   channel  Channel
+ * @param[in]   enable     0 to disable, >= 1 to enable
+ *
+ * @return      true if successful, false otherwise
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_wr_enable(struct rfic_state *state,
+                         bladerf_channel channel,
+                         uint32_t enable)
+{
+	bladerf_direction direction =
+	        BLADERF_CHANNEL_IS_TX(channel) ? BLADERF_TX : BLADERF_RX;
+	    uint32_t reg;     /* RFFE register value */
+	    bool ch_enabled;  /* Channel: initial state */
+	    bool ch_enable;   /* Channel: target state */
+	    bool ch_pending;  /* Channel: target state is not initial state */
+	    bool dir_enabled; /* Direction: initial state */
+	    bool dir_enable;  /* Direction: target state */
+	    bool dir_pending; /* Direction: target state is not initial state */
+
+	    band_port_map  *port_map;
+	    bladerf_channel subch;
+	    bladerf_frequency freq = 0;
+	    size_t i;
+
+	    /* Read RFFE control register */
+	    reg = csr_read();
+
+	#if 0
+	    uint32_t reg_old = reg;
+	#endif
+
+	    /* Pre-compute useful values */
+	    /* Calculate initial and target states */
+	    ch_enabled  = _rffe_ch_enabled(reg, channel);
+	    dir_enabled = _rffe_dir_enabled(reg, direction);
+	    ch_enable   = (enable > 0);
+	    dir_enable  = ch_enable || _rffe_dir_otherwise_enabled(reg, channel);
+	    ch_pending  = ch_enabled != ch_enable;
+	    dir_pending = dir_enabled != dir_enable;
+
+	    if (!ch_pending && !dir_pending) {
+	        DBG("%s: nothing to do?\n", __FUNCTION__);
+	        return true;
+	    }
+
+	    /* Query the current frequency if we'll need it */
+	    if (ch_enable) {
+	        if (BLADERF_CHANNEL_IS_TX(channel)) {
+	            CHECK_BOOL(ad9361_get_tx_lo_freq(state->phy, &freq));
+	        } else {
+	            CHECK_BOOL(ad9361_get_rx_lo_freq(state->phy, &freq));
+	        }
+	    }
+
+	    /* Channel Setup/Teardown */
+	    if (ch_pending) {
+	        /* Modify SPDT bits */
+	        CHECK_BOOL(_modify_spdt_bits_by_freq(&reg, channel, ch_enable, freq));
+
+	        /* Modify MIMO channel enable bits */
+	        if (ch_enable) {
+	            reg |= (1 << _get_rffe_control_bit_for_ch(channel));
+	        } else {
+	            reg &= ~(1 << _get_rffe_control_bit_for_ch(channel));
+	        }
+	    }
+
+	    /* Direction Setup/Teardown */
+	    if (dir_pending) {
+	        /* Modify ENABLE/TXNRX bits */
+	        if (dir_enable) {
+	            reg |= (1 << _get_rffe_control_bit_for_dir(direction));
+	        } else {
+	            FOR_EACH_CHANNEL(direction, 2, i, subch)
+	            {
+	                CHECK_BOOL(_modify_spdt_bits_by_freq(&reg, subch, false, 0));
+	            }
+
+	            reg &= ~(1 << _get_rffe_control_bit_for_dir(direction));
+	        }
+
+	        /* Select RFIC port */
+	        /* Look up the port configuration for this frequency */
+	        port_map =(band_port_map *)_get_band_port_map_by_freq(channel, ch_enable ? freq : 0);
+	        if (NULL == port_map) {
+	            return false;
+	        }
+
+	        /* Set the AD9361 port accordingly */
+	        if (BLADERF_CHANNEL_IS_TX(channel)) {
+	            CHECK_BOOL(
+	                ad9361_set_tx_rf_port_output(state->phy, port_map->rfic_port));
+	        } else {
+	            CHECK_BOOL(
+	                ad9361_set_rx_rf_port_input(state->phy, port_map->rfic_port));
+	        }
+	    }
+
+	#if 0
+	    DBG("%s: ch=%x dir=%x ch_en=%x ch_pend=%x dir_en=%x dir_pend=%x "
+	        "reg=%x->%x\n",
+	        __FUNCTION__, channel, direction, ch_enable, ch_pending, dir_enable,
+	        dir_pending, reg_old, reg);
+	#endif
+
+	    /* Write RFFE control register */
+	    csr_write(reg);
+
+	    return true;
+}
+
+/**
+ * @brief      Get the enabled status for a given channel
+ *
+ * @param[in]  channel  The channel
+ * @param[out] enabled  0 if disabled, 1 if enabled
+ *
+ * @return     true if successful, false otherwise
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_rd_enable(struct rfic_state *state,
+                         bladerf_channel channel,
+                         uint32_t *enabled)
+{
+    *enabled = _rffe_ch_enabled(csr_read(), channel) ? 1 : 0;
+
+    return true;
+}
+
+/**
+ * @brief      Set sample rate for a given channel
+ *
+ * @param[in]  channel    The channel
+ * @param[in]  rate       The rate
+ *
+ * @return     true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_wr_samplerate(struct rfic_state *state,
+                             bladerf_channel channel,
+                             uint32_t rate)
+{
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        CHECK_BOOL(ad9361_set_tx_sampling_freq(state->phy, rate));
+    } else {
+        CHECK_BOOL(ad9361_set_rx_sampling_freq(state->phy, rate));
+    }
+
+    return true;
+}
+
+/**
+ * @brief      Get sample rate for a given channel
+ *
+ * @param[in]  channel    The channel
+ * @param[out] rate       The sample rate
+ *
+ * @return     true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_rd_samplerate(struct rfic_state *state,
+                             bladerf_channel channel,
+                             uint32_t *rate)
+{
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        CHECK_BOOL(ad9361_get_tx_sampling_freq(state->phy, rate));
+    } else {
+        CHECK_BOOL(ad9361_get_rx_sampling_freq(state->phy, rate));
+    }
+
+    return true;
+}
+
+bool SENSOR_READER_CLASS::set_frequency(uint64_t frequency){
+	required_frequency=frequency;
+	return _rfic_cmd_wr_frequency(state,channel, frequency);
+}
+
+/**
+ * @brief      Set LO frequency for a given channel
+ *
+ * @param[in]  channel    The channel
+ * @param[in]  frequency  The frequency
+ *
+ * @return     true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_wr_frequency(struct rfic_state *state,
+                            bladerf_channel channel,
+                            uint64_t frequency)
+{
+    bladerf_direction dir =
+        BLADERF_CHANNEL_IS_TX(channel) ? BLADERF_TX : BLADERF_RX;
+    bladerf_channel other_ch;
+    uint32_t reg;
+    size_t i;
+
+    reg = csr_read();
+
+    /* We have to do this for all the channels sharing the same LO. */
+    FOR_EACH_CHANNEL(dir, 2, i, other_ch)
+    {
+        /* Is this channel enabled? */
+        bool enable = _rffe_ch_enabled(reg, other_ch);
+
+        /* Update SPDT bits accordingly */
+        CHECK_BOOL(
+            _modify_spdt_bits_by_freq(&reg, other_ch, enable, frequency));
+    }
+
+    csr_write(reg);
+
+    CHECK_BOOL(set_ad9361_port_by_freq(
+        state->phy, channel, _rffe_ch_enabled(reg, channel), frequency));
+
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        CHECK_BOOL(ad9361_set_tx_lo_freq(state->phy, frequency));
+        state->frequency_invalid[BLADERF_TX] = false;
+    } else {
+        CHECK_BOOL(ad9361_set_rx_lo_freq(state->phy, frequency));
+        state->frequency_invalid[BLADERF_RX] = false;
+    }
+
+    return true;
+}
+bool SENSOR_READER_CLASS::Set_TX_Tone_Frequency( bladerf_channel channel,
+                            uint64_t frequency)
+{
+
+    bladerf_direction dir =
+        BLADERF_CHANNEL_IS_TX(channel) ? BLADERF_TX : BLADERF_RX;
+    if(dir==BLADERF_TX){
+    	bladerf_channel other_ch;
+    	    uint32_t reg;
+    	    size_t i;
+
+    	    reg = csr_read();
+
+    	    /* We have to do this for all the channels sharing the same LO. */
+    	    FOR_EACH_CHANNEL(dir, 2, i, other_ch)
+    	    {
+    	        /* Is this channel enabled? */
+    	        bool enable = _rffe_ch_enabled(reg, other_ch);
+
+    	        /* Update SPDT bits accordingly */
+
+    	            _modify_spdt_bits_by_freq(&reg, other_ch, enable, frequency);
+    	    }
+
+    	    csr_write(reg);
+
+    	   set_ad9361_port_by_freq(
+    	        state->phy, channel, _rffe_ch_enabled(reg, channel), frequency);
+
+
+    	       adi->s;
+    	        state->frequency_invalid[BLADERF_TX] = false;
+
+
+    	    return true;
+    }else{
+    	return false;
+    }
+
+}
+
+/**
+ * @brief      Get LO frequency for a given channel
+ *
+ * @param[in]  channel    The channel
+ * @param[out] frequency  The frequency
+ *
+ * @return     true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_rd_frequency(struct rfic_state *state,
+                            bladerf_channel channel,
+                            uint64_t *frequency)
+{
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        if (state->frequency_invalid[BLADERF_TX]) {
+            return false;
+        }
+        CHECK_BOOL(ad9361_get_tx_lo_freq(state->phy, frequency));
+    } else {
+        if (state->frequency_invalid[BLADERF_RX]) {
+            return false;
+        }
+        CHECK_BOOL(ad9361_get_rx_lo_freq(state->phy, frequency));
+    }
+
+    return true;
+}
+
+bool SENSOR_READER_CLASS::is_locked(void){
+	_rfic_cmd_rd_frequency(state,channel, &current_frequency);
+	if(abs((long)(current_frequency-required_frequency))<herz_tolerance){
+		islocked=true;
+	}else{
+		islocked=false;
+	}
+	return islocked;
+}
+
+/**
+ * @brief      Set bandwidth
+ *
+ * @param[in]  channel    The channel
+ * @param[in]  bandwidth  The bandwidth
+ *
+ * @return     true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_wr_bandwidth(struct rfic_state *state,
+                            bladerf_channel channel,
+                            uint32_t bandwidth)
+{
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        CHECK_BOOL(ad9361_set_tx_rf_bandwidth(state->phy, bandwidth));
+    } else {
+        CHECK_BOOL(ad9361_set_rx_rf_bandwidth(state->phy, bandwidth));
+    }
+
+    return true;
+}
+
+/**
+ * @brief      Get bandwidth
+ *
+ * @param[in]  channel    The channel
+ * @param[out] bandwidth  The bandwidth
+ *
+ * @return     true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_rd_bandwidth(struct rfic_state *state,
+                            bladerf_channel channel,
+                            uint32_t *bandwidth)
+{
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        CHECK_BOOL(ad9361_get_tx_rf_bandwidth(state->phy, bandwidth));
+    } else {
+        CHECK_BOOL(ad9361_get_rx_rf_bandwidth(state->phy, bandwidth));
+    }
+
+    return true;
+}
+
+/**
+ * @brief      Set gainmode
+ *
+ * @param[in]  channel    The channel
+ * @param[in]  gainmode   The gainmode
+ *
+ * @return     true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_wr_gainmode(struct rfic_state *state,
+                           bladerf_channel channel,
+                           uint32_t gainmode)
+{
+    uint8_t const rfic_ch = channel >> 1;
+    enum rf_gain_ctrl_mode gc_mode;
+
+    /* Mode conversion */
+    switch (gainmode) {
+        case BLADERF_GAIN_DEFAULT:
+            switch (channel) {
+                case BLADERF_CHANNEL_RX(0):
+                    gc_mode = bladerf2_rx_gain_mode_default[0];
+                    break;
+
+                case BLADERF_CHANNEL_RX(1):
+                    gc_mode = bladerf2_rx_gain_mode_default[1];
+                    break;
+
+                default:
+                    return false;
+            }
+            break;
+        case BLADERF_GAIN_MGC:
+            gc_mode = RF_GAIN_MGC;
+            break;
+        case BLADERF_GAIN_FASTATTACK_AGC:
+            gc_mode = RF_GAIN_FASTATTACK_AGC;
+            break;
+        case BLADERF_GAIN_SLOWATTACK_AGC:
+            gc_mode = RF_GAIN_SLOWATTACK_AGC;
+            break;
+        case BLADERF_GAIN_HYBRID_AGC:
+            gc_mode = RF_GAIN_HYBRID_AGC;
+            break;
+        default:
+            return false;
+    }
+
+    /* Set the mode! */
+    CHECK_BOOL(ad9361_set_rx_gain_control_mode(state->phy, rfic_ch, gc_mode));
+
+    return true;
+}
+
+/**
+ * @brief      Get gainmode
+ *
+ * @param[in]  channel   The channel
+ * @param[out] gainmode  The gainmode
+ *
+ * @return     true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_rd_gainmode(struct rfic_state *state,
+                           bladerf_channel channel,
+                           uint32_t *gainmode)
+{
+    uint8_t const rfic_ch = channel >> 1;
+    uint8_t gc_mode;
+
+    /* Get the gain mode */
+    CHECK_BOOL(ad9361_get_rx_gain_control_mode(state->phy, rfic_ch, &gc_mode));
+
+    /* Mode conversion */
+    switch (gc_mode) {
+        case RF_GAIN_MGC:
+            *gainmode = BLADERF_GAIN_MGC;
+            break;
+        case RF_GAIN_FASTATTACK_AGC:
+            *gainmode = BLADERF_GAIN_FASTATTACK_AGC;
+            break;
+        case RF_GAIN_SLOWATTACK_AGC:
+            *gainmode = BLADERF_GAIN_SLOWATTACK_AGC;
+            break;
+        case RF_GAIN_HYBRID_AGC:
+            *gainmode = BLADERF_GAIN_HYBRID_AGC;
+            break;
+        default:
+            return false;
+    }
+
+    return true;
+}
+
+/**
+ * @brief      Set gain
+ *
+ * expects values that are ready to be passed down to the device.
+ * e.g.:
+ *  TX: mdB attenuation (-10 dB gain -> gain = 10000)
+ *  RX: dB gain (10 dB gain -> gain = 10)
+ * Values may be negative, and the uint32_t will be casted appropriately
+ *
+ * @param[in]  channel    The channel
+ * @param[in]  gain       The gain
+ *
+ * @return     true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_wr_gain(struct rfic_state *state,
+                       bladerf_channel channel,
+                       uint32_t gain)
+{
+    uint8_t const rfic_ch = channel >> 1;
+
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        bool muted;
+
+        CHECK_BOOL(txmute_get(state->phy, channel, &muted));
+
+        if (muted) {
+            CHECK_BOOL(txmute_set_cached(state->phy, channel, gain));
+        } else {
+            CHECK_BOOL(ad9361_set_tx_attenuation(state->phy, rfic_ch, gain));
+        }
+    } else {
+        CHECK_BOOL(ad9361_set_rx_rf_gain(state->phy, rfic_ch, (int32_t)gain));
+    }
+
+    return true;
+}
+
+/**
+ * @brief       Get gain
+ *
+ * returns values that are direct from the device.
+ * e.g.:
+ *  TX: mdB attenuation (data = 10000 -> -10 dB gain)
+ *  RX: dB gain (data = 10 -> 10 dB gain)
+ * Values may be negative, and will be casted to uint32_t
+ *
+ *
+ * @param[in]   channel    The channel
+ * @param[out]  gain       The gain
+ *
+ * @return      true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_rd_gain(struct rfic_state *state,
+                       bladerf_channel channel,
+                       uint32_t *gain)
+{
+    uint8_t const rfic_ch = channel >> 1;
+
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        bool muted;
+
+        CHECK_BOOL(txmute_get(state->phy, channel, &muted));
+
+        if (muted) {
+            *gain = txmute_get_cached(state->phy, channel);
+        } else {
+            CHECK_BOOL(ad9361_get_tx_attenuation(state->phy, rfic_ch, gain));
+        }
+    } else {
+        struct rf_rx_gain rx_gain;
+
+        CHECK_BOOL(ad9361_get_rx_gain(state->phy, rfic_ch + 1, &rx_gain));
+
+        *gain = (uint32_t)rx_gain.gain_db;
+    }
+
+    return true;
+}
+
+/**
+ * @brief       Get RSSI reading
+ *
+ * @param[in]   channel   The channel
+ * @param[out]  rssi_val  RSSI, packed
+ *
+ * @return      true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_rd_rssi(struct rfic_state *state,
+                       bladerf_channel channel,
+                       uint64_t *rssi_val)
+{
+    uint8_t const rfic_ch = channel >> 1;
+    int16_t pre, sym, mul;
+
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        uint32_t rssi = 0;
+
+        CHECK_BOOL(ad9361_get_tx_rssi(state->phy, rfic_ch, &rssi));
+
+        mul = -1000;
+        pre = rssi;
+        sym = rssi;
+    } else {
+        struct rf_rssi rssi;
+
+        CHECK_BOOL(ad9361_get_rx_rssi(state->phy, rfic_ch, &rssi));
+
+        mul = -rssi.multiplier;
+        pre = rssi.preamble;
+        sym = rssi.symbol;
+    }
+
+    *rssi_val = ((uint64_t)((uint16_t)mul & BLADERF_RFIC_RSSI_MULT_MASK)
+                 << BLADERF_RFIC_RSSI_MULT_SHIFT) |
+
+                ((uint64_t)((uint16_t)pre & BLADERF_RFIC_RSSI_PRE_MASK)
+                 << BLADERF_RFIC_RSSI_PRE_SHIFT) |
+
+                ((uint64_t)((uint16_t)sym & BLADERF_RFIC_RSSI_SYM_MASK)
+                 << BLADERF_RFIC_RSSI_SYM_SHIFT);
+
+    return true;
+}
+
+/**
+ * @brief       Set RFIC FIR filter
+ *
+ * @param[in]   channel  The channel
+ * @param[in]   filter   The filter enum value
+ *
+ * @return      true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_wr_filter(struct rfic_state *state,
+                         bladerf_channel channel,
+                         uint32_t filter)
+{
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        bladerf_rfic_txfir txfir       = (bladerf_rfic_txfir)filter;
+        AD9361_TXFIRConfig *fir_config = NULL;
+        uint8_t enable;
+
+        if (BLADERF_RFIC_TXFIR_CUSTOM == txfir) {
+            // custom FIR not implemented, assuming default
+            txfir = BLADERF_RFIC_TXFIR_DEFAULT;
+        }
+
+        switch (txfir) {
+            case BLADERF_RFIC_TXFIR_BYPASS:
+                fir_config = &bladerf2_rfic_tx_fir_config;
+                enable     = 0;
+                break;
+            case BLADERF_RFIC_TXFIR_INT1:
+                fir_config = &bladerf2_rfic_tx_fir_config;
+                enable     = 1;
+                break;
+            case BLADERF_RFIC_TXFIR_INT2:
+                fir_config = &bladerf2_rfic_tx_fir_config_int2;
+                enable     = 1;
+                break;
+            case BLADERF_RFIC_TXFIR_INT4:
+                fir_config = &bladerf2_rfic_tx_fir_config_int4;
+                enable     = 1;
+                break;
+            default:
+                return false;
+        }
+
+        CHECK_BOOL(ad9361_set_tx_fir_config(state->phy, *fir_config));
+        CHECK_BOOL(ad9361_set_tx_fir_en_dis(state->phy, enable));
+
+        state->txfir = txfir;
+
+        return true;
+    } else {
+        bladerf_rfic_rxfir rxfir       = (bladerf_rfic_rxfir)filter;
+        AD9361_RXFIRConfig *fir_config = NULL;
+        uint8_t enable;
+
+        if (BLADERF_RFIC_RXFIR_CUSTOM == rxfir) {
+            // custom FIR not implemented, assuming default
+            rxfir = BLADERF_RFIC_RXFIR_DEFAULT;
+        }
+
+        switch (rxfir) {
+            case BLADERF_RFIC_RXFIR_BYPASS:
+                fir_config = &bladerf2_rfic_rx_fir_config;
+                enable     = 0;
+                break;
+            case BLADERF_RFIC_RXFIR_DEC1:
+                fir_config = &bladerf2_rfic_rx_fir_config;
+                enable     = 1;
+                break;
+            case BLADERF_RFIC_RXFIR_DEC2:
+                fir_config = &bladerf2_rfic_rx_fir_config_dec2;
+                enable     = 1;
+                break;
+            case BLADERF_RFIC_RXFIR_DEC4:
+                fir_config = &bladerf2_rfic_rx_fir_config_dec4;
+                enable     = 1;
+                break;
+            default:
+                return false;
+        }
+
+        CHECK_BOOL(ad9361_set_rx_fir_config(state->phy, *fir_config));
+        CHECK_BOOL(ad9361_set_rx_fir_en_dis(state->phy, enable));
+
+        state->rxfir = rxfir;
+
+        return true;
+    }
+
+    return false;
+}
+
+/**
+ * @brief       Get current FIR filter setting
+ *
+ * @param[in]   channel  The channel
+ * @param[out]  filter   The filter state
+ *
+ * @return      true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_rd_filter(struct rfic_state *state,
+                         bladerf_channel channel,
+                         uint32_t *filter)
+{
+	uint8_t	en_dis;
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        *filter = (uint32_t)state->txfir;
+    } else {
+    	CHECK_BOOL(ad9361_get_rx_fir_en_dis(state->phy,&en_dis));
+        *filter = (uint32_t)en_dis;
+    }
+
+    return true;
+}
+
+/**
+ * @brief       Set/unset TX mute
+ *
+ * @param[in]   channel  The channel
+ * @param[in]   mute     Requested mute status
+ *
+ * @return      true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_wr_txmute(struct rfic_state *state,
+                         bladerf_channel channel,
+                         uint32_t mute)
+{
+    bool val = (mute > 0);
+
+    CHECK_BOOL(txmute_set(state->phy, channel, val));
+
+    return true;
+}
+
+/**
+ * @brief       Get current TX mute status
+ *
+ * @param[in]   channel  The channel
+ * @param[out]  mute     Current mute status
+ *
+ * @return      true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_rd_txmute(struct rfic_state *state,
+                         bladerf_channel channel,
+                         uint32_t *mute)
+{
+    bool val;
+
+    CHECK_BOOL(txmute_get(state->phy, channel, &val));
+
+    *mute = val ? 1 : 0;
+
+    return true;
+}
+
+/**
+ * @brief       Store current fastlock parameters into profile
+ *
+ * @param[in]   channel  The channel
+ * @param[in]   profile  The profile number
+ *
+ * @return      true if successful, false if not
+ */
+bool SENSOR_READER_CLASS::_rfic_cmd_wr_fastlock(struct rfic_state *state,
+                           bladerf_channel channel,
+                           uint32_t profile)
+{
+    if (BLADERF_CHANNEL_IS_TX(channel)) {
+        CHECK_BOOL(ad9361_tx_fastlock_store(state->phy, profile));
+    } else {
+        CHECK_BOOL(ad9361_rx_fastlock_store(state->phy, profile));
+    }
+
+    return true;
+}
+int SENSOR_READER_CLASS::txmute_get(struct ad9361_rf_phy *phy, bladerf_channel ch, bool *state)
+{
+    int rfic_ch = (ch >> 1);
+
+    *state = tx_mute_state[rfic_ch];
+
+    return 0;
+}
+
+int SENSOR_READER_CLASS::txmute_set(struct ad9361_rf_phy *phy, bladerf_channel ch, bool state)
+{
+    int rfic_ch                = (ch >> 1);
+    uint32_t const MUTED_ATTEN = 89750;
+    uint32_t atten, cached;
+    int status;
+
+    if (tx_mute_state[rfic_ch] == state) {
+        // short circuit if there's no change
+        return 0;
+    }
+
+    if (state) {
+        // mute: save the existing value before muting
+        uint32_t readval;
+
+        status = ad9361_get_tx_attenuation(phy, rfic_ch, &readval);
+        if (status < 0) {
+            return errno_ad9361_to_bladerf(status);
+        }
+
+        cached = readval;
+        atten  = MUTED_ATTEN;
+    } else {
+        // unmute: restore the saved value
+        cached = txmute_get_cached(phy, ch);
+        atten  = cached;
+    }
+
+    status = ad9361_set_tx_attenuation(phy, rfic_ch, atten);
+    if (status < 0) {
+        return errno_ad9361_to_bladerf(status);
+    }
+
+    status = txmute_set_cached(phy, ch, cached);
+    if (status < 0) {
+        return status;
+    }
+
+    tx_mute_state[rfic_ch] = state;
+
+    return 0;
+}
+int SENSOR_READER_CLASS::set_ad9361_port_by_freq(struct ad9361_rf_phy *phy,
+                            bladerf_channel ch,
+                            bool enabled,
+                            bladerf_frequency freq)
+{
+    band_port_map  *port_map = NULL;
+    int status;
+
+    /* Look up the port configuration for this frequency */
+    port_map = (band_port_map *)_get_band_port_map_by_freq(ch, enabled ? freq : 0);
+
+    if (NULL == port_map) {
+        return BLADERF_ERR_INVAL;
+    }
+
+    /* Set the AD9361 port accordingly */
+    if (BLADERF_CHANNEL_IS_TX(ch)) {
+        status = ad9361_set_tx_rf_port_output(phy, port_map->rfic_port);
+    } else {
+        status = ad9361_set_rx_rf_port_input(phy, port_map->rfic_port);
+    }
+
+    return errno_ad9361_to_bladerf(status);
+}
+
+uint32_t SENSOR_READER_CLASS::txmute_get_cached(struct ad9361_rf_phy *phy, bladerf_channel ch)
+{
+    switch (ch) {
+        case BLADERF_CHANNEL_TX(0):
+            return phy->tx1_atten_cached;
+        case BLADERF_CHANNEL_TX(1):
+            return phy->tx2_atten_cached;
+        default:
+            return 0;
+    }
+}
+
+int SENSOR_READER_CLASS::txmute_set_cached(struct ad9361_rf_phy *phy,
+                      bladerf_channel ch,
+                      uint32_t atten)
+{
+    switch (ch) {
+        case BLADERF_CHANNEL_TX(0):
+            phy->tx1_atten_cached = atten;
+            return 0;
+        case BLADERF_CHANNEL_TX(1):
+            phy->tx2_atten_cached = atten;
+            return 0;
+        default:
+            return BLADERF_ERR_INVAL;
+    }
+}
+
